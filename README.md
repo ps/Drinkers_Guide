@@ -19,4 +19,18 @@ Some of these are difficult to implement but who knows.
 * Visualize this with a map (not necessarily google maps), if we stick to one state, we could roll our own simple map which just plots each bar and has a heatmap of how dangerous the bars are
 * Have a form to report offences
 * Have a tool which locates the safest bar in your area to go to
-* more to come... 
+* If we want to do something with the location, should we have real city/town names with their legitimate zip codes etc? We can get a list of them from [this wikipedia page](http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey)
+
+**Time Table**
+This week:
+- Actually create the tables from our flowchart
+- Finish all data generation 
+- Enforce all of the patterns we want
+
+Next week:
+- Make the backend (probably in PHP)
+- Make forms to report offences, etc.
+- Make at least a couple visualizations of most dangerous areas
+- Add profiles of sex offenders
+
+FUCK
