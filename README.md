@@ -32,5 +32,17 @@ Next week:
 - Make forms to report offences, etc.
 - Make at least a couple visualizations of most dangerous areas
 - Add profiles of sex offenders
+- Real town names from NJ, NY, PA
+- Possibly use [google heatmap](https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap)
 
-FUCK
+
+Towns (for Drinker and Bar) [Kevin]
+- Use wikipedia lists, save to text files. Use google maps api to get lat/lon before generating the other stuff. Save to the text files.
+
+Drinker - mostly done, just add lat/lon/town
+
+Bar [Kevin] 
+
+Beer [Pawel]
+
+SexOffender [Pawel] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
