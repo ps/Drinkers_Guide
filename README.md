@@ -1,6 +1,10 @@
 CS336 Databases Project Bitch
 =============================
 
+* server directory is at /usr/local/httpd-2.2.14/htdocs [this is so gay]
+* mysql passwd same as username passwd
+
+
 **Name generation**
 * Run simply with: python gen.py (BeautifulSoup needs to be installed, internet connection needed)
 * First and last names are being pulled from the respective text/csv files

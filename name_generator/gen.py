@@ -56,6 +56,8 @@ lines2 = f.read()
 last = lines2.split(";")
 f.close()
 
+print len(last);
+
 #used to make sure that no last name is repeated
 usedLastNames = []
 
