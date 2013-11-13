@@ -3,6 +3,8 @@ CS336 Databases Project Bitch
 
 * server directory is at /usr/local/httpd-2.2.14/htdocs [this is so gay]
 * mysql passwd same as username passwd
+* mapped 'main' to put you in the public html directory [only under root though]
+* server has python version 2.4.3 so had to use BeautifulSoup version 3...
 
 
 **Name generation**
