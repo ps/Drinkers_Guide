@@ -14,6 +14,9 @@ part2 = ["Ale ","Angel ","Archer ","Arms ","Balrog ","Bandit ","Bard ","Barrel "
 part3 = ["Alehouse ","Cellar ","Clubhouse ","Guesthouse ","House ","Inn ","Lodge ","Meadhall ","Resthouse ","Tavern ","Hall ","Grogshop ","Taproom ","Barroom "]
 
 
+outFile = open(datadir + "bars.sql", "w")
+outFile.write("INSERT INTO Bar (`name`, `phone`, `city`, `state`, `latitude`, `longitude`, `license`) VALUES ")
+first = True
 for i in part1:
 	for j in part2:
 		for k in part3:
@@ -24,4 +27,13 @@ for i in part1:
 			state = randPlace[1]
 			lat = randPlace[2]
 			lon = randPlace[3]
-			print "%s, %s, %s [%0.3f, %0.3f] License: %s" % (name, city, state, lat, lon, license)
+			randPhone = "%i-%i-%i" % (random.randint(100,999),random.randint(100,999), random.randint(1000,9999))
+			if not first:
+				outFile.write(",")
+			else:
+				first = False
+			outFile.write("(\"%s\", \"%s\", \"%s\", \"%s\", %f, %f, \"%s\")" % (name, randPhone, city, state, lat, lon, license))
+			outFile.write("\n")
+
+outFile.close()
+print("Done -- output in " + datadir + "bars.sql")

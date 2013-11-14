@@ -1,6 +1,15 @@
 CS336 Databases Project Bitch
 =============================
 
+**Notes**
+
+Hostname:cs336-9.cs.rutgers.edu
+Username:csuser
+Password:csad1a0d
+
+To import large files into the database:
+http://stackoverflow.com/questions/93128/mysql-error-1153-got-a-packet-bigger-than-max-allowed-packet-bytes
+
 * server directory is at /usr/local/httpd-2.2.14/htdocs [this is so gay]
 * mysql passwd same as username passwd
 * mapped 'main' to put you in the public html directory [only under root though]
@@ -52,3 +61,5 @@ Bar [Kevin]
 Beer [Pawel]
 
 SexOffender [Pawel] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
+
+

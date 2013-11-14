@@ -64,13 +64,17 @@ print len(last);
 usedLastNames = []
 
 #number used to indicate the number of entries you want
-number = 10
+number = 80000
+
+outFile = open(datadir + "drinkers.sql", "w")
+outFile.write("INSERT INTO Drinker (`name`, `phone`, `city`, `state`, `latitude`, `longitude`, `gender`, `age`, `address`) VALUES ")
 
 stAbbr = ['Aly','Ave','Blvd','Cir','Ct','Dr','Ln','Rd','St','Way']
 
 #most names came out to be female so changed it so that only 20% of generated names are females
 males = math.ceil(number*0.8)
 females = math.ceil(number*0.2)
+first = True
 for i in range(0,number):	
 	lastNum = random.randint(0,len(last)-1)
 	firstNum = random.randint(0,len(first)-1)
@@ -102,4 +106,12 @@ for i in range(0,number):
 	state = randPlace[1]
 	lat = randPlace[2]
 	lon = randPlace[3]
+	if not first:
+		outFile.write(",")
+	else:
+		first = False
 	print "%i. %s %s [%s] Age: %i Phone: %s Addr: %s" % (i,randFirst, randLast,randGender,randAge, randPhone, "%s, %s, %s [%0.3f, %0.3f]" % (randStreet, city, state, lat, lon))
+	outFile.write("(\"%s\", \"%s\", \"%s\", \"%s\", %f, %f, \"%s\", %d, \"%s\")" % (randFirst + " " + randLast, randPhone, city, state, lat, lon, randGender, randAge, randStreet))
+	outFile.write("\n")
+outFile.close()
+print "Done"
