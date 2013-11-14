@@ -1,0 +1,565 @@
+Newark;277140
+Jersey City;247597
+Paterson;146199
+Elizabeth;124969
+Edison;99967
+Woodbridge Township;99585
+Lakewood Township;92843
+Toms River;91239
+Hamilton;88464
+Trenton;84913
+Clifton;84136
+Camden;77344
+Brick Township;75072
+Cherry Hill;71045
+Passaic;69781
+Middletown Township;66522
+Union City;66455
+Old Bridge Township;65375
+Gloucester Township;64634
+East Orange;64270
+Bayonne;63024
+Franklin;62300
+North Bergen;60773
+Vineland;60724
+Union;56642
+Piscataway;56044
+New Brunswick;55181
+Jackson Township;54856
+Wayne;54717
+Irvington;53926
+Parsippany-Troy Hills;53238
+Howell Township;51075
+Perth Amboy;50814
+Hoboken;50005
+Plainfield;49808
+West New York;49708
+Washington;48559
+East Brunswick;47512
+Bloomfield;47315
+West Orange;46207
+Evesham Township;45538
+Bridgewater Township;44464
+South Brunswick Township;43417
+Egg Harbor Township;43323
+Manchester Township;43070
+Hackensack;43010
+Sayreville;42704
+Mount Laurel Township;41864
+Berkeley Township;41255
+North Brunswick;40742
+Kearny;40684
+Linden;40499
+Marlboro Township;40191
+Teaneck;39776
+Atlantic City;39558
+Winslow Township;39499
+Monroe;39132
+Manalapan Township;38872
+Hillsborough Township;38303
+Montclair;37669
+Galloway Township;37349
+Freehold Township;36184
+Monroe;36129
+Belleville;35926
+Pennsauken Township;35885
+Ewing Township;35790
+Fort Lee;35345
+Lawrence Township;33472
+Fair Lawn;32457
+Willingboro Township;31629
+Long Branch;30719
+Deptford Township;30561
+Garfield;30487
+Westfield;30316
+Orange;30134
+Livingston;29366
+Voorhees Township;29131
+Princeton;28572
+Millville;28400
+Nutley;28370
+Mount Olive Township;28117
+Neptune Township;27935
+Pemberton Township;27912
+Lacey Township;27644
+Rahway;27346
+Ocean Township;27291
+East Windsor Township;27190
+West Windsor Township;27165
+Englewood;27147
+Bergenfield;26764
+Bernards Township;26652
+Stafford Township;26535
+Hamilton Township;26503
+Paramus;26342
+Wall Township;26164
+Mahwah;25890
+West Milford;25850
+Randolph;25734
+Bridgeton;25349
+Ridgewood;24958
+Rockaway Township;24156
+Lodi;24136
+Vernon Township;23943
+Maplewood;23867
+Cliffside Park;23594
+Scotch Plains;23510
+South Plainfield;23385
+Roxbury Township;23324
+Medford;23033
+Plainsboro Township;22999
+Lower Township;22866
+Carteret;22844
+Cranford;22625
+Burlington Township;22594
+Morris Township;22306
+Montgomery Township;22254
+Raritan Township;22185
+North Plainfield;21936
+West Deptford Township;21677
+Montville;21528
+Summit;21457
+Hillside;21404
+Jefferson Township;21314
+Roselle;21085
+Barnegat Township;20936
+Moorestown Township;20726
+Lyndhurst;20554
+Hazlet;20334
+Pleasantville;20249
+Millburn;20149
+Little Egg Harbor Township;20065
+Sparta Township;19722
+Palisades Park;19622
+Elmwood Park;19403
+Maple Shade Township;19131
+Middle Township;18911
+Hawthorne;18791
+Glassboro;18579
+Washington Township;18533
+Morristown;18411
+Point Pleasant;18392
+Aberdeen Township;18210
+Dover;18157
+Rutherford;18061
+Tinton Falls;17892
+Lindenwold;17613
+Dumont;17479
+Hopewell Township;17304
+Delran Township;16896
+Franklin Township;16820
+Holmdel Township;16773
+Wyckoff;16696
+Denville;16635
+New Milford;16341
+Secaucus;16264
+South Orange;16198
+Readington Township;16126
+Asbury Park;16116
+South River;16008
+Madison;15845
+Springfield;15817
+Cinnaminson Township;15569
+Pequannock Township;15540
+North Arlington;15392
+Warren Township;15311
+Mantua Township;15217
+Hopatcong;15147
+Phillipsburg;14950
+Hammonton;14791
+Clark;14756
+Haddon Township;14707
+Tenafly;14488
+Ramsey;14473
+Branchburg;14459
+Little Falls;14432
+Highland Park;13982
+Collingswood;13926
+Fairview;13835
+Hanover Township;13712
+Saddle Brook;13659
+Robbinsville Township;13642
+Middlesex;13635
+Harrison;13620
+Metuchen;13574
+Clinton Township;13478
+Pennsville Township;13409
+Verona;13332
+Roselle Park;13297
+Berkeley Heights;13183
+Oakland;12754
+Ridgefield Park;12729
+Eatontown;12709
+Lumberton Township;12559
+Weehawken;12554
+Harrison Township;12417
+Cedar Grove;12411
+Upper Township;12373
+Ringwood;12228
+Red Bank;12206
+New Providence;12171
+Florence Township;12109
+Somerville;12098
+Freehold Borough;12052
+Hasbrouck Heights;11842
+Woodland Park;11819
+Ocean City;11701
+Florham Park;11696
+Glen Rock;11601
+Haddonfield;11593
+Bellmawr;11583
+Edgewater;11513
+Gloucester City;11456
+Bordentown Township;11367
+Wantage Township;11358
+River Edge;11340
+Wallington;11335
+Guttenberg;11176
+East Hanover;11157
+Wanaque;11116
+Pompton Lakes;11097
+Beachwood;11045
+Ridgefield;11032
+Westwood;10908
+Totowa;10804
+Somers Point;10795
+West Caldwell;10759
+Ventnor City;10650
+Waterford Township;10649
+Little Ferry;10626
+Franklin Lakes;10590
+Millstone Township;10566
+Lincoln Park;10521
+Southampton Township;10464
+Chatham Township;10452
+Bound Brook;10402
+Manville;10344
+Kinnelon;10248
+Pine Hill;10233
+Hillsdale;10219
+Woolwich Township;10200
+Woodbury;10174
+Colts Neck Township;10142
+Keansburg;10105
+Burlington;9920
+Hackettstown;9724
+River Vale;9659
+Waldwick;9625
+East Greenwich Township;9555
+Maywood;9555
+Mount Holly Township;9536
+Brigantine;9450
+Pittsgrove Township;9393
+Washington Township;9102
+Pitman;9011
+Chatham Borough;8962
+Leonia;8937
+East Rutherford;8913
+Edgewater Park Township;8881
+Audubon;8819
+Westampton Township;8813
+Matawan;8810
+Long Hill Township;8702
+Park Ridge;8645
+South Amboy;8631
+Northfield;8624
+Cresskill;8573
+Mansfield Township;8544
+Runnemede;8468
+Plumsted Township;8421
+North Haledon;8417
+Absecon;8411
+Closter;8373
+Byram Township;8350
+Boonton;8347
+Ocean Township;8332
+Haledon;8318
+Spotswood;8257
+Hardyston Township;8213
+Upper Saddle River;8208
+Bogota;8187
+Clayton;8179
+Bedminster;8165
+West Long Branch;8097
+Riverside Township;8079
+Carneys Point Township;8049
+Lopatcong Township;8014
+Newton;7997
+Oradell;7978
+Maurice River Township;7976
+Kenilworth;7914
+Montvale;7844
+Chester Township;7838
+Caldwell;7822
+Mansfield Township;7725
+Bernardsville;7707
+Chesterfield Township;7699
+North Hanover Township;7678
+Upper Deerfield Township;7660
+Bloomingdale;7656
+Wood-Ridge;7626
+Berlin;7588
+Buena Vista Township;7570
+Butler;7539
+Glen Ridge Borough;7527
+Haddon Heights;7473
+Fairfield;7466
+Emerson;7401
+Palmyra;7398
+New Hanover Township;7385
+Fanwood;7318
+Keyport;7240
+Dunellen;7227
+Green Brook Township;7203
+Midland Park;7128
+Rumson;7122
+Linwood;7092
+Stratford;7040
+Barrington;6983
+Tabernacle Township;6949
+Upper Freehold Township;6902
+Milltown;6893
+Raritan;6881
+Mountainside;6685
+Washington Township;6651
+Lebanon Township;6588
+Wharton;6522
+Allendale;6505
+Shamong Township;6490
+Dennis Township;6467
+Washington;6461
+Rockaway;6438
+Margate City;6354
+Andover Township;6319
+Fairfield Township;6295
+Union Beach;6245
+North Caldwell;6183
+Mullica Township;6147
+Carlstadt;6127
+Fair Haven;6121
+Hainesport Township;6110
+Paulsboro;6097
+Eastampton Township;6069
+Logan Township;6042
+Tewksbury Township;5993
+Blairstown;5967
+Little Silver;5950
+Jamesburg;5915
+Union Township;5908
+Manasquan;5897
+Mendham Township;5869
+Prospect Park;5865
+Oceanport;5832
+Roseland;5819
+Watchung;5801
+Belmar;5794
+Old Tappan;5750
+Woodcliff Lake;5730
+Greenwich Township;5712
+Norwood;5711
+Independence Township;5662
+Frankford Township;5565
+Morris Plains;5532
+Rochelle Park;5530
+Hightstown;5494
+Berlin Township;5357
+Wildwood;5325
+Holland Township;5291
+Englewood Cliffs;5281
+Hampton Township;5196
+Commercial Township;5178
+Somerdale;5151
+Penns Grove;5147
+Salem;5146
+Mount Arlington;5050
+Franklin;5045
+Highlands;5005
+Clementon;5000
+Mendham Borough;4981
+Alexandria Township;4938
+Greenwich Township;4899
+White Township;4882
+Demarest;4881
+Neptune City;4869
+Brielle;4774
+Spring Lake Heights;4713
+Mount Ephraim;4676
+Point Pleasant Beach;4665
+Harrington Park;4664
+Northvale;4640
+Buena;4603
+Flemington;4581
+Hopewell Township;4571
+Delaware Township;4563
+South Bound Brook;4563
+Atlantic Highlands;4385
+Magnolia;4341
+Allamuchy Township;4323
+Bradley Beach;4298
+Westville;4288
+Delanco Township;4283
+Boonton Township;4263
+Egg Harbor City;4243
+Garwood;4226
+Elk Township;4216
+Mountain Lakes;4160
+Medford Lakes;4146
+Stillwater Township;4099
+Ho-Ho-Kus;4078
+North Wildwood;4041
+Oaklyn;4038
+Pilesgrove Township;4016
+East Amwell Township;4013
+Bethlehem Township;3979
+Bordentown;3924
+Lambertville;3906
+Cranbury;3857
+Montague Township;3847
+Kingwood Township;3845
+West Amwell Township;3840
+Harding Township;3838
+Merchantville;3821
+Shrewsbury;3809
+South Toms River;3684
+Mine Hill Township;3651
+High Bridge;3648
+Stanhope;3610
+Cape May;3607
+Green Township;3601
+Riverdale;3559
+Upper Pittsgrove Township;3505
+Woodstown;3505
+Alloway Township;3467
+Fredon Township;3437
+Springfield Township;3414
+Haworth;3382
+Tuckerton;3347
+Pohatcong Township;3339
+Lawrence Township;3290
+Monmouth Beach;3279
+Hamburg;3277
+Wildwood Crest;3270
+Netcong;3232
+Franklin;3195
+Franklin;3176
+South Harrison Township;3162
+Saddle River;3152
+Deerfield Township;3119
+Knowlton Township;3055
+Woodbury Heights;3055
+Long Beach Township;3051
+National Park;3036
+Spring Lake;2993
+Woodlynne;2978
+Lawnside;2945
+Liberty Township;2942
+Seaside Heights;2887
+Riverton;2779
+Clinton;2719
+Weymouth Township;2715
+Moonachie;2708
+Belvidere;2681
+Harmony Township;2667
+Quinton Township;2666
+Lakehurst;2654
+Pennington;2585
+Swedesboro;2584
+Peapack-Gladstone;2582
+Beverly;2577
+Lafayette Township;2538
+Oxford Township;2514
+Woodbine;2472
+Ogdensburg;2410
+East Newark;2406
+South Hackensack;2378
+Alpha;2369
+Wenonah;2278
+Gibbsboro;2274
+Frelinghuysen Township;2230
+Helmetta;2178
+Sussex;2130
+Pine Beach;2127
+Sea Isle City;2114
+Essex Fells;2113
+Ocean Gate;2011
+Sandyston Township;1998
+Brooklawn;1955
+Hope Township;1952
+Hopewell;1922
+Laurel Springs;1908
+Avon-by-the-Sea;1901
+Folsom;1885
+Lavallette;1875
+Alpine;1849
+Englishtown;1847
+Allentown;1828
+Sea Girt;1828
+Mannington Township;1806
+Woodland Township;1788
+Oldmans Township;1773
+Lower Alloways Creek Township;1770
+Lake Como;1759
+Estell Manor;1735
+Glen Gardner;1704
+Hardwick Township;1696
+Island Heights;1673
+Chester Borough;1649
+Chesilhurst;1634
+Eagleswood Township;1603
+Downe Township;1585
+Seaside Park;1579
+Newfield;1553
+Victory Gardens;1520
+Winfield Township;1471
+Bass River Township;1443
+Stow Creek Township;1431
+Sea Bright;1412
+Pemberton;1409
+Hampton;1401
+Elmer;1395
+Frenchtown;1373
+Lebanon;1358
+Avalon;1334
+Farmingdale;1329
+Milford;1233
+Surf City;1205
+Beach Haven;1170
+Ship Bottom;1156
+Shrewsbury Township;1141
+Port Republic;1115
+Califon;1076
+Elsinboro Township;1036
+West Cape May;1024
+Audubon Park;1023
+Bay Head;968
+Far Hills;919
+Longport;895
+Roosevelt;882
+Bloomsbury;870
+Hi-Nella;870
+Stone Harbor;866
+Branchville;841
+Interlaken;820
+Greenwich;804
+Wrightstown;802
+Deal;750
+Washington;687
+Rocky Hill;682
+Andover;606
+West Wildwood;603
+Barnegat Light;574
+Fieldsboro;540
+Stockton;538
+Rockleigh;531
+Shiloh;516
+Allenhurst;496
+Corbin City;492
+Millstone;418
+Harvey Cedars;337
+Mantoloking;296
+Cape May Point;291
+Loch Arbour;194
+Teterboro;67
+Walpack Township;16
+Pine Valley;12
+Tavistock;5

@@ -1,0 +1,2400 @@
+Philadelphia city;1526006
+Pittsburgh city;305704
+Allentown city;118032
+Erie city;101786
+Reading city;88082
+Upper Darby township;82795
+Scranton city;76089
+Bethlehem city;74982
+Bensalem township;60427
+Lancaster city;59322
+Lower Merion township;57825
+Bethlehem city;55639
+Abington township;55310
+Bristol township;54582
+Millcreek township;53515
+Harrisburg city;49528
+Haverford township;48491
+Lower Paxton township;47360
+Altoona city;46320
+Middletown township;45436
+York city;43718
+Hempfield township;43241
+Penn Hills township;42329
+State College borough;42034
+Wilkes-Barre city;41498
+Northampton township;39726
+Manheim township;38133
+Cheltenham township;36793
+Norristown borough;34324
+Falls township;34300
+Chester city;33972
+Mount Lebanon township;33137
+Warminster township;32682
+Lower Makefield township;32559
+Bethel Park municipality;32313
+Radnor township;31531
+Lower Macungie township;30633
+Ross township;31105
+Ridley township;30768
+North Huntingdon township;30609
+Williamsport city;29381
+Tredyffrin township;29332
+Cranberry township;28098
+Shaler township;28757
+McCandless township;28457
+Upper Merion township;28395
+Monroeville municipality;28386
+Hampden township;28044
+York township;27793
+Plum borough;27126
+Spring township;27119
+Whitehall township;26738
+Easton city;26800
+Springettsbury township;26668
+Horsham township;26147
+Upper Dublin township;25569
+Exeter township;25550
+Lower Providence township;25436
+Lebanon city;25477
+Montgomery township;24790
+Hazleton city;25340
+Derry township;24679
+Moon township;24185
+Susquehanna township;24036
+Springfield township;24211
+Upper Moreland township;24015
+Bethlehem township;23730
+East Hempfield township;23522
+Swatara township;23362
+Warrington township;23418
+Marple township;23428
+New Castle city;23273
+West Goshen township;21866
+Unity township;22607
+Pottstown borough;22377
+Peters township;21213
+Upper Providence township;21219
+Upper Macungie township;20063
+Dover township;21078
+East Pennsboro township;20228
+Palmer township;20691
+Johnstown city;20978
+Coolbaugh township;20564
+Chambersburg borough;20268
+Buckingham township;20075
+West Mifflin borough;20313
+Murrysville municipality;20079
+Manor township;19612
+Penn township;20005
+Muhlenberg township;19628
+Baldwin borough;19767
+McKeesport city;19731
+Bethlehem city;19343
+South Whitehall township;19180
+Springfield township;19418
+Newtown township;19299
+Upper St. Clair township;19229
+Whitpain township;18875
+Stroud township;19213
+Lower Southampton township;18909
+Carlisle borough;18682
+West Chester borough;18461
+West Manchester township;18894
+Limerick township;18074
+Hampton township;18363
+West Whiteland township;18274
+Upper Allen township;18059
+Uwchlan township;18088
+Manchester township;18161
+East Goshen township;18026
+Lower Allen township;17980
+Towamencin township;17578
+Warwick township;17783
+Ferguson township;17690
+Windsor township;17504
+Doylestown township;17565
+Hatfield township;17249
+Whitemarsh township;17349
+Concord township;17231
+Greene township;16700
+Harborcreek township;17234
+Butler township;17248
+Scott township;17024
+Chestnuthill township;17156
+Upper Chichester township;16738
+Fairview township;16668
+Lancaster township;16149
+Aston township;16592
+East Lampeter township;16424
+Plymouth township;16525
+Phoenixville borough;16440
+Lansdale borough;16269
+West Hempfield township;16153
+Hermitage city;16220
+North Whitehall township;15703
+Middle Smithfield township;15997
+Wilkinsburg borough;15930
+Middletown township;15807
+Upper Gwynedd township;15552
+White township;15821
+West Norriton township;15663
+Penn township;15612
+Patton township;15311
+Upper Saucon township;14808
+West Lampeter township;15209
+Hanover borough;15289
+Newberry township;15285
+Lower Salford township;14959
+Cumru township;15147
+Upper Southampton township;15152
+Hilltown township;15029
+Antrim township;14893
+Forks township;14721
+South Fayette township;14416
+South Middleton township;14663
+Greensburg city;14892
+Bloomsburg town;14855
+Guilford township;14531
+Warwick township;14437
+Silver Spring township;13657
+Derry township;14502
+Washington township;14009
+Pottsville city;14324
+Dunmore borough;14057
+North Fayette township;13934
+Caln township;13817
+East Norriton township;13590
+Indiana borough;13975
+Whitehall borough;13944
+Franklin Park borough;13470
+Skippack township;13715
+Sharon city;14038
+Nether Providence township;13706
+North Strabane township;13408
+Salisbury township;13505
+Butler city;13757
+Washington city;13663
+Robinson township;13354
+Ephrata borough;13394
+South Park township;13416
+Elizabeth township;13271
+Meadville city;13388
+Franconia township;13064
+Coatesville city;13100
+Kingston borough;13182
+Richland township;13052
+Lower Moreland township;12982
+New Kensington city;13116
+St. Marys city;13070
+Spring Garden township;12578
+Amity township;12583
+Richland township;12814
+North Union township;12728
+Plumstead township;12442
+Hopewell township;12593
+West Bradford township;12223
+Adams township;11652
+Logan township;12289
+Newtown township;12216
+Lower Pottsgrove township;12059
+Somerset township;12122
+New Garden township;11984
+Pine township;11497
+West Deer township;11771
+Dingman township;11926
+Center township;11795
+New Hanover township;10939
+Lower Burrell city;11761
+North Lebanon township;11429
+Cecil township;11271
+Elizabethtown borough;11545
+Lower Gwynedd township;11405
+Yeadon borough;11443
+Upper Uwchlan township;11227
+Richland township;11100
+Munhall borough;11406
+Emmaus borough;11211
+Rostraver township;11363
+North Middleton township;11143
+Salisbury township;11062
+Loyalsock township;11026
+Hanover township;10866
+Hanover township;11076
+New Britain township;11070
+Jefferson Hills borough;10619
+Pocono township;11065
+Hamilton township;10788
+Westtown township;10827
+Rapho township;10442
+Lower Saucon township;10772
+Mount Pleasant township;10911
+South Union township;10681
+Darby borough;10687
+East Whiteland township;10650
+Waynesboro borough;10568
+Sandy township;10625
+Lansdowne borough;10620
+Willistown township;10497
+Lehman township;10663
+Easttown township;10477
+Lehigh township;10526
+Wyomissing borough;10461
+Harrison township;10461
+Nanticoke city;10465
+Coal township;10383
+Columbia borough;10400
+East Cocalico township;10310
+Oil City city;10557
+Berwick borough;10477
+Douglass township;10195
+Upper Providence township;10142
+Uniontown city;10372
+Mount Joy township;9873
+North Versailles township;10229
+Fairview township;10102
+Worcester township;9750
+East Bradford township;9942
+Ephrata township;9400
+Plains township;9961
+Northampton borough;9926
+Milford township;9902
+East Stroudsburg borough;9840
+Sunbury city;9905
+Lock Haven city;9772
+Penn Forest township;9581
+Bristol borough;9726
+Brentwood borough;9643
+Hazle township;9549
+South Lebanon township;9463
+West Hanover township;9343
+Warren city;9710
+Jeannette city;9654
+College township;9521
+South Strabane township;9346
+Neshannock township;9609
+Lititz borough;9369
+Butler township;9221
+Aliquippa city;9438
+Darby township;9264
+Maidencreek township;9126
+Moore township;9198
+Perkiomen township;9139
+South Abington township;9073
+Economy borough;8970
+West Caln township;9014
+Dallas township;8994
+Bethel township;8791
+Penn township;8789
+Hamilton township;9083
+Canonsburg borough;8992
+Mechanicsburg borough;8981
+Swissvale borough;8983
+Quakertown borough;8979
+North Codorus township;8905
+Middletown borough;8901
+Carbondale city;8891
+Upper Leacock township;8708
+East Nottingham township;8650
+Beaver Falls city;8987
+Collingdale borough;8786
+Morrisville borough;8728
+Solebury township;8692
+Bradford city;8770
+Dormont borough;8593
+Schuylkill township;8516
+Tobyhanna township;8554
+Perkasie borough;8511
+O'Hara township;8407
+West Donegal township;8260
+Doylestown borough;8380
+Lewistown borough;8338
+Bellevue borough;8370
+Canton township;8375
+Lower Swatara township;8268
+Jackson township;8163
+Bushkill township;8178
+Castle Shannon borough;8316
+Allegheny township;8164
+Pleasant Hills borough;8268
+Old Forge borough;8313
+Millersville borough;8168
+Upper Makefield township;8190
+Brighton township;8227
+Latrobe city;8338
+Grove City borough;8322
+Southampton township;7987
+North Londonderry township;8068
+Thornbury township;8028
+Brookhaven borough;8006
+Maxatawny township;7906
+East Donegal township;7755
+Carnegie borough;7972
+West Earl township;7868
+London Grove township;7475
+West Manheim township;7744
+North Coventry township;7866
+Downingtown borough;7891
+Chartiers township;7818
+East Huntingdon township;7963
+Camp Hill borough;7888
+Conshohocken borough;7833
+White Oak borough;7862
+Wilson borough;7896
+Center township;7898
+Honey Brook township;7647
+Mount Joy borough;7410
+Kennett township;7565
+Kennedy township;7672
+Polk township;7874
+Ellwood City borough;7921
+Conewago township;7510
+Chippewa township;7620
+Pittston city;7739
+DuBois city;7794
+North Cornwall township;7553
+Gettysburg borough;7620
+Monessen city;7720
+Spring township;7470
+Lawrence township;7681
+Connellsville city;7637
+Jackson township;7494
+East Fallowfield township;7449
+New Sewickley township;7360
+Upper Milford township;7292
+West Brandywine township;7394
+Collier township;7080
+Frankstown township;7381
+Shenango township;7479
+Palmyra borough;7320
+Lower Windsor township;7382
+Hatboro borough;7360
+Washington township;7422
+Smithfield township;7357
+Derry township;7339
+South Heidelberg township;7271
+Brecknock township;7199
+East Manchester township;7264
+Shamokin city;7374
+Buffalo township;7307
+Delaware township;7396
+Indiana township;7253
+West Cocalico township;7280
+Robeson township;7216
+East Brandywine township;6742
+New Cumberland borough;7277
+Marshall township;6915
+East Pikeland township;7079
+Conemaugh township;7279
+Middlesex township;7040
+Valley township;6794
+South Londonderry township;6991
+Glenolden borough;7153
+East Marlborough township;7026
+Ellwood City borough;7289
+Franklin township;7280
+Earl township;7024
+Conewago township;7085
+Archbald borough;6984
+Dunbar township;7126
+Huntingdon borough;7093
+Kingston township;6999
+Milton borough;7042
+Ridley Park borough;7002
+Tamaqua borough;7107
+Ambridge borough;7050
+Jackson township;7033
+Providence township;6897
+Bullskin township;6966
+Bedminster township;6574
+Bern township;6797
+East Vincent township;6821
+Upper Mount Bethel township;6706
+California borough;6795
+Tunkhannock township;6789
+Clairton city;6796
+West View borough;6771
+East Coventry township;6636
+Allegheny township;6738
+Summit township;6603
+Washington township;6624
+Upper Hanover township;6464
+Clifton Heights borough;6652
+Southampton township;6359
+Souderton borough;6618
+East Earl township;6507
+Folcroft borough;6606
+Cranberry township;6685
+Salem township;6623
+Shrewsbury township;6447
+Corry city;6605
+Georges township;6612
+Ligonier township;6603
+Blakely borough;6564
+Benner township;6188
+Cumberland township;6623
+Forest Hills borough;6518
+South Hanover township;6248
+Clay township;6308
+Ambler borough;6417
+Catasauqua borough;6436
+Antis township;6499
+Prospect Park borough;6454
+Edinboro borough;6438
+Franklin city;6545
+North East township;6315
+South Williamsport borough;6379
+East Buffalo township;6414
+Oakmont borough;6303
+Wilkins township;6357
+Upper Nazareth township;6231
+Stowe township;6362
+Red Lion borough;6373
+Bellefonte borough;6187
+Taylor borough;6263
+Swarthmore borough;6194
+Somerset borough;6277
+Cumberland township;6162
+Plainfield township;6138
+Clearfield borough;6215
+Montgomery township;6116
+Chanceford township;6111
+Kennett Square borough;6072
+McKees Rocks borough;6104
+Dickson City borough;6070
+Carroll township;5939
+Cambria township;6099
+Hellam township;6043
+New Brighton borough;6025
+Luzerne township;5965
+Steelton borough;5990
+Crafton borough;5951
+Sewickley township;5996
+St. Thomas township;5935
+Plymouth borough;5951
+Williams township;5884
+Punxsutawney borough;5962
+Greenville borough;5919
+Monroe township;5823
+Adams township;5972
+Norwood borough;5890
+Ross township;5940
+Hellertown borough;5898
+Mount Carmel borough;5893
+East Hanover township;5718
+Hollidaysburg borough;5791
+Reading township;5780
+New London township;5631
+Lewisburg borough;5792
+Union township;5700
+Monaca borough;5737
+Moosic borough;5719
+South Huntingdon township;5796
+East Rockhill township;5706
+Nazareth borough;5746
+Lower Nazareth township;5674
+Charlestown township;5671
+Longswamp township;5679
+Sharon Hill borough;5697
+Wright township;5651
+Coraopolis borough;5677
+Exeter borough;5652
+Carroll township;5640
+Ohio township;4757
+Lower Heidelberg township;5513
+North Sewickley township;5488
+Slippery Rock township;5614
+Selinsgrove borough;5654
+West Pennsboro township;5561
+Vernon township;5630
+Duquesne city;5565
+Sayre borough;5587
+Quincy township;5541
+Stroudsburg borough;5567
+Oxford township;5517
+Redstone township;5566
+Titusville city;5601
+Shippensburg borough;5492
+Jefferson township;5504
+Penn township;5364
+Newport township;5374
+Tyrone borough;5477
+Shippensburg township;5429
+Kelly township;5491
+Lehighton borough;5500
+Middlesex township;5390
+Hopewell township;5435
+Fox Chapel borough;5388
+New Holland borough;5378
+Palmerton borough;5414
+Upper Pottsgrove township;5315
+Upper Yoder township;5449
+Schuylkill Haven borough;5437
+Turtle Creek borough;5349
+Media borough;5327
+Bedford township;5395
+West Rockhill township;5256
+Leacock township;5220
+Dickinson township;5223
+Springfield township;5152
+Shillington borough;5273
+Lower Oxford township;5200
+Paradise township;5131
+Bangor borough;5273
+Athens township;5251
+Carroll township;5269
+Sugarcreek borough;5294
+Londonderry township;5235
+Martic township;5190
+Lake township;5269
+Olyphant borough;5151
+West Mead township;5249
+Findlay township;5060
+Birdsboro borough;5163
+Clarion borough;5276
+Washington township;5122
+Collegeville borough;5089
+Bridgeville borough;5148
+Vandergrift borough;5205
+Pine township;5150
+Butler township;5224
+Clarks Summit borough;5116
+Oxford borough;5077
+Union township;5190
+Granville township;5104
+Wayne township;5113
+Bethel township;5007
+Scott township;5113
+Arnold city;5157
+Colebrookdale township;5078
+Westmont borough;5181
+Girard township;5102
+Harris township;4873
+Penn township;5071
+German township;5097
+Lackawaxen township;4994
+Swoyersville borough;5062
+Springfield township;5035
+Weisenberg township;4923
+Old Lycoming township;4938
+Middle Paxton township;4976
+Kutztown borough;5012
+Shenandoah borough;5071
+Gregg township;4984
+Scott township;4905
+Duryea borough;4917
+Straban township;4928
+East Allen township;4903
+Farrell city;5111
+Telford borough;4872
+Franklin township;4678
+Franklin township;4877
+Lower Frederick township;4840
+East Caln township;4838
+Summit township;4884
+Manheim borough;4858
+North Braddock borough;4857
+West Pittston borough;4868
+Peach Bottom township;4813
+Annville township;4767
+Bradford township;4805
+Edwardsville borough;4816
+West Vincent township;4567
+Royersford borough;4752
+Caernarvon township;4748
+Blooming Grove township;4819
+Kiskiminetas township;4800
+Donora borough;4781
+Jim Thorpe borough;4781
+Center township;4764
+Greene township;4706
+Avalon borough;4705
+Mount Pleasant township;4693
+Pocopson township;4582
+Danville borough;4699
+Jessup borough;4676
+Montoursville borough;4615
+Jackson township;4646
+Pequea township;4605
+Fountain Hill borough;4597
+Swatara township;4555
+Lemoyne borough;4553
+Brecknock township;4585
+North Franklin township;4583
+West York borough;4617
+West Hazleton borough;4594
+Bridgeport borough;4554
+White Deer township;4437
+Blair township;4494
+Warrington township;4532
+Decatur township;4548
+New Freedom borough;4464
+Fairview township;4520
+Hummelstown borough;4538
+Tarentum borough;4530
+Smithfield township;4390
+East Petersburg borough;4506
+Walker township;4433
+Beaver borough;4531
+Lower Alsace township;4475
+Towamensing township;4477
+Delaware township;4489
+Glassport borough;4483
+Jenkins township;4442
+Larksville borough;4480
+Washington township;4432
+Smith township;4476
+Mount Pleasant borough;4454
+Jenkintown borough;4422
+Peters township;4430
+Littlestown borough;4434
+McKean township;4409
+Green Tree borough;4432
+Shippensburg borough;4416
+West Penn township;4442
+Franklin township;4352
+Allen township;4269
+Conneaut township;4290
+Jersey Shore borough;4361
+Sharpsville borough;4415
+Burrell township;4393
+Ralpho township;4321
+Honesdale borough;4480
+Minersville borough;4397
+Scottdale borough;4384
+Penn township;4324
+Tunkhannock township;4273
+Jackson township;4392
+Fallowfield township;4321
+Narberth borough;4282
+Cresson township;4336
+Foster township;4316
+Lynn township;4229
+Hamburg borough;4289
+Mahoning township;4305
+Monongahela city;4300
+Slatington borough;4232
+North East borough;4294
+Salem township;4254
+Sellersville borough;4249
+Franklin township;4262
+Manor township;4227
+Sugarloaf township;4211
+Birmingham township;4208
+Strasburg township;4182
+Mahoning township;4171
+West Reading borough;4212
+Forty Fort borough;4214
+Menallen township;4205
+Salem township;4271
+Cornwall borough;4112
+Barrett township;4225
+Greenfield township;4173
+Upper Paxton township;4161
+Little Britain township;4106
+Aldan borough;4152
+Connoquenessing township;4170
+Pine Grove township;4123
+Ruscombmanor township;4112
+Heidelberg township;4069
+Bethel township;4112
+Waynesburg borough;4176
+Mahanoy City borough;4162
+Baden borough;4135
+Throop borough;4088
+Tinicum township;4091
+Chester township;3940
+Windber borough;4138
+Charleroi borough;4120
+Fleetwood borough;4085
+Clarion township;4116
+North Beaver township;4121
+Brown township;4053
+West Pikeland township;4024
+Jenner township;4122
+Centre township;4036
+Chalfont borough;4009
+East Franklin township;4082
+Boyertown borough;4055
+Canaan township;3963
+Franklin township;4052
+Edgmont township;3987
+Caernarvon township;4006
+Dallastown borough;4049
+Greencastle borough;3996
+Ridgway borough;4078
+Sinking Spring borough;4008
+Rush township;4008
+Tinicum township;3995
+Kittanning borough;4044
+Monroe township;3895
+Millcreek township;3892
+Waterford township;3920
+Lawrence Park township;3982
+Irwin borough;3973
+Woodward township;3992
+Elizabeth township;3886
+Akron borough;3876
+Greene township;3956
+Laureldale borough;3911
+Washington township;3810
+Carroll Valley borough;3876
+Brookville borough;3924
+Lansford borough;3941
+West Pottsgrove township;3874
+Shenango township;3929
+Denver borough;3861
+Codorus township;3796
+Pennsburg borough;3843
+Armagh township;3863
+Washington township;3902
+Paradise township;3766
+East Drumore township;3791
+Shrewsbury borough;3823
+Sewickley borough;3827
+Lower Milford township;3775
+Conestoga township;3776
+Rockland township;3778
+Green township;3839
+Port Vue borough;3798
+Northumberland borough;3804
+Zelienople borough;3812
+Hempfield township;3741
+Frackville borough;3805
+Jefferson township;3731
+Northern Cambria borough;3835
+Clinton township;3708
+Paupack township;3828
+Alsace township;3751
+Amwell township;3751
+North Manheim township;3770
+Greenwich township;3725
+Millvale borough;3744
+Point township;3685
+Chadds Ford township;3640
+Sadsbury township;3570
+Colerain township;3635
+Kane borough;3730
+Hanover township;3690
+Mount Joy township;3670
+Slippery Rock borough;3625
+Oley township;3620
+Jenks township;3629
+Jackson township;3657
+Parkesburg borough;3593
+Mansfield borough;3625
+Rochester borough;3657
+Pennsbury township;3604
+Damascus township;3659
+Tilden township;3597
+Fox township;3630
+Portage township;3640
+Wallace township;3458
+Pen Argyl borough;3595
+Halifax township;3483
+Price township;3573
+Wharton township;3575
+Trappe borough;3509
+Potter township;3517
+Upper Frederick township;3523
+Buffalo township;3538
+Mount Pleasant township;3515
+Winfield township;3535
+Muncy Creek township;3474
+Mifflinburg borough;3540
+Ohioville borough;3533
+Conewango township;3594
+Menallen township;3515
+Union township;3503
+Freeland borough;3531
+Lehman township;3508
+West Salem township;3538
+Fayette township;3478
+Hegins township;3516
+Rice township;3335
+Foster township;3467
+Lower Chichester township;3469
+Union township;3460
+Freedom township;3458
+Heidelberg township;3416
+Charleston township;3360
+Nockamixon township;3441
+Etna borough;3451
+Saltlick township;3461
+Sharpsburg borough;3446
+Sadsbury township;3395
+Masontown borough;3450
+Richmond township;3397
+Springfield township;3425
+Blairsville borough;3412
+Manheim township;3380
+Springdale borough;3405
+Mount Oliver borough;3403
+Rush township;3412
+Pulaski township;3452
+Pittston township;3368
+Forward township;3376
+Snyder township;3364
+Athens borough;3367
+Conoy township;3194
+Spring City borough;3323
+Reserve township;3333
+Douglass township;3306
+Upper Salford township;3299
+West Brunswick township;3327
+Ingram borough;3330
+Nesquehoning borough;3349
+Wheatfield township;3334
+Wesleyville borough;3341
+Hatfield borough;3290
+Palmyra township;3312
+Ebensburg borough;3351
+South Franklin township;3310
+Wellsboro borough;3263
+Pitcairn borough;3294
+Union City borough;3320
+Tulpehocken township;3274
+Manor borough;3239
+Marlborough township;3178
+Pine Creek township;3215
+Brackenridge borough;3260
+Pymatuning township;3281
+Lower Towamensing township;3228
+Upland borough;3239
+Centerville borough;3263
+Slippery Rock township;3283
+North Wales borough;3229
+Mahanoy township;3152
+Coplay borough;3192
+Earl township;3195
+Trafford borough;3174
+London Britain township;3139
+Penn township;3225
+Mount Penn borough;3106
+Daugherty township;3187
+West Providence township;3210
+Bart township;3094
+Harmony township;3197
+Union township;3148
+Homestead borough;3165
+Paradise township;3186
+Paint township;3149
+New Britain borough;3152
+Decatur township;3137
+Mount Pocono borough;3170
+Mount Carmel township;3139
+Union township;3099
+Fulton township;3074
+Fawn township;3099
+Edgewood borough;3118
+Macungie borough;3074
+Myerstown borough;3062
+Lower Mount Bethel township;3101
+Trafford borough;3113
+Thornbury township;3017
+Girard borough;3104
+Heidelberg township;3078
+Orwigsburg borough;3099
+Wormleysburg borough;3070
+Wrightstown township;2995
+Wyoming borough;3073
+Lower Chanceford township;3028
+Raccoon township;3064
+Nottingham township;3036
+Mohnton borough;3043
+McSherrystown borough;3038
+Malvern borough;2998
+Mahoning township;3083
+Bradford township;3034
+Wolf township;2907
+Lake City borough;3031
+Briar Creek township;3016
+Springfield township;3043
+Youngwood borough;3050
+Washington township;3033
+Summit Hill borough;3034
+Churchill borough;3011
+Conewago township;2997
+Keating township;3021
+Patterson township;3029
+East St. Clair township;3048
+North Buffalo township;3011
+West Buffalo township;2983
+Hereford township;2997
+Penbrook borough;3008
+Harmar township;2921
+Boggs township;2985
+Armstrong township;2998
+Oakland township;2987
+Rayne township;2992
+St. Clair borough;3004
+East Greenville borough;2951
+Wilkes-Barre township;2967
+Ford City borough;2991
+Ross township;2937
+Penn township;2924
+Morris township;2938
+Findley township;2910
+Hayfield township;2940
+Seven Fields borough;2887
+Sadsbury township;2933
+Towanda borough;2919
+Kulpmont borough;2924
+Delmar township;2856
+Eldred township;2910
+South Annville township;2850
+Springhill township;2907
+Cowanshannock township;2899
+Kenhorst borough;2877
+Clinton township;2864
+West Grove borough;2854
+East Penn township;2881
+Newton township;2846
+Fermanagh township;2811
+Luzerne borough;2845
+Allegheny township;2851
+West Mahanoy township;2872
+North Catasauqua borough;2849
+Strasburg borough;2809
+East Hanover township;2801
+Mountville borough;2802
+Woodcock township;2856
+Womelsdorf borough;2810
+Fairfield township;2792
+Dallas borough;2804
+Harveys Lake borough;2791
+Aspinwall borough;2801
+North Hopewell township;2791
+Stonycreek township;2844
+Bedford borough;2841
+Bridgewater township;2844
+Ashland borough;2817
+Ashland borough;2817
+Rochester township;2802
+Spring Brook township;2768
+Hepburn township;2762
+Bear Creek township;2774
+Ashley borough;2790
+Walker township;2738
+Manchester borough;2763
+Madison township;2750
+Philipsburg borough;2770
+Cherryhill township;2765
+Reynoldsville borough;2759
+Shade township;2774
+Wind Gap borough;2720
+West Nottingham township;2722
+West Wyoming borough;2725
+Dupont borough;2711
+Parks township;2744
+South Beaver township;2717
+Germany township;2700
+Clay township;2703
+North Woodbury township;2644
+Cooper township;2704
+Halfmoon township;2667
+Somerset township;2684
+Wilmington township;2715
+Nanty-Glo borough;2734
+Bath borough;2693
+Franklin township;2620
+Morton borough;2669
+East Taylor township;2726
+Washington township;2673
+Telford borough;2665
+Hanover township;2673
+Avoca borough;2661
+East Lansdowne borough;2668
+Hallam borough;2673
+South Pymatuning township;2695
+Delmont borough;2686
+Pine Grove township;2695
+Lackawannock township;2662
+Derry borough;2688
+Lower Yoder township;2699
+Clearfield township;2645
+Salford township;2504
+Monaghan township;2630
+Crescent township;2640
+Quarryville borough;2576
+South Buffalo township;2636
+Freemansburg borough;2636
+West Chillisquaque township;2627
+South Coventry township;2604
+Midland borough;2635
+West Newton borough;2633
+Winslow township;2622
+Drumore township;2560
+Marietta borough;2588
+Portage borough;2638
+Upper Augusta township;2586
+Latimore township;2580
+West Fallowfield township;2566
+Wayne township;2606
+Roaring Spring borough;2585
+Dillsburg borough;2563
+Fannett township;2548
+Bentleyville borough;2581
+Butler township;2567
+Wayne township;2550
+Coudersport borough;2546
+Rockledge borough;2543
+Liberty borough;2551
+Morgan township;2587
+Chester Heights borough;2531
+Colwyn borough;2546
+Millersburg borough;2557
+Lamar township;2517
+Hamilton township;2530
+Lancaster township;2532
+Perry township;2552
+Snyder township;2547
+New Hope borough;2528
+Shirley township;2524
+Texas township;2569
+Marysville borough;2534
+Forward township;2531
+Warwick township;2507
+South Manheim township;2507
+Ryan township;2459
+Curwensville borough;2542
+Franklin township;2528
+Berlin township;2578
+Weatherly borough;2525
+Upper Oxford township;2484
+Ridgway township;2523
+Independence township;2503
+Wernersville borough;2494
+Saville township;2502
+Gilpin township;2496
+Taylor township;2465
+Centre township;2491
+Muncy borough;2477
+Verona borough;2474
+New Wilmington borough;2466
+West Sadsbury township;2444
+Donegal township;2465
+North Newton township;2430
+Yardley borough;2434
+Hickory township;2470
+Hunlock township;2443
+Emsworth borough;2449
+Shamokin township;2407
+Johnsonburg borough;2483
+Richmond township;2396
+Center township;2458
+Cambridge Springs borough;2595
+Summerhill township;2467
+Matamoras borough;2469
+Shohola township;2475
+Fairfield township;2424
+Perry township;2417
+Geistown borough;2467
+Mount Union borough;2447
+East Hopewell township;2416
+North Annville township;2381
+Pleasant township;2444
+Eddystone borough;2410
+Gregg township;2405
+Coopersburg borough;2386
+Marcus Hook borough;2397
+Woodward township;2372
+Donegal township;2403
+Greene township;2356
+Red Hill borough;2383
+Highspire borough;2399
+Clifford township;2408
+Berwick township;2389
+Cornplanter township;2418
+Alburtis borough;2361
+Brothersvalley township;2398
+Exeter township;2378
+Fawn township;2376
+Hamiltonban township;2372
+Huntington township;2369
+Hopewell township;2329
+Connellsville township;2391
+Watsontown borough;2351
+Loyalhanna township;2382
+Dunkard township;2372
+Plumcreek township;2375
+Rye township;2364
+East Wheatfield township;2366
+Bell township;2348
+Scott township;2347
+East Bethlehem township;2354
+Letterkenny township;2318
+Parkside borough;2328
+Covington township;2284
+Jefferson township;2352
+Pike township;2311
+Brownsville borough;2331
+Croyle township;2339
+Stewartstown borough;2089
+Venango township;2297
+Upper Burrell township;2326
+Windsor township;2279
+Mifflin township;2322
+Westfall township;2323
+Wrightsville borough;2310
+Norwegian township;2310
+Tyrone township;2298
+Londonderry township;2149
+West Wheatfield township;2314
+Rockefeller township;2273
+Glade township;2308
+Delaware township;2291
+Washington township;2268
+Lafayette township;2350
+Coolspring township;2278
+Conemaugh township;2294
+McAdoo borough;2300
+Kittanning township;2265
+Summit township;2271
+Penndel borough;2328
+Franklin township;2259
+Monroe township;2237
+Huntington township;2244
+Muddy Creek township;2254
+Coaldale borough;2281
+Hemlock township;2249
+Cook township;2250
+Sandycreek township;2260
+Newtown borough;2248
+Southmont borough;2284
+Haycock township;2225
+East Washington borough;2234
+Elk Lick township;2241
+Dorrance township;2188
+Stonycreek township;2237
+Telford borough;2207
+Lowhill township;2173
+Woodward township;2200
+Spring township;2208
+Perry township;2183
+Oliver township;2175
+West Nantmeal township;2170
+Wilmerding borough;2190
+Napier township;2198
+Fell township;2178
+New Eagle borough;2184
+Conway borough;2176
+Shippen township;2232
+Valley township;2158
+Pine Grove borough;2186
+Jermyn borough;2169
+New Stanton borough;2173
+Lurgan township;2151
+Spring Grove borough;2167
+Dublin borough;2158
+Porter township;2176
+Braddock borough;2159
+Eldred township;2122
+Meyersdale borough;2184
+Canton township;2143
+Hughesville borough;2128
+South Woodbury township;2155
+Port Allegany borough;2157
+McDonald borough;2149
+East McKeesport borough;2126
+Eden township;2094
+Middlecreek township;2114
+Southwest Greensburg borough;2155
+Liberty township;2118
+Rankin borough;2122
+Leechburg borough;2156
+Milford township;2088
+Tyrone township;2124
+Cleona borough;2080
+North Centre township;2105
+Greenfield township;2105
+South Greensburg borough;2117
+Sheffield township;2121
+Bald Eagle township;2065
+Buffalo township;2069
+Fairview township;2080
+Berlin borough;2104
+Robesonia borough;2061
+Topton borough;2069
+Walnutport borough;2070
+Lake township;2049
+Brockway borough;2072
+Barr township;2056
+Henry Clay township;2066
+Black Creek township;2016
+Burnham borough;2054
+Union township;2042
+Jay township;2072
+Upper Tyrone township;2059
+Limestone township;2019
+Bell township;2056
+Mount Holly Springs borough;2030
+South Shenango township;2037
+Moscow borough;2026
+Clinton township;2053
+Upper Frankford township;2005
+Glen Rock borough;2025
+Emporium borough;2073
+New Milford township;2042
+Columbus township;2034
+Summit township;2027
+Pine township;2033
+Jefferson township;2015
+Ridgebury township;1978
+Quemahoning township;2025
+Dover borough;2007
+Hopewell township;2010
+Jefferson township;1977
+Canton borough;1976
+Miles township;1983
+Penn township;1949
+Brady township;2000
+Baldwin township;1992
+Blacklick township;2013
+Conemaugh township;2012
+Susquehanna township;2007
+Springfield township;1981
+Mercer borough;2002
+West Cornwall township;1976
+Porter township;1968
+Darlington township;1962
+Falls township;1995
+Fairchance borough;1975
+Big Beaver borough;1970
+South Connellsville borough;1970
+Greenfield township;1933
+Roaring Brook township;1907
+Jackson township;1941
+Walker township;1947
+Martinsburg borough;1958
+Kidder township;1935
+North Belle Vernon borough;1971
+Cass township;1958
+West Homestead borough;1929
+Greenwood township;1952
+Riverside borough;1932
+Jonestown borough;1905
+Perry township;1938
+Robinson township;1931
+Ayr township;1942
+Lewis township;1915
+Oliver township;1931
+South Centre township;1937
+Great Bend township;1949
+Jackson township;1887
+Leesport borough;1918
+Farmington township;1934
+Auburn township;1939
+Aleppo township;1916
+Tyrone township;1885
+North York borough;1914
+Lenox township;1934
+Benton township;1908
+Conyngham borough;1914
+Washington township;1926
+Menno township;1883
+Bloomfield township;1919
+Rayburn township;1907
+Braddock Hills borough;1880
+Washington township;1887
+Cherry Ridge township;1895
+Donegal township;1864
+Forest City borough;1911
+Tullytown borough;1872
+Metal township;1866
+Jefferson township;1880
+Port Carbon borough;1889
+Zerbe township;1872
+Brokenstraw township;1884
+East Providence township;1854
+Limestone township;1858
+Oil Creek township;1877
+Brush Valley township;1858
+Trainer borough;1828
+Londonderry township;1856
+West Franklin township;1853
+Upper Fairfield township;1823
+Adamstown borough;1789
+Elkland borough;1821
+Jacobus borough;1841
+East Nantmeal township;1803
+Lehigh township;1881
+Rome township;1840
+Branch township;1840
+Industry borough;1835
+Adamstown borough;1772
+East Pittsburgh borough;1822
+Hartley township;1820
+South Mahoning township;1841
+Evans City borough;1833
+Plymouth township;1812
+Bellwood borough;1828
+Turbot township;1806
+St. Lawrence borough;1809
+Elk Creek township;1798
+Sparta township;1832
+Tunkhannock borough;1836
+Warriors Mark township;1796
+Bonneauville borough;1800
+Henderson township;1816
+Mayfield borough;1807
+Everett borough;1834
+Freeport borough;1813
+Nicholson township;1805
+Washington township;1808
+Dravosburg borough;1792
+New Oxford borough;1783
+East Brunswick township;1793
+Ben Avon borough;1781
+Lower Mifflin township;1783
+Lykens borough;1779
+Beccaria township;1782
+Perryopolis borough;1784
+Snake Spring township;1639
+Beaver township;1761
+Franklin township;1757
+Boggs township;1751
+Randolph township;1782
+McDonald borough;1766
+Young township;1775
+Marion township;1688
+Abington township;1743
+South Canaan township;1768
+Snow Shoe township;1746
+Lawrence township;1718
+Cheswick borough;1746
+Honey Brook borough;1713
+Upper Bern township;1734
+Limestone township;1723
+Patton borough;1769
+Tremont borough;1752
+Pike township;1723
+Heidelberg township;1724
+Young township;1749
+Albany township;1724
+Mont Alto borough;1705
+Lower Frankford township;1732
+Wysox township;1721
+Ontelaunee township;1646
+West St. Clair township;1730
+Cherry township;1705
+Greene township;1695
+Lower Mahanoy township;1709
+Licking Creek township;1703
+LeBoeuf township;1698
+Sugar Grove township;1723
+Youngsville borough;1729
+Silver Lake township;1716
+Elk township;1681
+Woodbury township;1693
+Homer City borough;1707
+Mars borough;1699
+Paint township;1699
+Edgeworth borough;1680
+Troy township;1645
+Shamokin Dam borough;1686
+Wayne township;1666
+Cresson borough;1711
+East Lackawannock township;1682
+Broad Top township;1687
+Washington township;1654
+Wayne township;1659
+Union township;1655
+Overfield township;1666
+Washington township;1619
+Gallitzin borough;1668
+Monroe township;1652
+Cressona borough;1651
+Wetmore township;1650
+Lykens township;1618
+East Carroll township;1654
+Smethport borough;1655
+Springdale township;1636
+Leet township;1634
+Franklin township;1633
+North Bethlehem township;1631
+Apollo borough;1647
+Mill Hall borough;1613
+Langhorne borough;1622
+Spring township;1616
+Porter township;1601
+East Union township;1605
+Mount Pleasant township;1609
+Susquehanna Depot borough;1643
+Springville township;1641
+Jones township;1624
+Madison township;1605
+Kimmel township;1616
+Ferndale borough;1636
+Liberty township;1612
+East Fallowfield township;1620
+Liberty township;1584
+Union township;1589
+Reade township;1619
+Clearfield township;1604
+Eldred township;1592
+Cumberland Valley township;1597
+Hanover township;1571
+Montgomery borough;1579
+Montrose borough;1617
+Haines township;1564
+West Pike Run township;1587
+Delaware township;1547
+Upper Tulpehocken township;1575
+Nescopeck borough;1583
+Waterford borough;1517
+Shiremanstown borough;1569
+Roseto borough;1567
+Newport borough;1574
+Cussewago township;1559
+Freedom borough;1569
+Mercersburg borough;1561
+Ligonier borough;1573
+Paxtang borough;1561
+Montgomery township;1568
+Chapman township;1554
+Blossburg borough;1538
+Cross Creek township;1556
+Monongahela township;1572
+Otto township;1556
+Independence township;1557
+Northmoreland township;1558
+Cambridge township;1563
+Milford township;1553
+Richland borough;1519
+Monroe township;1544
+Catawissa borough;1552
+Spring township;1548
+Wayne township;1539
+Sugarcreek township;1539
+Saxonburg borough;1525
+Cherrytree township;1540
+East Berlin borough;1521
+Union township;1520
+Frenchcreek township;1542
+Avis borough;1484
+Anthony township;1501
+Eaton township;1519
+Versailles borough;1515
+Lincoln township;1519
+Bethel township;1508
+St. Clair township;1518
+Lycoming township;1478
+Milford township;1530
+Cromwell township;1510
+Duncannon borough;1522
+Girardville borough;1519
+Albion borough;1516
+Elizabethville borough;1510
+Concord township;1505
+East Deer township;1500
+Oakland township;1504
+Smithfield township;1498
+Freehold township;1510
+Canoe township;1505
+Elizabeth borough;1493
+Clifton township;1480
+Laflin borough;1487
+Rockdale township;1506
+Porter township;1460
+Dimock township;1497
+Pulaski township;1500
+New Beaver borough;1502
+East Mead township;1493
+Perry township;1521
+Elk township;1490
+Windsor borough;1319
+Lewis township;1480
+Clarks Green borough;1476
+Sullivan township;1453
+North Union township;1476
+West Bethlehem township;1460
+Oakdale borough;1459
+Richmond township;1475
+Conyngham township;1453
+Conneaut township;1476
+Belfast township;1448
+Horton township;1452
+Langhorne Manor borough;1442
+Rockland township;1456
+Blawnox borough;1432
+Greenwood township;1454
+Perry township;1453
+Wilmington township;1415
+Kline township;1438
+Sterling township;1450
+Worth township;1416
+Ransom township;1420
+Harford township;1430
+Huston township;1433
+North Mahoning township;1428
+South Newton township;1383
+Atglen borough;1406
+Warsaw township;1424
+Fishing Creek township;1416
+Mahoning township;1425
+Locust township;1404
+Jefferson township;1423
+Jackson township;1382
+Union township;1383
+Juniata township;1412
+Bell Acres borough;1388
+Liberty township;1414
+Hughestown borough;1392
+Bryn Athyn borough;1375
+Little Beaver township;1411
+Dyberry township;1401
+East Finley township;1392
+Washington township;1412
+Avondale borough;1265
+North Shenango township;1410
+Schwenksville borough;1385
+South Coatesville borough;1303
+Mount Wolf borough;1393
+White township;1394
+Pittsfield township;1405
+Dreher township;1412
+Williamstown borough;1387
+Shoemakersville borough;1378
+Burgettstown borough;1388
+Graham township;1383
+Nicholson township;1385
+Loretto borough;1302
+East Bangor borough;1172
+Irwin township;1391
+Mead township;1386
+Redbank township;1370
+Huston township;1360
+District township;1337
+Huston township;1336
+Ulster township;1337
+Wayne township;1341
+Clymer borough;1357
+West Mahoning township;1357
+Flemington borough;1330
+Pine Creek township;1352
+Mount Pleasant township;1357
+Liberty township;1368
+Sheshequin township;1348
+Porter township;1348
+Concord township;1344
+Litchfield township;1320
+Pinegrove township;1354
+Montour township;1344
+Tower City borough;1346
+West Conshohocken borough;1320
+Richlandtown borough;1327
+Newville borough;1326
+Buffington township;1328
+Terre Hill borough;1295
+Newlin township;1285
+Upper Mifflin township;1304
+Bratton township;1317
+Vanport township;1321
+Troy borough;1354
+Monroe township;1336
+Palmyra township;1339
+Gallitzin township;1324
+Middlebury township;1285
+Clinton township;1367
+North Charleroi borough;1313
+Waymart borough;1341
+Brady township;1310
+Washington township;1300
+Middleburg borough;1309
+Dublin township;1290
+Hallstead borough;1303
+Houston borough;1296
+Main township;1236
+Highland township;1272
+North Apollo borough;1297
+Bridgeton township;1277
+Elverson borough;1225
+West Carroll township;1296
+West Leechburg borough;1294
+Bigler township;1289
+Fairmount township;1276
+Jackson township;1273
+Whitaker borough;1271
+Union township;1273
+Rome township;1191
+Liberty township;1292
+Susquehanna township;1250
+Boswell borough;1277
+Watts township;1265
+Hastings borough;1278
+Woodbury township;1263
+Wyalusing township;1242
+Centre Hall borough;1265
+Monroe township;1250
+Dublin township;1264
+Rush township;1267
+West Easton borough;1257
+Penn township;1264
+Orange township;1257
+Center township;1267
+Farmington township;1259
+Glenburn township;1246
+Tuscarora township;1240
+Williamsburg borough;1254
+Banks township;1262
+Heidelberg borough;1244
+Benton township;1245
+Bloomfield borough;1247
+Liberty township;1237
+Gulich township;1235
+Rose township;1255
+Marion township;1224
+Marion township;1239
+Loganville borough;1240
+Dalton borough;1234
+Renovo borough;1228
+Duncansville borough;1233
+Summerhill township;1236
+West Mayfield borough;1239
+Lemon township;1243
+King township;1238
+Black Lick township;1237
+Factoryville borough;1158
+North Heidelberg township;1214
+Sandy Lake township;1226
+Troy township;1235
+Leetsdale borough;1218
+Eldred township;1226
+Perry township;1226
+Gibson township;1221
+Buffalo township;1219
+Dale borough;1234
+Hollenback township;1196
+Biglerville borough;1200
+McConnellsburg borough;1220
+Duboistown borough;1205
+Roulette township;1197
+Madison township;1207
+Wiconisco township;1210
+Wilmot township;1204
+Columbia township;1196
+East Conemaugh borough;1220
+Castanea township;1185
+Bethel township;1183
+Tuscarora township;1189
+Wayne township;1200
+Piatt township;1180
+Hawley borough;1211
+Penn township;1181
+Colerain township;1195
+Wayne township;1197
+Bradford Woods borough;1171
+Forest Lake township;1193
+Christiana borough;1168
+South Bend township;1167
+Jefferson township;1162
+Nescopeck township;1155
+West Kittanning borough;1175
+Prospect borough;1169
+Brady township;1172
+Millbourne borough;1159
+Jackson township;1147
+Orwell township;1159
+Ellport borough;1180
+Frazer township;1157
+Towanda township;1149
+Galeton borough;1149
+Point Marion borough;1159
+Sykesville borough;1157
+Speers borough;1154
+Durham township;1144
+Knox borough;1146
+Tatamy borough;1203
+Tuscarora township;1131
+Derry township;1130
+North Towanda township;1132
+Dennison township;1125
+Rush township;1122
+Shinglehouse borough;1127
+Carbondale township;1115
+Osceola Mills borough;1141
+South Creek township;1128
+Springfield township;1124
+Cochranton borough;1136
+Schuylkill township;1129
+White Haven borough;1097
+Ashland township;1114
+Limestone township;1066
+Lower Tyrone township;1123
+Milesburg borough;1123
+Williams township;1112
+Slocum township;1115
+Juniata township;1112
+Cass township;1119
+Muncy township;1089
+Taylor township;1118
+Cherry township;1106
+Upper Turkeyfoot township;1119
+Central City borough;1124
+Bally borough;1090
+Morris township;1105
+West Beaver township;1110
+Cleveland township;1110
+Mercer township;1100
+Thompson township;1098
+Bessemer borough;1111
+Thornhurst township;1085
+Fairview township;1085
+Miller township;1098
+Belle Vernon borough;1093
+Amity township;1073
+Penn township;1077
+Greene township;1091
+Neville township;1084
+Oneida township;1077
+Washington township;1098
+Shippensburg borough;1076
+New Philadelphia borough;1085
+Mifflin township;1070
+Lincoln borough;1072
+Oliver township;1083
+Westfield borough;1064
+McCalmont township;1082
+West Perry township;1071
+Burnside township;1076
+East Mahoning township;1077
+Asylum township;1058
+Lower Augusta township;1064
+Westfield township;1047
+Meshoppen township;1073
+Redbank township;1064
+Liverpool township;1057
+Harrison township;1037
+Liberty township;1042
+Walker township;1054
+Plum township;1056
+Covington township;1022
+Ivyland borough;1041
+Pine township;1046
+Stoneboro borough;1051
+Chicora borough;1043
+Union township;1029
+Taylor township;1052
+South Waverly borough;1027
+Knox township;1036
+Knox township;1042
+Dunbar borough;1042
+Falls Creek borough;1037
+Elder township;1038
+Royalton borough;907
+Palo Alto borough;1032
+Linesville borough;1040
+Beech Creek township;1015
+Ellsworth borough;1027
+Union township;1000
+Dunnstable township;1008
+Yoe borough;1018
+Abbottstown borough;1011
+Hulmeville borough;1003
+Fairfield township;1023
+Bloomfield township;1016
+Milford borough;1021
+Packer township;998
+Banks township;1018
+Susquehanna township;1000
+Canal township;1023
+Tioga township;991
+Preston township;1014
+Avonmore borough;1011
+Union township;1010
+Turbett township;981
+Venango township;997
+West Brownsville borough;992
+Penn township;960
+Greenwood township;998
+Terry township;992
+Lewis township;987
+Paint borough;1023
+Southwest Madison township;999
+Saegertown borough;997
+Sugar Notch borough;989
+Toby township;991
+Falls Creek borough;989
+New Bethlehem borough;989
+Pringle borough;979
+Trumbauersville borough;974
+Sugar Grove township;971
+Southampton township;976
+Howard township;964
+Beavertown borough;965
+Addison township;974
+Moreland township;943
+Warren township;959
+Cogan House township;955
+Granville township;950
+Bernville borough;955
+Liverpool borough;955
+Harrison township;972
+Lilly borough;968
+Hopewell township;957
+Todd township;952
+Brooklyn township;963
+Franklin township;933
+Perry township;947
+Millville borough;948
+Juniata township;954
+Crawford township;939
+Windham township;933
+Goldsboro borough;952
+Highland township;943
+Bechtelsville borough;942
+Arendtsville borough;952
+East Prospect borough;905
+Mifflintown borough;936
+Rose Valley borough;913
+Rimersburg borough;951
+Cooper township;932
+McClure borough;941
+Port Royal borough;925
+Boggs township;936
+Catawissa township;932
+Washington township;923
+East Brady borough;942
+Stockertown borough;927
+Barry township;932
+Franklin township;937
+Karthaus township;811
+Henderson township;933
+Blythe township;924
+Clay township;926
+Beaver township;917
+Black township;926
+Marion township;913
+Mount Jewett borough;919
+Sugarloaf township;913
+Albany township;911
+South Fork borough;928
+East Fairfield township;922
+Midway borough;913
+Worth township;899
+Adams township;907
+Export borough;917
+Bowmanstown borough;937
+Mehoopany township;892
+Millheim borough;904
+Ceres township;905
+Harrisville borough;897
+Eulalia township;889
+Hyndman borough;910
+Union township;892
+Elmhurst township;894
+Jackson township;875
+Noxen township;902
+Beaver township;902
+Harmony borough;890
+Anthony township;865
+Sweden township;872
+Pleasantville borough;892
+West Finley township;878
+Rockwood borough;890
+Richhill township;896
+Salem township;881
+Jordan township;863
+Sharon township;866
+Rural Valley borough;876
+Chester Hill borough;883
+Washington township;875
+Silverdale borough;871
+Smithfield borough;875
+Venango township;868
+Jackson township;872
+New Berlin borough;873
+Riegelsville borough;868
+Saltsburg borough;873
+Middlecreek township;875
+Taylor township;853
+Beaver Meadows borough;869
+Chapman township;848
+Spruce Hill township;834
+West Middlesex borough;863
+East Norwegian township;863
+Hubley township;854
+Union township;855
+New Milford borough;868
+Clinton township;854
+Oil Creek township;854
+Carrolltown borough;853
+Beale township;830
+Parker city;840
+Halifax borough;841
+Jackson township;848
+North Irwin borough;846
+Spring Creek township;852
+Shickshinny borough;838
+Wolf Creek township;832
+Windham township;841
+Lathrop township;841
+Freedom township;831
+York Springs borough;833
+Wells township;814
+White township;836
+Worth township;824
+Eldred borough;825
+Claysville borough;829
+Manchester township;836
+Logan township;817
+West Marlborough township;814
+Benton borough;824
+Sewickley Heights borough;810
+Morris township;818
+Rutland township;805
+Madison township;820
+Brush Creek township;819
+Plain Grove township;813
+Ringtown borough;818
+Polk borough;816
+Roscoe borough;812
+Steuben township;804
+Genesee township;799
+Oklahoma borough;809
+Chalfant borough;800
+Burlington township;791
+Rutledge borough;784
+Jordan township;794
+Washington township;799
+Upper Mahanoy township;796
+Dauphin borough;791
+Lack township;785
+West Lebanon township;781
+Houtzdale borough;797
+Mifflin township;784
+Everson borough;793
+West Taylor township;795
+Sandy Creek township;795
+Northeast Madison township;786
+New Salem borough;724
+Lake township;780
+Richland township;777
+Snow Shoe borough;765
+Confluence borough;780
+Gamble township;756
+French Creek township;771
+Scalp Level borough;778
+Oregon township;781
+Conneautville borough;774
+Bradys Bend township;773
+Gilberton borough;769
+Gratz borough;765
+Herrick township;754
+Koppel borough;762
+Bell township;760
+Gordon borough;763
+Conyngham township;758
+Nicholson borough;767
+Salem township;754
+Eldred township;758
+East Cameron township;748
+Vandling borough;751
+Lorain borough;759
+Washington township;746
+Scrubgrass township;751
+Athens township;734
+Grant township;741
+Ringgold township;741
+Courtdale borough;732
+Franklin township;723
+Auburn borough;741
+Delaware Water Gap borough;746
+Brownstown borough;744
+Howard borough;720
+Hamlin township;734
+Delta borough;728
+Jefferson borough;733
+Stewart township;731
+East Butler borough;732
+Catharine township;724
+Saxton borough;736
+Deemston borough;722
+Leroy township;718
+Mill Creek township;721
+Reilly township;726
+Salisbury borough;727
+Great Bend borough;734
+Tionesta township;729
+Wood township;708
+Middle Taylor township;727
+Sligo borough;720
+Nippenose township;709
+Herrick township;713
+Union township;706
+York Haven borough;709
+Bridgewater borough;704
+Wampum borough;717
+Beech Creek borough;701
+Choconut township;713
+Kilbuck township;697
+Gaskill township;708
+Burrell township;689
+Annin township;694
+Turbotville borough;705
+North Abington township;703
+Colley township;694
+South New Castle borough;709
+Thompsontown borough;697
+Bingham township;684
+Munster township;690
+Armstrong township;681
+West Burlington township;696
+Deer Lake borough;687
+Sewickley Hills borough;639
+Plunketts Creek township;684
+Allegheny township;692
+Blaine township;690
+Jennerstown borough;695
+Briar Creek borough;660
+Pike township;671
+Exeter township;690
+Deerfield township;662
+New Florence borough;689
+Brownsville township;683
+Picture Rocks borough;678
+Tidioute borough;688
+Nuangola borough;679
+Logan township;678
+Tioga borough;666
+Greenville township;668
+Millerstown borough;673
+Lebanon township;684
+Pennsbury Village borough;661
+East Vandergrift borough;674
+Standing Stone township;642
+Sankertown borough;675
+Osceola township;659
+East Chillisquaque township;668
+Valley township;656
+Tell township;662
+Sandy Lake borough;659
+Harmony township;666
+Springfield township;654
+Upper Mahantongo township;655
+Whiteley township;649
+Ulysses township;635
+Farmington township;637
+Conneaut Lake borough;653
+Knox township;647
+Mifflin borough;642
+Bendersville borough;641
+Knoxville borough;629
+Eldred township;650
+Allegheny township;641
+Irvona borough;647
+Hooversville borough;645
+Parker township;632
+Jackson township;626
+Southampton township;630
+Worthington borough;639
+Cranesville borough;638
+Patterson Heights borough;636
+Greenwood township;617
+Cokeburg borough;630
+Clark borough;640
+Mill Creek township;604
+Ellwood City borough;632
+Winterstown borough;632
+Wheatland borough;632
+Ulysses borough;621
+Big Run borough;624
+Emlenton borough;625
+Curtin township;618
+Marion Heights borough;611
+Lewis Run borough;617
+Dushore borough;608
+Lawrenceville borough;581
+Yatesville borough;607
+Morris township;606
+Jamestown borough;617
+Emlenton borough;617
+Sugar Grove borough;614
+Port Matilda borough;606
+Oakland borough;616
+Chatham township;588
+La Plume township;602
+Sutersville borough;605
+Hebron township;589
+Lower Turkeyfoot township;603
+West Fallowfield township;605
+Wyalusing borough;596
+Fayette City borough;596
+Hopewell township;586
+Larimer township;595
+Franklin township;595
+Clymer township;581
+Warrior Run borough;584
+Otter Creek township;589
+Nelson township;571
+Connoquenessing borough;528
+Scott township;593
+Wall borough;580
+Norwich township;583
+Elkland township;577
+Davidson township;573
+Meshoppen borough;563
+West township;571
+Valencia borough;551
+Austin borough;562
+Freeburg borough;575
+East Rochester borough;567
+Bastress township;546
+Potter township;548
+New Alexandria borough;560
+Ararat township;563
+Gaines township;542
+Oakland township;564
+Juniata township;554
+Monroe borough;554
+Watson township;537
+Hickory township;558
+West Cameron township;541
+Glen Osborne borough;547
+Dayton borough;553
+Strattanville borough;550
+Juniata Terrace borough;542
+Licking township;536
+Roaring Creek township;545
+Jackson township;547
+Hamilton township;543
+Newell borough;541
+Shippen township;527
+Brady township;521
+Allenport borough;537
+Modena borough;535
+President township;540
+Mineral township;538
+Girard township;534
+Jessup township;536
+Summerville borough;528
+Beaver township;525
+McIntyre township;520
+Parryville borough;525
+Highland township;525
+Covington township;526
+Southwest township;527
+Portland borough;519
+Harmony township;528
+Bruin borough;524
+Hydetown borough;526
+West Elizabeth borough;518
+Coalport borough;523
+Laurel Run borough;500
+Elk township;520
+Rouseville borough;523
+Green township;522
+Hamilton township;499
+Cross Roads borough;512
+Seven Valleys borough;517
+Felton borough;506
+Chest township;515
+New Vernon township;504
+Green Lane borough;508
+Stockdale borough;502
+Fairfield borough;507
+Buckingham township;520
+Orangeville borough;508
+Apolacon township;500
+West Shenango township;504
+Clintonville borough;508
+Aleppo township;502
+West Hemlock township;503
+Deer Creek township;502
+Lanesboro borough;506
+Braintrim township;502
+Fredonia borough;502
+Ogle township;501
+Beaver township;498
+Hyde Park borough;500
+Mann township;500
+Penn borough;475
+Marianna borough;494
+Richland township;494
+Highland township;492
+Seward borough;495
+Hawthorn borough;494
+Franklintown borough;489
+Jackson township;487
+Lehigh township;479
+Summerhill borough;490
+Porter township;485
+Petersburg borough;480
+Lyons borough;478
+South Bethlehem borough;481
+Shippenville borough;480
+Carmichaels borough;483
+Little Mahanoy township;479
+Vanderbilt borough;476
+Barree township;469
+Tionesta borough;483
+Wells township;477
+South Heights borough;475
+Loganton borough;468
+Franklin township;466
+Springboro borough;477
+Jordan township;461
+Beallsville borough;466
+Miller township;462
+Bolivar borough;465
+Rices Landing borough;463
+Finleyville borough;461
+Ernest borough;462
+Pine township;462
+Mechanicsville borough;457
+Thornburg borough;455
+Fawn Grove borough;452
+Cooperstown borough;460
+Broad Top City borough;452
+Garrett borough;456
+Piney township;453
+Ramey borough;451
+Clarendon borough;450
+Long Branch borough;447
+Clover township;448
+Ferguson township;444
+Marion Center borough;451
+Three Springs borough;444
+Glendon borough;440
+South Renovo borough;439
+Toboyne township;443
+Delano township;445
+Stevens township;437
+Burnside township;439
+Mapleton borough;441
+Buck township;435
+Rome borough;441
+Greene township;445
+Homer township;437
+Goshen township;435
+Putnam township;425
+Allegany township;422
+Brookfield township;421
+Rosslyn Farms borough;427
+Platea borough;430
+Orbisonia borough;428
+Frailey township;429
+Lincoln township;425
+Cascade township;413
+Morris township;410
+Bloom township;414
+Shrewsbury township;409
+New Castle township;414
+Thompson township;410
+Pine township;412
+Weissport borough;412
+Mill Village borough;412
+Vintondale borough;414
+Brisbin borough;411
+Victory township;410
+Manorville borough;410
+Howe township;405
+Middleport borough;405
+West Branch township;393
+Wattsburg borough;403
+Jackson township;396
+Limestone township;403
+St. Petersburg borough;400
+Indian Lake borough;394
+Smithton borough;399
+Centerport borough;387
+Millcreek township;396
+Madison borough;397
+Callery borough;394
+Westover borough;390
+Howe township;393
+Hector township;386
+Forkston township;397
+Gallagher township;381
+McKean borough;388
+Dunlevy borough;381
+Forks township;377
+Dean township;391
+McDonald borough;383
+Carbon township;375
+New Galilee borough;379
+Ben Avon Heights borough;371
+Ford Cliff borough;371
+Middletown township;382
+Laceyville borough;379
+Greenwood township;372
+Warren township;369
+Rockhill borough;371
+Berrysburg borough;368
+Jefferson township;362
+Dawson borough;367
+Arona borough;370
+Lewisberry borough;362
+Mahaffey borough;368
+Tunnelhill borough;363
+Noyes township;357
+Fox township;358
+Cherry Tree borough;364
+Elderton borough;356
+New Albany borough;356
+Barnett township;361
+Kingsley township;363
+Laporte township;349
+Bloss township;353
+Corsica borough;357
+Chest township;349
+Perry township;352
+Grampian borough;356
+South Versailles township;351
+Stoystown borough;355
+Saltillo borough;346
+Strausstown borough;342
+West Liberty borough;343
+Springhill township;349
+McVeytown borough;342
+Alexandria borough;346
+Cadogan township;344
+Northampton township;343
+Newburg borough;336
+Lincoln township;338
+Snydertown borough;339
+Deerfield township;339
+Schellsburg borough;338
+Blooming Valley borough;337
+Pike township;324
+Mill Creek borough;328
+Hop Bottom borough;337
+Port Clinton borough;326
+Shrewsbury township;319
+Daisytown borough;326
+Youngstown borough;326
+Kistler borough;320
+Herndon borough;324
+Elco borough;323
+Townville borough;323
+Franklin borough;323
+Laporte borough;316
+Keating township;312
+East Side borough;317
+Eau Claire borough;316
+Wallaceton borough;313
+Triumph township;316
+Penn Lake Park borough;308
+Creekside borough;309
+Freeport township;310
+Applewold borough;310
+Plumville borough;307
+Porter township;305
+Spartansburg borough;305
+Pillow borough;298
+Enon Valley borough;306
+Manns Choice borough;300
+Pine township;294
+Hillsgrove township;287
+Thompson borough;299
+Le Raysville borough;290
+Unionville borough;291
+Hunker borough;291
+Pavia township;295
+Hartleton borough;283
+Markleysburg borough;284
+Oswayo township;278
+McEwensville borough;279
+Woodbury borough;284
+Tremont township;280

@@ -1,0 +1,994 @@
+Albany;97660
+Amsterdam;18507
+Auburn;27590
+Batavia;15444
+Beacon;15565
+Binghamton;46996
+Buffalo;261025
+Canandaigua;10604
+Cohoes;16133
+Corning;11187
+Cortland;19212
+Dunkirk;12511
+Elmira;29204
+Fulton;11906
+Geneva;13324
+Glen Cove;27063
+Glens Falls;14728
+Gloversville;15621
+Hornell;8566
+Hudson;6657
+Ithaca;30054
+Jamestown;31020
+Johnstown;8718
+Kingston;23887
+Lackawanna;18121
+Little Falls;5188
+Lockport;21119
+Long Beach;33395
+Mechanicville;5227
+Middletown;28243
+Mount Vernon;67780
+New Rochelle;77606
+New York;8244910
+Newburgh;29026
+Niagara Falls;50086
+North Tonawanda;31501
+Norwich;7139
+Ogdensburg;11104
+Olean;14363
+Oneida;11387
+Oneonta;13843
+Oswego;18158
+Peekskill;23755
+Plattsburgh;19949
+Port Jervis;8878
+Poughkeepsie;32790
+Rensselaer;9391
+Rochester;210855
+Rome;33660
+Rye;15834
+Salamanca;5780
+Saratoga Springs;26727
+Schenectady;66273
+Sherrill;3147
+Syracuse;145151
+Tonawanda;15112
+Troy;50120
+Utica;62110
+Watertown;27423
+Watervliet;10230
+White Plains;57258
+Yonkers;197399
+Adams;5143
+Addison;2595
+Afton;2851
+Alabama;1869
+Albion;8468
+Albion;2073
+Alden;10865
+Alexander;2534
+Alexandria;4061
+Alfred;5237
+Allegany;8004
+Allen;448
+Alma;842
+Almond;1633
+Altona;2887
+Amboy;1263
+Amenia;4436
+Amherst;122366
+Amity;2308
+Amsterdam;5566
+Ancram;1573
+Andes;1301
+Andover;1830
+Angelica;1403
+Annsville;3012
+Antwerp;1846
+Arcade;4205
+Arcadia;14244
+Argyle;3782
+Arietta;304
+Arkwright;1061
+Ashford;2132
+Ashland;1695
+Ashland;784
+Athens;4089
+Attica;7702
+Au Sable;3146
+Augusta;2020
+Aurelius;2792
+Aurora;13782
+Austerlitz;1654
+Ava;676
+Avoca;2264
+Avon;7164
+Babylon;213603
+Bainbridge;3308
+Baldwin;832
+Ballston;9776
+Bangor;2224
+Barker;2732
+Barre;2025
+Barrington;1681
+Barton;8858
+Batavia;6809
+Bath;12379
+Bedford;17335
+Beekman;14621
+Beekmantown;5545
+Belfast;1663
+Bellmont;1434
+Bennington;3359
+Benson;192
+Benton;2836
+Bergen;3120
+Berkshire;1412
+Berlin;1880
+Berne;2794
+Bethany;1765
+Bethel;4255
+Bethlehem;33656
+Big Flats;7731
+Binghamton;4942
+Birdsall;221
+Black Brook;1497
+Bleecker;533
+Blenheim;377
+Blooming Grove;18028
+Bolivar;2189
+Bolton;2326
+Bombay;1357
+Boonville;4555
+Boston;8023
+Bovina;633
+Boylston;549
+Bradford;855
+Brandon;577
+Brant;2065
+Brasher;2512
+Bridgewater;1522
+Brighton;1435
+Brighton;36609
+Bristol;2315
+Broadalbin;5260
+Brookfield;2545
+Brookhaven;486040
+Broome;973
+Brownville;6263
+Brunswick;11941
+Brutus;4464
+Burke;1465
+Burlington;1140
+Burns;1180
+Busti;7351
+Butler;2064
+Butternuts;1786
+Byron;2369
+Cairo;6670
+Caledonia;4255
+Callicoon;3057
+Cambria;5839
+Cambridge;2021
+Camden;4934
+Cameron;945
+Camillus;24167
+Campbell;3406
+Canaan;1710
+Canadice;1664
+Canajoharie;3730
+Canandaigua;10020
+Candor;5305
+Caneadea;2542
+Canisteo;3391
+Canton;10995
+Cape Vincent;2777
+Carlisle;1948
+Carlton;2994
+Carmel;34305
+Caroga;1205
+Caroline;3282
+Carroll;3524
+Carrollton;1297
+Castile;2906
+Catharine;1762
+Catlin;2618
+Cato;2537
+Caton;2179
+Catskill;11775
+Cayuta;556
+Cazenovia;7086
+Centerville;822
+Champion;4494
+Champlain;5754
+Charleston;1373
+Charlotte;1729
+Charlton;4133
+Chateaugay;2155
+Chatham;4128
+Chautauqua;4464
+Chazy;4284
+Cheektowaga;88226
+Chemung;2563
+Chenango;11252
+Cherry Creek;1118
+Cherry Valley;1223
+Chester;11981
+Chester;3355
+Chesterfield;2445
+Chili;28625
+Cicero;31632
+Cincinnatus;1056
+Clare;105
+Clarence;30673
+Clarendon;3648
+Clarkson;6736
+Clarkstown;84187
+Clarksville;1161
+Claverack;6021
+Clay;58206
+Clayton;5153
+Clermont;1965
+Clifton Park;36705
+Clifton;751
+Clinton;4312
+Clinton;737
+Clymer;1698
+Cobleskill;6625
+Cochecton;1372
+Coeymans;7418
+Cohocton;2561
+Colchester;2077
+Colden;3265
+Coldspring;663
+Colesville;5232
+Collins;6601
+Colonie;81591
+Colton;1451
+Columbia;1580
+Columbus;975
+Concord;8494
+Conesus;2473
+Conesville;734
+Conewango;1857
+Conklin;5441
+Conquest;1819
+Constable;1566
+Constantia;4973
+Copake;3615
+Corinth;6531
+Corning;6270
+Cornwall;12646
+Cortlandt;41592
+Cortlandville;8509
+Coventry;1655
+Covert;2154
+Covington;1232
+Coxsackie;8918
+Crawford;9316
+Croghan;3093
+Crown Point;2024
+Cuba;3243
+Cuyler;980
+Danby;3329
+Dannemora;4898
+Dansville;1842
+Danube;1039
+Darien;3158
+Davenport;2965
+Day;856
+Dayton;1886
+De Kalb;2434
+De Peyster;998
+DeRuyter;1589
+DeWitt;25838
+Decatur;353
+Deerfield;4273
+Deerpark;7901
+Delaware;2670
+Delhi;5117
+Denmark;2860
+Denning;551
+Deposit;1712
+Diana;1709
+Dickinson;5278
+Dickinson;823
+Dix;3864
+Dover;8699
+Dresden;652
+Dryden;14435
+Duane;174
+Duanesburg;6122
+Dunkirk;1318
+Durham;2725
+Eagle;1192
+East Bloomfield;3634
+East Fishkill;29029
+East Greenbush;16473
+East Hampton;21457
+East Otto;1062
+East Rochester;6587
+Eastchester;32363
+Easton;2336
+Eaton;5255
+Eden;7688
+Edinburg;1214
+Edmeston;1826
+Edwards;1156
+Elba;2370
+Elbridge;5922
+Elizabethtown;1163
+Ellenburg;1743
+Ellery;4528
+Ellicott;8714
+Ellicottville;1598
+Ellington;1643
+Ellisburg;3474
+Elma;11317
+Elmira;6934
+Enfield;3512
+Ephratah;1682
+Erin;1962
+Erwin;8037
+Esopus;9041
+Esperance;2076
+Essex;671
+Evans;16356
+Exeter;987
+Fabius;1964
+Fairfield;1627
+Fallsburg;12870
+Farmersville;1090
+Farmington;11825
+Fayette;3929
+Fenner;1726
+Fenton;6674
+Fine;1512
+Fishkill;22107
+Fleming;2636
+Florence;1025
+Florida;2696
+Floyd;3819
+Forestburgh;819
+Forestport;1535
+Fort Ann;6190
+Fort Covington;1676
+Fort Edward;6371
+Fowler;2202
+Frankfort;7636
+Franklin;2411
+Franklin;1140
+Franklinville;2990
+Freedom;2405
+Freetown;757
+Fremont;1008
+Fremont;1381
+French Creek;906
+Friendship;2004
+Fulton;1442
+Gaines;3378
+Gainesville;2182
+Galen;4290
+Gallatin;1668
+Galway;3545
+Gardiner;5713
+Gates;28400
+Geddes;17118
+Genesee Falls;438
+Genesee;1693
+Geneseo;10483
+Geneva;3291
+Genoa;1935
+Georgetown;974
+German Flatts;13258
+German;370
+Germantown;1954
+Gerry;1905
+Ghent;5402
+Gilboa;1307
+Glen;2507
+Glenville;29480
+Gorham;4247
+Goshen;13687
+Gouverneur;7085
+Grafton;2130
+Granby;6821
+Grand Island;20374
+Granger;538
+Granville;6669
+Great Valley;1974
+Greece;96095
+Green Island;2620
+Greenburgh;88400
+Greene;5604
+Greenfield;7775
+Greenport;4165
+Greenville;3739
+Greenville;4616
+Greenwich;4942
+Greenwood;801
+Greig;1199
+Groton;5950
+Grove;548
+Groveland;3249
+Guilderland;35303
+Guilford;2922
+Hadley;2048
+Hague;699
+Halcott;258
+Halfmoon;21535
+Hamburg;56936
+Hamden;1323
+Hamilton;6690
+Hamlin;9045
+Hammond;1191
+Hampton;938
+Hamptonburgh;5561
+Hancock;3224
+Hannibal;4854
+Hanover;7127
+Hardenburgh;238
+Harford;943
+Harmony;2206
+Harpersfield;1577
+Harrietstown;5709
+Harrisburg;437
+Harrison;27472
+Hartford;2269
+Hartland;4117
+Hartsville;609
+Hartwick;2110
+Hastings;9450
+Haverstraw;36634
+Hebron;1853
+Hector;4940
+Hempstead;759757
+Henderson;1360
+Henrietta;42581
+Herkimer;10175
+Hermon;1108
+Highland;2530
+Highlands;12492
+Hillsdale;1927
+Hinsdale;2168
+Holland;3401
+Homer;6405
+Hoosick;6924
+Hope;403
+Hopewell;3747
+Hopkinton;1077
+Horicon;1389
+Hornby;1706
+Hornellsville;4151
+Horseheads;19485
+Hounsfield;3466
+Howard;1467
+Hume;2071
+Humphrey;687
+Hunter;2732
+Huntington;203264
+Hurley;6314
+Huron;2118
+Hyde Park;21571
+Independence;1167
+Indian Lake;1352
+Inlet;333
+Ira;2206
+Irondequoit;51692
+Ischua;859
+Islip;335543
+Italy;1141
+Ithaca;19930
+Jackson;1800
+Jasper;1424
+Java;2057
+Jay;2506
+Jefferson;1410
+Jerusalem;4469
+Jewett;953
+Johnsburg;2395
+Johnstown;7098
+Junius;1471
+Keene;1105
+Kendall;2724
+Kent;13507
+Kiantone;1350
+Kinderhook;8498
+Kingsbury;12671
+Kingston;889
+Kirkland;10315
+Kirkwood;5857
+Knox;2692
+Kortright;1675
+LaFayette;4952
+LaGrange;15730
+Lake George;3515
+Lake Luzerne;3347
+Lake Pleasant;781
+Lancaster;41604
+Lansing;11033
+Lapeer;767
+Laurens;2424
+Lawrence;1826
+Le Ray;21782
+Le Roy;7641
+Lebanon;1332
+Ledyard;1886
+Lee;6486
+Leicester;2200
+Lenox;9122
+Leon;1365
+Lewis;1382
+Lewis;854
+Lewisboro;12411
+Lewiston;16262
+Lexington;805
+Leyden;1785
+Liberty;9885
+Lima;4305
+Lincklaen;396
+Lincoln;2012
+Lindley;1967
+Lisbon;4102
+Lisle;2751
+Litchfield;1513
+Little Falls;1587
+Little Valley;1740
+Livingston;3646
+Livonia;7809
+Lloyd;10863
+Locke;1951
+Lockport;20529
+Lodi;1550
+Long Lake;711
+Lorraine;1037
+Louisville;3145
+Lowville;4982
+Lumberland;2468
+Lyme;2185
+Lyndon;707
+Lyons;5682
+Lyonsdale;1227
+Lysander;21759
+Macedon;9148
+Machias;2375
+Macomb;906
+Madison;3008
+Madrid;1735
+Maine;5377
+Malone;14545
+Malta;14765
+Mamakating;12085
+Mamaroneck;29156
+Manchester;9395
+Manheim;3334
+Manlius;32370
+Mansfield;808
+Marathon;1967
+Marbletown;5607
+Marcellus;6210
+Marcy;8982
+Marilla;5327
+Marion;4746
+Marlborough;8808
+Marshall;2131
+Martinsburg;1433
+Maryland;1897
+Masonville;1320
+Massena;12883
+Mayfield;6495
+McDonough;886
+Mendon;9152
+Mentz;2378
+Meredith;1529
+Mexico;5197
+Middleburgh;3746
+Middlebury;1441
+Middlefield;2114
+Middlesex;1495
+Middletown;3750
+Milan;2370
+Milford;3044
+Milo;7006
+Milton;18575
+Mina;1106
+Minden;4297
+Minerva;809
+Minetto;1659
+Minisink;4490
+Mohawk;3844
+Moira;2934
+Monroe;39912
+Montague;78
+Montezuma;1277
+Montgomery;22606
+Montour;2308
+Mooers;3592
+Moravia;3626
+Moreau;14728
+Morehouse;86
+Moriah;4798
+Morris;1878
+Morristown;1974
+Mount Hope;7018
+Mount Kisco;10877
+Mount Morris;4465
+Mount Pleasant;43724
+Murray;4988
+Nanticoke;1672
+Naples;2502
+Napoli;1248
+Nassau;4789
+Nelson;1980
+Neversink;3557
+New Albion;1972
+New Baltimore;3370
+New Berlin;2682
+New Bremen;2706
+New Castle;17569
+New Hartford;22166
+New Haven;2856
+New Hudson;781
+New Lebanon;2305
+New Lisbon;1114
+New Paltz;14003
+New Scotland;8648
+New Windsor;25244
+Newark Valley;3946
+Newburgh;29801
+Newcomb;436
+Newfane;9666
+Newfield;5179
+Newport;2302
+Newstead;8594
+Niagara;8378
+Nichols;2525
+Niles;1194
+Niskayuna;21781
+Norfolk;4668
+North Castle;11841
+North Collins;3523
+North Dansville;5538
+North East;3031
+North Elba;8957
+North Greenbush;12075
+North Harmony;2267
+North Hempstead;226322
+North Hudson;240
+North Norwich;1783
+North Salem;5104
+Northampton;2670
+Northumberland;5087
+Norway;762
+Norwich;3998
+Nunda;3064
+Oakfield;3250
+Ogden;19856
+Ohio;1002
+Olean;1963
+Olive;4419
+Oneonta;5229
+Onondaga;23101
+Ontario;10136
+Oppenheim;1924
+Orange;1609
+Orangetown;49212
+Orangeville;1355
+Orchard Park;29054
+Orleans;2789
+Orwell;1167
+Osceola;229
+Ossian;789
+Ossining;37674
+Oswegatchie;4397
+Oswego;7984
+Otego;3115
+Otisco;2541
+Otsego;3900
+Otselic;1054
+Otto;808
+Ovid;2311
+Owasco;3793
+Owego;19883
+Oxford;3901
+Oyster Bay;293214
+Palatine;3240
+Palermo;3664
+Palmyra;7975
+Pamelia;3160
+Paris;4411
+Parish;2558
+Parishville;2153
+Parma;15633
+Patterson;12023
+Pavilion;2495
+Pawling;8463
+Pelham;12396
+Pembroke;4292
+Pendleton;6397
+Penfield;36242
+Perinton;46462
+Perry;4616
+Perrysburg;1626
+Persia;2404
+Perth;3646
+Peru;6998
+Petersburgh;1525
+Pharsalia;593
+Phelps;7072
+Philadelphia;1947
+Philipstown;9662
+Piercefield;310
+Pierrepont;2589
+Pike;1114
+Pinckney;329
+Pine Plains;2473
+Pitcairn;846
+Pitcher;803
+Pittsfield;1366
+Pittsford;29405
+Pittstown;5735
+Plainfield;915
+Plattekill;10499
+Plattsburgh;11870
+Pleasant Valley;9672
+Plymouth;1804
+Poestenkill;4530
+Poland;2356
+Pomfret;14965
+Pompey;7080
+Portage;884
+Porter;6771
+Portland;4827
+Portville;3730
+Potsdam;16041
+Potter;1865
+Poughkeepsie;43341
+Pound Ridge;5104
+Prattsburgh;2085
+Prattsville;700
+Preble;1393
+Preston;1044
+Princetown;2115
+Providence;1995
+Pulteney;1285
+Putnam Valley;11809
+Putnam;609
+Queensbury;27901
+Ramapo;126595
+Randolph;2602
+Rathbone;1126
+Reading;1707
+Red Hook;11319
+Red House;38
+Redfield;550
+Remsen;1929
+Rensselaerville;1843
+Rhinebeck;7548
+Richfield;2388
+Richford;1172
+Richland;5718
+Richmond;3361
+Richmondville;2610
+Ridgeway;6780
+Riga;5590
+Ripley;2415
+Riverhead;33506
+Rochester;7313
+Rockland;3775
+Rodman;1176
+Romulus;4316
+Root;1715
+Rose;2369
+Roseboom;711
+Rosendale;6075
+Rossie;877
+Rotterdam;29094
+Roxbury;2502
+Royalton;7660
+Rush;3478
+Rushford;1150
+Russell;1856
+Russia;2587
+Rutland;3060
+Rye;45928
+Salamanca;481
+Salem;2715
+Salina;33710
+Salisbury;1958
+Sand Lake;8530
+Sandy Creek;3939
+Sanford;2407
+Sangerfield;2561
+Santa Clara;345
+Saranac;4007
+Saratoga;5674
+Sardinia;2775
+Saugerties;19482
+Savannah;1730
+Scarsdale;17166
+Schaghticoke;7679
+Schodack;12794
+Schoharie;3205
+Schroeppel;8501
+Schroon;1654
+Schuyler Falls;5181
+Schuyler;3420
+Scio;1833
+Scipio;1713
+Scott;1176
+Scriba;6840
+Sempronius;895
+Seneca Falls;9040
+Seneca;2721
+Sennett;3595
+Seward;1763
+Shandaken;3085
+Sharon;1846
+Shawangunk;14332
+Shelby;5319
+Sheldon;2409
+Shelter Island;2392
+Sherburne;4048
+Sheridan;2673
+Sherman;1653
+Sidney;5774
+Skaneateles;7209
+Smithfield;1288
+Smithtown;117801
+Smithville;1330
+Smyrna;1280
+Sodus;8384
+Solon;1079
+Somers;20434
+Somerset;2662
+South Bristol;1590
+South Valley;264
+Southampton;56790
+Southeast;18404
+Southold;21968
+Southport;10940
+Spafford;1686
+Sparta;1624
+Spencer;3153
+Springfield;1358
+Springport;2367
+Springwater;2439
+St. Armand;1548
+St. Johnsville;2631
+Stafford;2459
+Stamford;2267
+Stanford;3823
+Stark;757
+Starkey;3573
+Stephentown;2903
+Sterling;3040
+Steuben;1100
+Stillwater;8287
+Stockbridge;2103
+Stockholm;3665
+Stockport;2815
+Stockton;2248
+Stony Creek;767
+Stony Point;15059
+Stratford;610
+Stuyvesant;2027
+Sullivan;15339
+Summerhill;1217
+Summit;1148
+Sweden;14175
+Taghkanic;1310
+Taylor;523
+Theresa;2905
+Thompson;15308
+Throop;1990
+Thurman;1219
+Thurston;1350
+Ticonderoga;5042
+Tioga;4871
+Tompkins;1247
+Tonawanda;73567
+Torrey;1282
+Trenton;4498
+Triangle;2946
+Troupsburg;1291
+Truxton;1133
+Tully;2738
+Tupper Lake;5971
+Turin;761
+Tuscarora;1473
+Tusten;1515
+Tuxedo;3624
+Tyre;981
+Tyrone;1597
+Ulster;12327
+Ulysses;4900
+Unadilla;4392
+Union Vale;4877
+Union;56346
+Urbana;2343
+Van Buren;13185
+Van Etten;1557
+Varick;1857
+Venice;1368
+Vernon;5408
+Verona;6293
+Vestal;28043
+Veteran;3313
+Victor;14275
+Victory;1660
+Vienna;5440
+Villenova;1110
+Virgil;2401
+Volney;5926
+Waddington;2266
+Wales;3005
+Wallkill;27426
+Walton;5576
+Walworth;9449
+Wappinger;27048
+Ward;368
+Warren;1143
+Warrensburg;4094
+Warsaw;5064
+Warwick;32065
+Washington;4741
+Waterford;8423
+Waterloo;7642
+Watertown;4470
+Watson;1881
+Waverly;1022
+Wawarsing;13157
+Wawayanda;7266
+Wayland;4102
+Wayne;1041
+Webb;1807
+Webster;42641
+Wells;674
+Wellsville;7397
+West Almond;334
+West Bloomfield;2466
+West Monroe;4252
+West Seneca;44711
+West Sparta;1255
+West Turin;1524
+West Union;312
+Westerlo;3361
+Western;1951
+Westfield;4896
+Westford;868
+Westmoreland;6138
+Westport;1312
+Westville;1819
+Wethersfield;883
+Wheatfield;18117
+Wheatland;4775
+Wheeler;1260
+White Creek;3356
+Whitehall;4042
+Whitestown;18667
+Willet;1043
+Williamson;6984
+Williamstown;1277
+Willing;1228
+Willsboro;2025
+Wilmington;1253
+Wilna;6427
+Wilson;5993
+Wilton;16173
+Windham;1703
+Windsor;6274
+Winfield;2086
+Wirt;1111
+Wolcott;4453
+Woodbury;11353
+Woodhull;1719
+Woodstock;5884
+Worcester;2220
+Worth;231
+Wright;1539
+Yates;2559
+York;3397
+Yorkshire;3913
+Yorktown;36081
