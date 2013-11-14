@@ -102,4 +102,4 @@ for i in range(0,number):
 	state = randPlace[1]
 	lat = randPlace[2]
 	lon = randPlace[3]
-	print "%i. %s %s [%s] Age: %i Phone: %s Addr: %s" % (i,randFirst, randLast,randGender,randAge, randPhone, "%s, %s, %s [%f, %0.3f]" % (randStreet, city, state, lat, lon))
+	print "%i. %s %s [%s] Age: %i Phone: %s Addr: %s" % (i,randFirst, randLast,randGender,randAge, randPhone, "%s, %s, %s [%0.3f, %0.3f]" % (randStreet, city, state, lat, lon))
