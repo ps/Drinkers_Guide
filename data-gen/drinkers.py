@@ -3,6 +3,7 @@ import urllib
 import re
 import math
 from bs4 import BeautifulSoup
+import cities
 
 #get street names by posting first name to Wu Tang Name generator site 
 def getStreet(givenName):
