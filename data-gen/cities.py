@@ -3,17 +3,17 @@ import re
 import urllib
 import json
 import random
+from settings import *
 
-sdir = "data/"
 data = None
 states = ["NJ", "NY", "PA"]
 
 def generate():
-	global states, sdir
+	global states, datadir
 	index = 0;
-	inFile = open(sdir + states[index] + ".txt", "r")
+	inFile = open(datadir + states[index] + ".txt", "r")
 
-	outFile = open(sdir + states[index] + "_complete.txt", "w");
+	outFile = open(datadir + states[index] + "_complete.txt", "w");
 	i = 0
 
 	for line in inFile:
@@ -55,13 +55,13 @@ def generate():
 # rangeStart/rangeEnd - values between 0 and 1 for which this city will appear in the probability
 
 def loadData():
-	global data, states, sdir
+	global data, states, datadir
 	data = []
 	total = 0
 	#load up the files
 	for key in states:
 		#open file
-		f = open(sdir + key + "_complete.txt", "r")
+		f = open(datadir + key + "_complete.txt", "r")
 		for line in f:
 			parts = line.split(";")
 			total += float(parts[3])
@@ -75,8 +75,9 @@ def loadData():
 		cur += val
 
 #returns a tuple with city,state,lat,lon
+#the lat/lon are varied by .15
 def getCity():
-	global data, sdir
+	global data, datadir
 	#first get random state
 	if(data == None):
 		#need to load the data
@@ -86,4 +87,6 @@ def getCity():
 	for l in data:
 		if r > l[4] and r < l[5]:
 			#we have a winner
-			return (l[0], l[1], l[2], l[3])
+			varLon = random.random() * .3 - .15
+			varLat = random.random() * .3 - .15
+			return (l[0], l[1], l[2] + varLat, l[3] + varLon)

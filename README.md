@@ -42,7 +42,7 @@ Next week:
 - Possibly use [google heatmap](https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap)
 
 
-Towns (for Drinker and Bar) [Kevin]
+Towns (for Drinker and Bar) [Kevin - done 11/13]
 - Use wikipedia lists, save to text files. Use google maps api to get lat/lon before generating the other stuff. Save to the text files.
 
 Drinker - mostly done, just add lat/lon/town

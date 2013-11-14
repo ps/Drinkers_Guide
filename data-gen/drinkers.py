@@ -4,6 +4,7 @@ import re
 import math
 from bs4 import BeautifulSoup
 import cities
+from settings import *
 
 #get street names by posting first name to Wu Tang Name generator site 
 def getStreet(givenName):
@@ -20,7 +21,7 @@ def getStreet(givenName):
 	return name
 
 #read first names from file and put them into first list
-f = open('first.txt')
+f = open(datadir + 'first.txt')
 lines=f.readlines()
 f.close()
 
@@ -51,7 +52,7 @@ for item in first:
 			item[2] = item[2] + c.lower()
 
 #read in last names from file
-f = open('last_names.csv')
+f = open(datadir + 'last_names.csv')
 lines2 = f.read()
 #last list holds last names read in from the CSV
 last = lines2.split(";")
@@ -96,4 +97,9 @@ for i in range(0,number):
 	randAge = random.randint(17,80)
 	randPhone = "%i-%i-%i" % (random.randint(100,999),random.randint(100,999), random.randint(1000,9999))
 	randStreet = "%i %s %s" % (random.randint(1,600), getStreet(randFirst), stAbbr[random.randint(0,len(stAbbr)-1)])
-	print "%i. %s %s [%s] Age: %i Phone: %s Addr: %s" % (i,randFirst, randLast,randGender,randAge, randPhone, randStreet)
+	randPlace = cities.getCity()
+	city = randPlace[0]
+	state = randPlace[1]
+	lat = randPlace[2]
+	lon = randPlace[3]
+	print "%i. %s %s [%s] Age: %i Phone: %s Addr: %s" % (i,randFirst, randLast,randGender,randAge, randPhone, "%s, %s, %s [%f, %0.3f]" % (randStreet, city, state, lat, lon))
