@@ -68,7 +68,7 @@ Next week:
 - Bar(name, address, license, phone, latitude, longitude, state, city) [Kevin - done 11/13]
 - Beer(name, alcCont, manf) [Pawel]
 - SexOffender(name, dateOccured, sexOffendee) [Pawel] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
-- Frequents(drinker, bar) [Kevin?]
+- Frequents(drinker, bar) [Kevin - done 11/16, just need to add primary key]
 - Likes(drinker, beer)
 - Manufacturer(name, country) 
 - Country(name, isAlcProhib)

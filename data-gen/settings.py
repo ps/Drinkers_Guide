@@ -1,7 +1,7 @@
-import _mysql
+import MySQLdb
 
 datadir = "data/"
 def conn_remote():
-	db = _mysql.connect(host="cs336-9.cs.rutgers.edu", user="root", passwd="root", db="SAFETY_DB")
+	db = MySQLdb.connect(host="cs336-9.cs.rutgers.edu", user="root", passwd="root", db="SAFETY_DB")
 	print "Connection made"
 	return db
