@@ -3,6 +3,8 @@ CS336 Databases Project Bitch
 
 ## Notes ##
 
+Using [this post](http://stackoverflow.com/questions/8380797/enable-remote-mysql-connection) I was able to get remote connection allowed so we do not have to SSH before connecting. This way we can just run the scripts on our machines and have MySQLDB connect remotely. However, stupid me made the password 'root' instead of the other password. 
+
 Hostname:cs336-9.cs.rutgers.edu
 
 Username:csuser
