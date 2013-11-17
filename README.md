@@ -25,6 +25,16 @@ Then put this in the background with Ctrl-Z. Do not exit this shell until after 
 * mysql passwd same as username passwd
 * mapped 'main' to put you in the public html directory [only under root though]
 * server has python version 2.4.3 so had to use BeautifulSoup version 3...
+* original large sqldump is in file dump.sql
+
+
+In the SexOffender table, two people have date of 0000-00-00, not sure if we should delete them or add a date.
+```
+select * from SexOffender where dateOfCrime='0000-00-00';
+```
+
+#### We have decided to largely cut down on the amount of data ####
+The data is now for one month.
 
 ## Ideas ##
 Some of these are difficult to implement but who knows.
@@ -34,6 +44,7 @@ Some of these are difficult to implement but who knows.
 * Have a form to report offences
 * Have a tool which locates the safest bar in your area to go to
 * If we want to do something with the location, should we have real city/town names with their legitimate zip codes etc? We can get a list of them from [this wikipedia page](http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey)
+* Right now I favored Polish bars and beers. However, the data might visualize better if I don't favor Polish bars, just beers, so the distribution of people is still genuine to the population.
 
 ## Time Table ##
 This week:
@@ -70,6 +81,10 @@ Next week:
 - SexOffender(name, dateOccured, sexOffendee) [Pawel] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
 - Frequents(drinker, bar) [Kevin - done 11/16, just need to add primary key]
 - Likes(drinker, beer)
+- LeftWith(drinker1, drinker2, dateOccurred, bar)
+	- this will match up with frequents
+	- this should probably also match up with Consumed and SexOffender (date occurred). 
+	- also need to implement pattern (will do afterwards, that if one person is underage then the other is a sexoffender)
 - Manufacturer(name, country) 
 - Country(name, isAlcProhib)
 - Consumed(drinker, bar, date, numDrinks)
@@ -78,8 +93,32 @@ Next week:
 
 We need to add a couple of patterns to the data. It might be easier to add all of the data initially and then implement the patterns by deleting records which go against the pattern. This way we can just worry about making a shit ton of data for now.
 
+#### People who leave with underage drinkers are sex offenders ####
+
+This pattern states that if an older person left with an underage drinker the older person is a sex offender.
+
+After running this is the SQL verification of the pattern:
+
+Logic behind this:
+	Drinkers who left with underage drinkers are sex offenders
+	Find a drinker who did leave with an underage drinker but is not a sex offender
+	I have to check both drinker1 and drinker2 in LeftWith
+```sql
+SELECT CASE WHEN (SELECT COUNT(*) FROM (
+	SELECT d1.name
+	FROM LeftWith lw, Drinker d1, Drinker d2 
+	WHERE lw.drinker1 = d1.name AND d1.age >= 21 AND lw.drinker2 = d2.name and d2.age < 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
+	UNION
+	SELECT d1.name
+	FROM LeftWith lw, Drinker d1, Drinker d2 
+	WHERE lw.drinker2 = d1.name AND d1.age >= 21 AND lw.drinker1 = d2.name and d2.age < 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
+	) A) = 0 THEN 'Yes'
+ELSE 'No'
+END AS isTrue
 Some possibilities:
+```
 
 - bars with sex offenders have underage drinkers
 - bars with illegal beers have sex offenders
 - the higher the alchohol content in the beers which a bar serves correlates to how many sex offenders frequent that bar
+- everybody likes Zywiec (we could add a trigger to make sure anyone added into Drinker has a corresponding row in the Likes table)

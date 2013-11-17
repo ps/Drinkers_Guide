@@ -1,4 +1,8 @@
 #!/usr/bin/python
+'''
+THIS FILE NO LONGER REPRESENTS OUR DATA
+Since we've decided to only use NJ, this needs to be modified (I will not modify it, until it is necessary)
+'''
 import re
 import urllib
 import json
@@ -6,7 +10,7 @@ import random
 from settings import *
 
 data = None
-states = ["NJ", "NY", "PA"]
+states = ["NJ"]
 
 def generate():
 	global states, datadir

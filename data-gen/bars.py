@@ -13,27 +13,57 @@ part2 = ["Ale ","Angel ","Archer ","Arms ","Balrog ","Bandit ","Bard ","Barrel "
 
 part3 = ["Alehouse ","Cellar ","Clubhouse ","Guesthouse ","House ","Inn ","Lodge ","Meadhall ","Resthouse ","Tavern ","Hall ","Grogshop ","Taproom ","Barroom "]
 
+polish = ["Cieknacy But","Flaszka u Leszka","Gruba Rura","Donald I Przyjaciele","Pod Myszka" ,"Jeszcze Jeden","Budka Suflera","Wehikul Czasu","Wlaz Kotek na Plotek","Pod Sokolem","Wieczny Bal","Trzezwy Student","Kapitan Bomba","Nowicjusz","Maluszek","Brat Robert","Tereska","Bar Doda","Atlas","Pudzian","Zbysiu","Bar Jasionka","Same Przyjemnosci","Jurek Ogorek","Narcyz","Pod Kopytkiem","Prawie Jak Ameryka","Bar Abstynentow","Wierny Rys","Dupa Biskupa","Zloty Rak","Czarna Magia","Chatka Puchatka"
+]
 
-outFile = open(datadir + "bars.sql", "w")
-outFile.write("INSERT INTO Bar (`name`, `phone`, `city`, `state`, `latitude`, `longitude`, `license`) VALUES ")
-first = True
-for i in part1:
-	for j in part2:
-		for k in part3:
-			name = i + j + k #calc3
-			license = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in range(10))#stolen from stackoverflow
-			randPlace = cities.getCity()
-			city = randPlace[0]
-			state = randPlace[1]
-			lat = randPlace[2]
-			lon = randPlace[3]
-			randPhone = "%i-%i-%i" % (random.randint(100,999),random.randint(100,999), random.randint(1000,9999))
-			if not first:
-				outFile.write(",")
-			else:
-				first = False
-			outFile.write("(\"%s\", \"%s\", \"%s\", \"%s\", %f, %f, \"%s\")" % (name, randPhone, city, state, lat, lon, license))
-			outFile.write("\n")
 
-outFile.close()
-print("Done -- output in " + datadir + "bars.sql")
+
+def justPolish():
+	global polish
+	outFile = open(datadir + "bars.sql", "w")
+	outFile.write("INSERT INTO Bar (`name`, `phone`, `city`, `state`, `latitude`, `longitude`, `license`, `international`) VALUES ")
+	first = True
+	for i in polish:
+		name = i
+		license = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in range(10))#stolen from stackoverflow
+		randPlace = cities.getCity()
+		city = randPlace[0]
+		state = randPlace[1]
+		lat = randPlace[2]
+		lon = randPlace[3]
+		randPhone = "%i-%i-%i" % (random.randint(100,999),random.randint(100,999), random.randint(1000,9999))
+		if not first:
+			outFile.write(",")
+		else:
+			first = False
+		outFile.write("(\"%s\", \"%s\", \"%s\", \"%s\", %f, %f, \"%s\", 1)" % (name, randPhone, city, state, lat, lon, license))
+		outFile.write("\n")
+	outFile.close()
+	print("Done -- output in " + datadir + "bars.sql")
+
+def everythingElse():
+	global polish
+	outFile = open(datadir + "bars.sql", "w")
+	outFile.write("INSERT INTO Bar (`name`, `phone`, `city`, `state`, `latitude`, `longitude`, `license`) VALUES ")
+	first = True
+	for i in part1:
+		for j in part2:
+			for k in part3:
+				name = i + j + k #calc3
+				license = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in range(10))#stolen from stackoverflow
+				randPlace = cities.getCity()
+				city = randPlace[0]
+				state = randPlace[1]
+				lat = randPlace[2]
+				lon = randPlace[3]
+				randPhone = "%i-%i-%i" % (random.randint(100,999),random.randint(100,999), random.randint(1000,9999))
+				if not first:
+					outFile.write(",")
+				else:
+					first = False
+				outFile.write("(\"%s\", \"%s\", \"%s\", \"%s\", %f, %f, \"%s\")" % (name, randPhone, city, state, lat, lon, license))
+				outFile.write("\n")
+	outFile.close()
+	print("Done -- output in " + datadir + "bars.sql")
+
+justPolish()
