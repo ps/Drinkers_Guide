@@ -5,11 +5,11 @@ CS336 Databases Project Bitch
 
 Using [this post](http://stackoverflow.com/questions/8380797/enable-remote-mysql-connection) I was able to get remote connection allowed so we do not have to SSH before connecting. This way we can just run the scripts on our machines and have MySQLDB connect remotely. However, stupid me made the password 'root' instead of the other password. 
 
-Hostname:cs336-9.cs.rutgers.edu
+Hostname: <b>cs336-9.cs.rutgers.edu</b>
 
-Username:csuser
+Username: <b>csuser</b>
 
-Password:csad1a0d
+Password: <b>csad1a0d</b>
 
 To import large files into the database:
 http://stackoverflow.com/questions/93128/mysql-error-1153-got-a-packet-bigger-than-max-allowed-packet-bytes
@@ -118,7 +118,7 @@ END AS isTrue
 ```
 
 Some possibilities:
-- bars with sex offenders have underage drinkers
+- bars with sex offenders have underage drinkers [done 11/17]
 - bars with illegal beers have sex offenders
 - the higher the alchohol content in the beers which a bar serves correlates to how many sex offenders frequent that bar
 - everybody likes Zywiec (we could add a trigger to make sure anyone added into Drinker has a corresponding row in the Likes table)
