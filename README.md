@@ -115,9 +115,9 @@ SELECT CASE WHEN (SELECT COUNT(*) FROM (
 	) A) = 0 THEN 'Yes'
 ELSE 'No'
 END AS isTrue
-Some possibilities:
 ```
 
+Some possibilities:
 - bars with sex offenders have underage drinkers
 - bars with illegal beers have sex offenders
 - the higher the alchohol content in the beers which a bar serves correlates to how many sex offenders frequent that bar
