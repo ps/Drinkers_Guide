@@ -117,6 +117,20 @@ ELSE 'No'
 END AS isTrue
 ```
 
+#### Bars which serve illegal beers have sex offenders ####
+
+Here is the verification of the pattern:
+
+```sql
+SELECT CASE WHEN 
+(SELECT COUNT(*) 
+FROM Sells s 
+WHERE s.beer IN (SELECT name FROM Beer where manf in (SELECT m.name FROM Manufacturer m,Country c Where m.country = c.name AND prohibition=1))
+AND NOT EXISTS (SELECT * FROM SexOffender WHERE bar = s.bar)) = 0 THEN 'Yes'
+ELSE 'No'
+END AS isTrue
+```
+
 Some possibilities:
 - bars with sex offenders have underage drinkers [done 11/17]
 - bars with illegal beers have sex offenders
