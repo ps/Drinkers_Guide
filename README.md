@@ -156,5 +156,5 @@ Some possibilities:
 	- Our ranking can be on a 1-10 scale:
 	 	+ 8-10 the bar is safe. There is low risk of visiting this bar
 	 	+ 5-7 There is some risk.
-	 	+ 3-5 There is a moderate risk.
+	 	+ 3-4 There is a moderate risk.
 	 	+ 1-2 There is high risk.
