@@ -146,6 +146,16 @@ FROM Bar b LEFT JOIN (SELECT f.bar AS bar, s.name AS name FROM SexOffender s, Fr
 ```
 Maybe we can use this some way to generate the rankings with SQL. Otherwise we can use PHP.
 
+
+#### Danger Radius for Sex Offenders ####
+
+I think this get's the maximum radius for a sex offender:
+```sql
+SELECT so.name, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) 
+FROM SexOffender so, Drinker d, Frequents f, Bar b 
+WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name GROUP BY so.name;
+```
+
 Some possibilities:
 - bars with sex offenders have underage drinkers [done 11/17]
 - bars with illegal beers have sex offenders [done 11/17]
