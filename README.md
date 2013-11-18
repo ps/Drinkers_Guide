@@ -28,13 +28,18 @@ Then put this in the background with Ctrl-Z. Do not exit this shell until after 
 * original large sqldump is in file dump.sql
 
 
-In the SexOffender table, two people have date of 0000-00-00, not sure if we should delete them or add a date.
+In the SexOffender table, two people have date of 0000-00-00, not sure if we should delete them or add a date. [taken care of]
 ```
 select * from SexOffender where dateOfCrime='0000-00-00';
 ```
 
 #### We have decided to largely cut down on the amount of data ####
-The data is now for one month.
+The data is now for one month of October 2013 with the following assumptions:
+- ~5k drinkers
+- ~3k bars 
+- ~250 sex offenders 
+- Each drinker goes to bar on average 3-4 times 
+- Each drinker frequents 2-3 different bars 
 
 ## Ideas ##
 Some of these are difficult to implement but who knows.
@@ -65,7 +70,7 @@ Next week:
 ## Data Generation ##
 
 ### Name generation ###
-- Run simply with: python <strike>gen.py</strike><ins>this is now drinkers.py</ins> (BeautifulSoup needs to be installed, internet connection needed)
+- Run simply with: python drinkers.py (BeautifulSoup needs to be installed, internet connection needed)
 - First and last names are being pulled from the respective text/csv files
 - Gender is provided with the names (hard coded to make 20% of names female)
 - Age and phone number generated with the random class
@@ -77,17 +82,18 @@ Next week:
 	- Use wikipedia lists, save to text files. Use google maps api to get lat/lon before generating the other stuff. Save to the text files.
 - Drinker(name, address, phone, gender, latitude, longitude, state, city, age) - mostly done, just add lat/lon/town [Kevin - done 11/13]
 - Bar(name, address, license, phone, latitude, longitude, state, city) [Kevin - done 11/13]
-- Beer(name, alcCont, manf) [Pawel]
-- SexOffender(name, dateOccured, sexOffendee) [Pawel] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
+- Sells(bar, beer, price) [Kevin]
+- Beer(name, alcCont, manf) [Pawel - done 11/13]
+- SexOffender(name, dateOccured, sexOffendee) [Pawel - done 11/17] - add pattern for past sex offendees to be more likely to be sex offenders, make sexoffendee other gender most of the time
 - Frequents(drinker, bar) [Kevin - done 11/16, just need to add primary key]
-- Likes(drinker, beer)
-- LeftWith(drinker1, drinker2, dateOccurred, bar)
+- Likes(drinker, beer) [Kevin]
+- LeftWith(drinker1, drinker2, dateOccurred, bar) [Kevin]
 	- this will match up with frequents
-	- this should probably also match up with Consumed and SexOffender (date occurred). 
+	- this should probably also match up with Consumed and SexOffender (date occurred).
 	- also need to implement pattern (will do afterwards, that if one person is underage then the other is a sexoffender)
-- Manufacturer(name, country) 
-- Country(name, isAlcProhib)
-- Consumed(drinker, bar, date, numDrinks)
+- Manufacturer(name, country) [Pawel - done 11/13]
+- Country(name, isAlcProhib) [Pawel - done 11/13]
+- Consumed(drinker, bar, date, numDrinks) [Pawel - done 11/17]
 
 ### Patterns ###
 
