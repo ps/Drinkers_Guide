@@ -137,8 +137,24 @@ ELSE 'No'
 END AS isTrue
 ```
 
+#### Safety Ranking ####
+
+Ok, so this query gets the number of sex offenders all of the bars have:
+```sql
+SELECT b.name, COUNT(A.name) AS cnt 
+FROM Bar b LEFT JOIN (SELECT f.bar AS bar, s.name AS name FROM SexOffender s, Frequents f WHERE s.name = f.drinker) A ON b.name = A.bar GROUP BY b.name ORDER By cnt;
+```
+Maybe we can use this some way to generate the rankings with SQL. Otherwise we can use PHP.
+
 Some possibilities:
 - bars with sex offenders have underage drinkers [done 11/17]
-- bars with illegal beers have sex offenders
+- bars with illegal beers have sex offenders [done 11/17]
 - the higher the alchohol content in the beers which a bar serves correlates to how many sex offenders frequent that bar
-- everybody likes Zywiec (we could add a trigger to make sure anyone added into Drinker has a corresponding row in the Likes table)
+- everybody who frequents an international bar likes Zywiec (we could add a trigger to make sure anyone added into Frequents with an international bar has a corresponding row in the Likes table)
+- bars which serve beers with higher alchohol content are less safe
+- generate a safety rating for a bar (possibly using the time too)
+	- Our ranking can be on a 1-10 scale:
+	 	+ 8-10 the bar is safe. There is low risk of visiting this bar
+	 	+ 5-7 There is some risk.
+	 	+ 3-5 There is a moderate risk.
+	 	+ 1-2 There is high risk.
