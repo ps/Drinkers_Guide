@@ -36,7 +36,7 @@ for i in range(number):
 	bar = freqs[num][1]
 	d1 = freqs[num][0]
 	d2 = None
-	otherNum = num + 1
+	otherNum = num + random.randint(1,3)
 	if otherNum < nFreqs:
 		if freqs[num][1] == freqs[otherNum][1]:
 			#good
@@ -44,7 +44,7 @@ for i in range(number):
 
 	if d2 == None:
 		#try other direction
-		otherNum = num - 1
+		otherNum = num - random.randint(1,3)
 		if otherNum >= 0:
 			if freqs[num][1] == freqs[otherNum][1]:
 				#good
@@ -54,7 +54,7 @@ for i in range(number):
 		#happens if bar is only frequented by that one person
 		continue
 
-	#random date within 5 years, I chose to avoid 2013 so we did not have accidental future dates
+	#random date within 1 month
 	y = 2013
 	m =	10
 	d = random.randint(1,31)
@@ -68,7 +68,7 @@ for i in range(number):
 	date = "%04d-%02d-%02d %02d:%02d:00" %(y,m,d,h,mi)
 	
 	q = "INSERT INTO LeftWith (`drinker1`, `drinker2`, `bar`, `dateOccurred`) VALUES(\"%s\", \"%s\", \"%s\", \"%s\")" % (d1, d2, bar, date)
-	print q
+	#print q
 	rowCount += 1
 	if rowCount > 1000:
 		count += 1

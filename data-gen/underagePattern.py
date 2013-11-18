@@ -30,7 +30,6 @@ END AS isTrue
 
 '''
 cxn = conn_remote()
-number = 5000 #number of rows desired
 
 #get drinkers
 

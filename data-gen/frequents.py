@@ -41,10 +41,13 @@ count = 0
 rowCount = 0
 print "Inserting..."
 for drinker in drinkers:
+	nLocalBars = 0
 	if drinker[4] in lookup:
 		localBars = lookup[drinker[4]]
 		nLocalBars = len(localBars)
 		n = int(random.random() * (numPerDrinker+1))
+		if n == 0:
+			n = 1
 		if(nLocalBars < n):
 			n = nLocalBars
 		if nLocalBars > 0:
@@ -59,9 +62,12 @@ for drinker in drinkers:
 				        print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
 				    except IndexError:
 				        print "MySQL Error: %s" % str(e)
-
+    #small change of frequenting two random bars
 	for k in range(2):
-		if random.random() < .1:
+		chance = .1
+		if nLocalBars == 0:
+			chance = 1
+		if random.random() < chance:
 			#add random bar
 			randBar = bars[random.randint(0, nBars-1)]
 			q = "INSERT INTO Frequents (`drinker`, `bar`) VALUES(\"%s\", \"%s\")" % (drinker[0], randBar[6])
@@ -72,8 +78,12 @@ for drinker in drinkers:
 			        print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
 			    except IndexError:
 			        print "MySQL Error: %s" % str(e)
+			
 		else:
 			break
+		if nLocalBars == 0:
+			break
+
 	rowCount += 1
 	if rowCount >= 100:
 		count += 1
