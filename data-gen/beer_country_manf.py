@@ -13,21 +13,24 @@ import MySQLdb
 import random
 import sys
 import unicodedata
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 #sanitize from unicode characters to ascii
 def sanitizeString(str):
 	str = unicodedata.normalize('NFKD', str).encode('ascii', 'ignore')
 	return str
 
-#connect to DB
-db = MySQLdb.connect(host="127.0.0.1", user="csuser", passwd="csad1a0d", db="SAFETY_DB")
+#connect to db
+print "Connectin to db"
+db = MySQLdb.connect(host="cs336-9.cs.rutgers.edu", user="root", passwd="root", db="SAFETY_DB")
 cursor = db.cursor()
 
+print "Getting data"
 #soup = BeautifulSoup(urllib2.urlopen('http://www.beerme.com/beerlist.php'))
 soup = BeautifulSoup(open("list_of_beers.html"))
 print "Got page"
 
+print "Finding table"
 rows = soup.find("table", {"class":"beerlist"}).findAll("tr")
 print "Got table, time to print\n\n"
 
@@ -56,7 +59,11 @@ merrors = []
 #3 is catalog
 #4 is score
 #5 is date
+
+rem = len(rows)
 for row in rows:
+	print rem
+	rem = rem - 1
 	cols = row.findAll("td")
 	out = ""
 	colnum=0
@@ -74,12 +81,14 @@ for row in rows:
 	style = sanitizeString(style)
 
 	#sanitize for database
+	'''
 	try:
 		beer = MySQLdb.escape_string(beer)
 	except:
 		print "Error"
 		print beer
 		sys.exit()
+	'''
 	try:
 		manf = MySQLdb.escape_string(manf)
 	except:
@@ -120,22 +129,28 @@ for row in rows:
 
 
 	#use the commented code below to insert beers into db
-	'''
-	query = """INSERT INTO Beer (name, alcContent,style,manf) VALUES (%s, %s, %s, %s) """
+	
+	query = """INSERT INTO Beer (name, alcContent,style,manf) VALUES (%s,%s, %s, %s) """
+	
 	try:
 		cursor.execute(query, (beer,alcCont, style,manf))
 	except MySQLdb.Error, e:
 		errors.append([e,beer,alcCont,style,manf])
+		print beer
+		print e
 	db.commit()
-	'''
-
+	
+'''
 	#print the data
 	print "Beer #%i: %s" % (num,beer)
 	print "Manf: %s" % (manf)
 	print "Style: %s" % (style)
 	print "Country %s" % (country)
 	print "Town: %s\n" % (town)
+	
 	num = num +1
+'''
+	
 
 #print beer errors
 '''
