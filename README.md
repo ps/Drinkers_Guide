@@ -28,10 +28,7 @@ Then put this in the background with Ctrl-Z. Do not exit this shell until after 
 * original large sqldump is in file dump.sql
 
 
-In the SexOffender table, two people have date of 0000-00-00, not sure if we should delete them or add a date. [taken care of]
-```
-select * from SexOffender where dateOfCrime='0000-00-00';
-```
+We could add to sells so bars sell more beers (and bars sell more illegal beers)
 
 #### We have decided to largely cut down on the amount of data ####
 The data is now for one month of October 2013 with the following assumptions:

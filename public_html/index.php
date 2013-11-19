@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set("display_errors",1);
 	require_once("settings.php");
 
 	//query to check if victim got revenge on the criminal [currently no such pattern is present :( ]
@@ -9,12 +11,21 @@
 	$q = "SELECT DISTINCT victim FROM SexOffender WHERE victim IN (SELECT DISTINCT name FROM SexOffender)";
 
 	$query = mysqli_query($cxn, $q) or die("Query failed: ".mysqli_error($cxn));
-	echo mysqli_num_rows($query);
+	//echo mysqli_num_rows($query);
 	while ($row = mysqli_fetch_array($query))
 	{
-		print_r($row);
+		//print_r($row);
 		
-		echo "<br>";
+		//echo "<br>";
+	}
+
+
+	//Select the safest and most dangerous bars of the month
+	$results = getAllRatings(true);
+	$leastSafe = mysqli_fetch_assoc($results);
+	$safest = null;
+	while($tmp = mysqli_fetch_assoc($results)){
+		$safest = $tmp;
 	}
 
 ?>
@@ -23,7 +34,12 @@
 </head>
 <body>
 	<div>Pretend this is the main content page</div>
-	<br><br><br><br>
+	<strong>
+		<?php
+			printf("Safest bar is %s <br />", $safest['name']);
+			printf("Most dangerous bar is %s <br />", $leastSafe['name']);
+		?>
+	</strong>
 	<div>
 		<u>Menu Shizz</u>
 		<br>
