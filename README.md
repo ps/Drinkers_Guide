@@ -144,7 +144,20 @@ Ok, so this query gets the number of sex offenders all of the bars have:
 SELECT b.name, COUNT(A.name) AS cnt 
 FROM Bar b LEFT JOIN (SELECT f.bar AS bar, s.name AS name FROM SexOffender s, Frequents f WHERE s.name = f.drinker) A ON b.name = A.bar GROUP BY b.name ORDER By cnt;
 ```
-Maybe we can use this some way to generate the rankings with SQL. Otherwise we can use PHP.
+
+Newer version (get illegal beers and number of sex offenders)
+```sql
+SELECT b.name, COUNT(A.name) AS offCnt, (SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN (SELECT name FROM Beer where manf in (SELECT m.name FROM Manufacturer m,Country c Where m.country = c.name AND prohibition=1))) AS numIllegal 
+FROM Bar b 
+LEFT JOIN (SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Consumed c WHERE s.name = c.drinker) A ON b.name = A.bar GROUP BY b.name ORDER BY numIllegal;
+```
+
+Newer version (using victims)
+```sql
+SELECT b.name, round((10 - (COUNT(A.name) + (SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN (SELECT name FROM Beer where manf in (SELECT m.name FROM Manufacturer m,Country c Where m.country = c.name AND prohibition=1)))) * (10/13)),1) AS rating 
+FROM Bar b LEFT JOIN (SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar 
+GROUP BY b.name;
+```
 
 
 #### Danger Radius for Sex Offenders ####

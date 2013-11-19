@@ -30,7 +30,7 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
   <?php
-    $results = mysqli_query($cxn, "SELECT so.name AS name, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name GROUP BY so.name LIMIT 10;");
+    $results = mysqli_query($cxn, "SELECT so.name AS name, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name GROUP BY so.name LIMIT 1;");
     $first = true;
     //the radius must be in meters
     //approximation for scaling http://geography.about.com/library/faq/blqzdistancedegree.htm
@@ -45,7 +45,7 @@ function initialize() {
         fillOpacity: .1, 
         map: map,
         center: new google.maps.LatLng(" . $row['lat'] . "," . $row['lon'] ."),
-        radius: (" . $row['radius'] . " * 100000)
+        radius: (" . $row['radius'] . " * 90000)
         });";
       }
   ?>
