@@ -15,13 +15,13 @@ cxn = conn_remote()
 
 print "Fetching bars... please wait"
 c = cxn.cursor()
-c.execute("SELECT * FROM Bar")
+c.execute("SELECT name From Bar WHERE name Not in (Select bar from Sells);")
 bars = c.fetchall()
 nBars = len(bars)
 c.close()
-print "Fetching unused beers"
+print "Fetching beers"
 c = cxn.cursor()
-c.execute("SELECT name FROM Beer WHERE name not in (SELECT beer FROM Sells)")
+c.execute("SELECT name FROM Beer")
 beers = c.fetchall()
 nBeers = len(beers)
 c.close()
@@ -31,25 +31,26 @@ c.close()
 count = 0 
 rowCount = 0
 print "Inserting..."
-for i in range(nBeers):
+for i in range(nBars):
+	print count
 	rand = random.random()
-	beer = beer[i]
-	bar = bars[random.randint(0, nBars-1)]
+	bar = bars[i]
+	beer = beers[random.randint(0, nBeers-1)]
 
-	q = "INSERT INTO Sells (`bar`, `beer`) VALUES(\"%s\", \"%s\")" % (bar[6], beer[0])
+	q = "INSERT INTO Sells (`bar`, `beer`) VALUES(\"%s\", \"%s\")" % (bar[0], beer[0])
 	
 	rowCount += 1
 	if rowCount > 1000:
 		count += 1
 		print "Done %d thousand" % count
 		rowCount = 0
-	try:
+	'''try:
 		cxn.query(q)
 	except MySQLdb.Error, e:
 	    try:
 	        print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
 	    except IndexError:
-	        print "MySQL Error: %s" % str(e)
+	        print "MySQL Error: %s" % str(e)'''
 #insert them into the sells table
 
 cxn.close()
