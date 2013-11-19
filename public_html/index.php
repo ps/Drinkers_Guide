@@ -31,36 +31,41 @@ ini_set("display_errors",1);
 ?>
 <html>
 <head>
+	<title>Bar Safety</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-	<div>Pretend this is the main content page</div>
-	<strong>
-		<?php
-			printf("Safest bar is %s <br />", $safest['name']);
-			printf("Most dangerous bar is %s <br />", $leastSafe['name']);
-		?>
-	</strong>
-	<div>
-		<u>Menu Shizz</u>
-		<br>
-		<a href="">Top 10 Safest Bars</a>
-		<br>
-		<a href="">Top 10 Least Safest Bars</a>
-		<br>
-		Search bar:
-		<form action="search.php" method="GET">
-			Location (within NJ): <input type="text" name="location"><br>
-			Bar name: <input type="text" name="bname">
-			<input type="submit" value="Find">		
-		</form> 
-
-		<a href="">View Latest Offenses</a><br>
-		<a href="">Upreported Sex Offenders</a><br>
-		<a href="">Top 10 Dangerous Offenders</a><br>
-		<a href="">When will offender strike next?</a><br>
-		<br><br>
-		<a href="">HeatMap Dawg</a>
-
+	<div id="container">
+		<div>Pretend this is the main content page</div>
+		<strong>
+			<?php
+				printf("Safest bar is %s <br />", $safest['name']);
+				printf("Most dangerous bar is %s <br />", $leastSafe['name']);
+			?>
+		</strong>
+		<div>
+			<u>Menu Shizz</u>
+			<br>
+			<a href="">Top 10 Safest Bars</a>
+			<br>
+			<a href="">Top 10 Least Safest Bars</a>
+			<br>
+			Search bar:
+			<form action="search.php" method="GET">
+				Location (within NJ): <input type="text" name="location"><br>
+				Bar name: <input type="text" name="bname">
+				<input type="submit" value="Find">		
+			</form> 
+		
+			<a href="">View Latest Offenses</a><br>
+			<a href="">Upreported Sex Offenders</a><br>
+			<a href="">Top 10 Dangerous Offenders</a><br>
+			<a href="">When will offender strike next?</a><br>
+			<br><br>
+			<a href="">HeatMap Dawg</a>
+		
+		</div>
 	</div>
 	
 </body>

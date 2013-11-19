@@ -20,7 +20,7 @@ if(isset($_GET['bname']) && isset($_GET['location'])){
 		}
 		echo "<h2>Search by location</h2>";
 		//search by location
-		$results = file_get_contents("http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" . $location);
+		$results = file_get_contents("http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=" . urlencode($location));
 		$results = json_decode($results, true);
 		$lon = $results["results"][0]["geometry"]["location"]["lng"];
 		$lat = $results["results"][0]["geometry"]["location"]["lat"];
