@@ -5,7 +5,12 @@
 	$bname = $_GET["bar"];
 ?>
 Maybe some pretty picture here<br><br>
-Safety Rating Here: <br><br>
+Safety Rating Here: 
+<?php 
+	$rating = getOneRating($bname);
+	echo $rating[0]
+?>
+<br><br>
 Recommend to a friend? [Yes/No] probably based on the rating<br><br>
 Beers Served:
 <?php
