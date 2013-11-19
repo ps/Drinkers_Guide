@@ -3,6 +3,8 @@ import random
 import sys
 
 '''
+This sells file is the one we created after realizing that many bars did not sell any beer.
+
 This generation file assumes that the database already has the bars as well as the beers already in place.
 
 Also, this does not check for duplicate entries, but relies on the SQL primary key restraints to prevent duplicates.

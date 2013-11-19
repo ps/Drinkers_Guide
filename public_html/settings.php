@@ -19,7 +19,7 @@ function getAllRatings($sort){
 //$resutls[1]-->rating
 function getOneRating($bName){
 	global $cxn;
-	$bName = mysqli_escape_string($cx, $bName);
+	$bName = mysqli_escape_string($cxn, $bName);
 	$q = "SELECT b.name AS name, round((10 - (COUNT(A.name) + (SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN (SELECT name FROM Beer where manf in (SELECT m.name FROM Manufacturer m,Country c Where m.country = c.name AND prohibition=1)))) * (10/13)),1) AS rating FROM Bar b LEFT JOIN (SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar WHERE b.name = '". $bName ."' GROUP BY b.name;";
 	$results = mysqli_query($cxn, $q) or die("Could not fetch rating");
 	return $results;
