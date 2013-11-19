@@ -14,8 +14,9 @@ $q = "SELECT so.name AS name, d.gender AS gender, COUNT(*) as numOffenses, d.lat
 $results = mysqli_query($cxn, $q) or die("Could not get sex offender's information");
 $row = mysqli_fetch_assoc($results);
 
-$imgFile = "res/images_";
+$imgFile = "res/images_females";
 if($row['gender'] == 'M'){
-	
+	$imgFile = "res/images_males";
 }
+
 print_r($row);
