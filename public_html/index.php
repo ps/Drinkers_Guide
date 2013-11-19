@@ -48,11 +48,10 @@ ini_set("display_errors",1);
 		<a href="">Top 10 Least Safest Bars</a>
 		<br>
 		Search bar:
-		<form>
-			Location: <input type="text" name="location"><br>
+		<form action="search.php" method="GET">
+			Location (within NJ): <input type="text" name="location"><br>
 			Bar name: <input type="text" name="bname">
-			<input type="submit" value="Find">
-						
+			<input type="submit" value="Find">		
 		</form> 
 
 		<a href="">View Latest Offenses</a><br>
