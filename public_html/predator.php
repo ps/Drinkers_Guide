@@ -36,6 +36,10 @@ $city = "";
 
 $q = "SELECT so.name AS name, d.gender AS gender, d.city as city, COUNT(*) as numOffenses, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name AND so.name='" . $predator_name . "' GROUP BY so.name";
 $results = mysqli_query($cxn, $q) or die("Could not get sex offender's information");
+
+if(mysqli_num_rows($results) == 0){
+	die("No sex offender found");
+}
 $row = mysqli_fetch_assoc($results);
 
 $city = $row['city'];
@@ -49,7 +53,30 @@ if($row['gender'] == 'M'){
 }
 $contents = file_get_contents($imgFile);
 $rows = explode("\n", $contents);
-$predator_img = $rows[rand(0, sizeof($rows))];
+$contentsChanged = false;
+for($i = 0; $i < sizeof($rows); $i++){
+	$r = $rows[$i];
+	$parts = explode("$", $r);
+	if(sizeof($parts) == 2){
+		
+		if($parts[0] == $predator_name){
+			$predator_img = $parts[1];
+			break;
+		}
+	}
+	else{
+		//add to this file
+		$rows[$i] = $predator_name . "$" . $r;
+		$contentsChanged = true;
+		$predator_img = $r;
+		break;
+	}
+}
+if($contentsChanged){
+	$FILE = fopen($imgFile, "w");
+	fwrite($FILE, implode("\n", $rows));
+	fclose($FILE);
+}
 
 $q = sprintf("SELECT s.victim as victim, s.dateOfCrime as dateOfCrime, d.gender as victimGender FROM SexOffender s, Drinker d WHERE s.name = '%s' and s.victim = d.name", $predator_name);
 $history = mysqli_query($cxn, $q) or die("Could not get history");
