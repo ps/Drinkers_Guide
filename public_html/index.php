@@ -1,14 +1,6 @@
 <?php 
 	require_once("settings.php");
-	//Select the safest and most dangerous bars of the month
-	/*
-	$results = getAllRatings(true);
-	$leastSafe = mysqli_fetch_assoc($results);
-	$safest = null;
-	while($tmp = mysqli_fetch_assoc($results)){
-		$safest = $tmp;
-	}
-	*/
+	
 ?>
 <html>
 <head>
@@ -66,12 +58,15 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>Bar 1</td><td>1.0</td>
-						</tr>
-						<tr>
-							<td>Bar 2</td><td>1.0</td>
-						</tr>
+						<?php
+							//Select the most dangerous bars of the month
+							$results = getAllRatings(true);
+							$i = 10;
+							while($i > 0 && $row = mysqli_fetch_assoc($results)){
+								printf("<tr><td><a href='bar.php?bar=%s' title='View bar'>%s</a></td><td>%.1f</td></tr>", urlencode(trim($row['name'])), trim($row['name']), $row['rating']);
+								$i--;
+							}
+						?>
 					</tbody>
 				</table>
 				<br/>
@@ -82,12 +77,7 @@
 				<div id="map-canvas"></div>
 			</div>
 		</div>
-		<strong>
-			<?php
-				//printf("Safest bar is %s <br />", $safest['name']);
-				//printf("Most dangerous bar is %s <br />", $leastSafe['name']);
-			?>
-		</strong>
+		
 		<footer>
 			<small>Made by Pawe&lstrok; Szczurko and Kevin Albertson</small>
 		</footer>
