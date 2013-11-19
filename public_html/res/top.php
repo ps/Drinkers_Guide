@@ -19,7 +19,7 @@
 		<nav>
 			<ul class="cf">
 				<li><a class="ln_home" href="index.php">Home</a></li>
-				<li><a class="ln_latestOffenses" href="latestOffences.php">Latest Offenses</a></li>
+				<li><a class="ln_latestOffenses" href="latestOffenses.php">Latest Offenses</a></li>
 				<li><a class="ln_bestAndWorstBars" href="barStats.php">Bar Stats</a></li>
 			</ul>
 		</nav>

@@ -1,3 +1,8 @@
+<?php
+$PG_NAME='search';
+require_once("res/top.php");
+?>
+
 <form action="search.php" method="GET">
 	Location: <input type="text" name="location"><br>
 	Bar name: <input type="text" name="bname">
@@ -9,9 +14,10 @@
 TODO: add maps
 */
 require_once("settings.php");
+
 $barName = "";
 $location = "";
-if(isset($_GET['bname']) && isset($_GET['location'])){
+if(isset($_GET['bname']) && isset($_GET['location']) && $_GET['location'] != 'Search by location (in NJ)'){
 	$barName = trim($_GET['bname']) . " "; //extra space since data has it
 	$location = trim($_GET['location']);
 	if($location != ""){
@@ -34,7 +40,7 @@ if(isset($_GET['bname']) && isset($_GET['location'])){
 			$i--;
 		}
 	}
-	else if($barName != ""){
+	else if($barName != "" && $barName != "Search by bar name"){
 		//search by bar
 		echo "<h2>Search by bar name</h2>";
 		$terms = implode("%", explode(" ", $barName));
@@ -48,4 +54,4 @@ if(isset($_GET['bname']) && isset($_GET['location'])){
 else{
 	die("Nothing submitted");
 }
-
+require_once("res/bottom.php");

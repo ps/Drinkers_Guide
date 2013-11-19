@@ -79,7 +79,7 @@ nav ul li a{
 	font-family: "Noto Sans";
 }
 
-nav ul li a:hover, .pg_home .ln_home{
+nav ul li a:hover, .pg_home .ln_home, .pg_latestOffenses .ln_latestOffenses{
 	background: #96E0FF;
 	text-decoration: none;
 }
