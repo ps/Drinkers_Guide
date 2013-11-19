@@ -15,6 +15,8 @@ function getAllRatings($sort){
 	return $results;
 }
 
+//$results[0]-->bar name
+//$resutls[1]-->rating
 function getOneRating($bName){
 	global $cxn;
 	$bName = mysqli_escape_string($cx, $bName);
