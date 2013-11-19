@@ -1,5 +1,7 @@
 <?php 
 	require_once("settings.php");
+	$PG_NAME = "bar";
+	require_once("res/top.php");
 	echo "Safety Rating here: <br>";
 	//$_GET["bar"]="Stone Bottle Cellar";
 	$bname = $_GET["bar"];
@@ -71,4 +73,5 @@ Have any of sex offense victims that frequent this bar become sex offenders?
 	{
 		echo $row["drinker"]."<br>";
 	}
+	require_once("res/bottom.php");
 ?>

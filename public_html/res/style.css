@@ -12,8 +12,13 @@ body{
 }
 #container{
 	width: 800px;
-	margin: 10px auto;
+	margin: 0px auto;
+	position: relative;
+	min-height: 100%;
+}
 
+#content{
+	padding-bottom: 30px;
 }
 
 /* clearfix - thanks to http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -80,6 +85,7 @@ nav ul li a:hover, .pg_home .ln_home{
 }
 
 #page_header{
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 #page_header h1, #page_header h2{
@@ -189,8 +195,10 @@ a:hover{
 	text-decoration: underline;
 }
 
+footer{
+	position: absolute;
+	bottom: 4px;
+}
 footer small{
 	color: #FFF;
-	position: relative;
-	top: 3px;
 }
