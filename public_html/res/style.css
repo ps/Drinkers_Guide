@@ -237,3 +237,7 @@ footer small{
 .pg_bar .columns ul, ul.marginFix{
 	margin-left: 1.2em;
 }
+
+p.n{
+	font-family: "Noto Sans";
+}

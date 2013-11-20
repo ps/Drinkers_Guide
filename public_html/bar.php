@@ -68,7 +68,7 @@
 		<?php
 			while($row = mysqli_fetch_array($query))
 			{
-				echo "<li>" . $row["drinker"]."</li>";
+				echo "<li><a href='predator.php?name=". urlencode($row['drinker']) . "' title='View predator'>" . $row["drinker"]."</a></li>";
 			}
 		?>
 		</ul>
@@ -91,7 +91,7 @@
 
 	while($row = mysqli_fetch_array($query))
 	{
-		echo "<li>" . $row["drinker"]."</li>";
+		echo "<li><a href='predator.php?name=". urlencode($row['drinker']) . "' title='View predator'>" . $row["drinker"]."</a></li>";
 	}
 
 	if($numVicOff > 0){
