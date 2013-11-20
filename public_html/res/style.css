@@ -216,3 +216,24 @@ footer small{
 .pg_search .niceTable tr:nth-child(odd) td{
 	background: #96E0FF;
 }
+.ratingCircle{
+	display: inline-block;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+	width: 40px;
+	height: 31px;
+	padding-top: 9px;
+	border-radius: 20px;
+}
+.r0, .r1{background: #fe0200;}
+.r2, .r3 {background: #eb1f07;}
+.r4, .r5 {background: #c55211;}
+.r6, .r7 {background: #ac7518;}
+.r8 {background: #84aa21;}
+.r9 {background: #76c126;}
+.r10 {background: #4aff31;}
+
+.pg_bar .columns ul, ul.marginFix{
+	margin-left: 1.2em;
+}

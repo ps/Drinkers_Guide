@@ -12,3 +12,4 @@
 
 - Add better die function which includes bottom.php
 - Add circle around ratings which is colored based on rating
+- Footer not at the bottom for Firefox

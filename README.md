@@ -156,6 +156,18 @@ FROM Bar b LEFT JOIN (SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Fr
 GROUP BY b.name;
 ```
 
+Yet another (actually this is slower)
+```sql
+SELECT off.name,  round(10 - (off.numOff + ill.numIllegal) * (10/13), 1) as rating 
+FROM (SELECT b.name AS name, COUNT(A.name) AS numOff FROM Bar b 
+	LEFT JOIN (SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar GROUP BY b.name) off 
+LEFT JOIN
+(SELECT s.bar as name, COUNT(illBeers.name) as numIllegal 
+	FROM Sells s 
+	LEFT JOIN 
+	(SELECT name FROM Beer WHERE manf in (SELECT m.name FROM Manufacturer m,Country c Where m.country = c.name AND prohibition=1)) illBeers 
+	ON illBeers.name = s.beer GROUP BY s.bar) ill ON ill.name = off.name
+```
 
 #### Danger Radius for Sex Offenders ####
 
