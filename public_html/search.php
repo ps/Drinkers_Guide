@@ -86,7 +86,7 @@ else{
 				}
 				printf("</tr>");
 			}
-			printf("</tbody></table>");
+			echo "</tbody></table>";
 		?>
 		<br/>
 		<small>* Distance is approximate and in kilometers</small>
