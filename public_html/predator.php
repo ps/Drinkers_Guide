@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Heatmaps</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px
-      }
-       #map-canvas{
-          width: 400px;
-          height: 600px;
-       }
-    </style>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfKJWAEA2dIy33v-b074fvcnE--TSxi1U&v=3.exp&sensor=false&libraries=visualization"></script>
-  
-  </head>
-
-  <body>
 <?php
 require_once("settings.php");
+$PG_NAME = "predator";
+require_once("res/top.php");
 if(!isset($_GET['name'])){
-	die("No predator name specified.");
+	niceDie("No predator name specified.");
 }
+?>
+
+<?php
 $predator_name = mysqli_escape_string($cxn, trim($_GET['name']));
 $predator_img = "";
 $predator_history = NULL; //result object
@@ -81,9 +66,7 @@ if($contentsChanged){
 $q = sprintf("SELECT s.victim as victim, s.dateOfCrime as dateOfCrime, d.gender as victimGender FROM SexOffender s, Drinker d WHERE s.name = '%s' and s.victim = d.name", $predator_name);
 $history = mysqli_query($cxn, $q) or die("Could not get history");
 
-printf("<img width='150' src='%s' />", $predator_img);
-printf("<h2>%s</h2>", $predator_name);
-printf("<p>From %s</p>", $city);
+
 
 /*
 danger rating:
@@ -92,12 +75,13 @@ danger rating:
 - illegal beers
 */
 $dangerRank = mysqli_num_rows($history);
-printf("<h2>Previous offenses</h2>");
 $sexes = array("M" => 0, "F" => 0);
+$histText = "<ul class='marginFix'>";
 while($row = mysqli_fetch_assoc($history)){
 	$sexes[$row['victimGender']] = 1;
-	printf("%s | %s <br/>", $row['victim'], $row['dateOfCrime']);
+	$histText .= sprintf("<li><span style='width:150px; display:inline-block;'>%s</span><b>(%s)</b> </li>", $row['victim'], $row['dateOfCrime']);
 }
+$histText .= "</ul>";
 
 if($sexes["M"] == 1 && $sexes["F"] == 1){
 	$dangerRank += 3;
@@ -107,9 +91,25 @@ if($dangerRank > 10){
 	$dangerRank = 10;
 }
 
-printf("Danger Rank: %d" , $dangerRank);
-?>
 
+?>
+<div class="columns cf">
+  <div class="left50">
+    <?php
+    printf("<img style='border:1px black solid' width='150' src='%s' />", $predator_img);
+    printf("<h2>%s <div style='position: relative; top: -2px;' class='ratingCircle r%d'>%d</div></h2>", $predator_name, 10-$dangerRank, $dangerRank);
+    printf("<p class='n'>From %s, NJ</p>", $city);
+    printf("<p class='n'>Danger Rank: %d</p>" , $dangerRank);
+    echo "<br/><h3>Previous Offenses</h3>";
+    echo $histText;
+    ?>
+  </div>
+  <div class="right50">
+    <h4>Danger Zone</h4>
+    <div id="map-canvas"></div>
+  </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfKJWAEA2dIy33v-b074fvcnE--TSxi1U&v=3.exp&sensor=false&libraries=visualization"></script>
  <script>
 var map, pointarray, heatmap;
 
@@ -132,7 +132,7 @@ function initialize() {
         strokeOpacity: 0.8,
         strokeWeight: 1,
         fillColor: '#FF0000',
-        fillOpacity: .1, 
+        fillOpacity: .3, 
         map: map,
         center: new google.maps.LatLng(" . $lat . "," . $lon ."),
         radius: " . $radius . "
@@ -146,7 +146,5 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
-   
-    <div id="map-canvas"></div>
-  </body>
-</html>
+
+<?php require_once("res/bottom.php"); ?>
