@@ -241,3 +241,13 @@ footer small{
 p.n{
 	font-family: "Noto Sans";
 }
+
+.modified.niceTable .barName{
+	width: auto;
+}
+.modified.niceTable{
+	margin: 0 auto;
+}
+.modified.niceTable tr td:last-child{
+	text-align: center;
+}

@@ -24,7 +24,7 @@ $q = "SELECT D.drinker AS criminal, C.dateOfCrime, LEFT(D.dateOfConsump,10) AS a
 
 $query = mysqli_query($cxn, $q) or die("Query failed: ".mysqli_error($cxn));
 
-echo "<table class='niceTable' cellspacing='0'><thead><tr><th class='barName'>Criminal</th><th>Date Of Offense</th><th>Potentially Struck Again On</th>";
+echo "<table class='niceTable modified' cellspacing='0'><thead><tr><th class='barName'>Criminal</th><th>Date Of Offense</th><th>Potentially Struck Again On</th>";
 echo "</tr></thead><tbody>";
 
 while($row = mysqli_fetch_array($query))
