@@ -233,3 +233,7 @@ footer small{
 .r8 {background: #84aa21;}
 .r9 {background: #76c126;}
 .r10 {background: #4aff31;}
+
+.pg_bar .columns ul, ul.marginFix{
+	margin-left: 1.2em;
+}
