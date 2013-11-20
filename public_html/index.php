@@ -26,7 +26,7 @@
 		</form>
 		<br/>
 		<h4>Ten most dangerous bars of the month</h4>
-		<table cellspacing="0">
+		<table class="niceTable" cellspacing="0">
 			<thead>
 				<tr>
 					<th class="barName">Bar Name</th>
@@ -75,7 +75,8 @@
 	  var mapOptions = {
 	    zoom: 8,
 	    center: new google.maps.LatLng(40.207721, -74.635620),
-	    mapTypeId: google.maps.MapTypeId.ROADMAP
+	    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	    mapTypeControl: false
 	  };
 
 	  map = new google.maps.Map(document.getElementById('map-canvas'),

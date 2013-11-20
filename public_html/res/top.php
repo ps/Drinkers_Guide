@@ -21,6 +21,9 @@
 				<li><a class="ln_home" href="index.php">Home</a></li>
 				<li><a class="ln_latestOffenses" href="latestOffenses.php">Latest Offenses</a></li>
 				<li><a class="ln_bestAndWorstBars" href="barStats.php">Bar Stats</a></li>
+				<li><a class="ln_unreported" href="unreported.php">Unreported Offenses</a></li>
+				<li><a class="ln_predictions" href="strikeNext.php">Offender Predictions</a></li>
+				<li><a class="ln_technical" href="technical.php">Technical</a></li>
 			</ul>
 		</nav>
 		<div id="content">

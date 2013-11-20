@@ -168,22 +168,22 @@ h4{
   border: 1px black solid;
 }
 
-.pg_home table td, .pg_home table th{
+.niceTable td, .niceTable th{
 	padding: 5px 10px;
 	margin: 0;
 }
-.pg_home table tr td{
+.niceTable tr td{
 	background: #FFD6C4;
 }
-.pg_home table tr:nth-child(even) td{
+.niceTable tr:nth-child(even) td{
 	background: #FFF;
 }
-.pg_home table th{
+.niceTable th{
 	text-align: left;
 	font-weight: normal;
 	font-size: 10px;
 }
-.pg_home th.barName{
+.niceTable th.barName{
 	width: 82%;
 }
 
@@ -201,4 +201,18 @@ footer{
 }
 footer small{
 	color: #FFF;
+}
+
+
+
+/* page specific styles */
+.pg_search .niceTable td{
+	font-size: 12px;
+}
+
+.pg_search .niceTable th.barName{
+	width: 40%;
+}
+.pg_search .niceTable tr:nth-child(odd) td{
+	background: #96E0FF;
 }
