@@ -3,8 +3,17 @@
 	$PG_NAME = 'latestOffenses';
 	require_once("res/top.php");
 ?>
-(Probably add a picture next to the bastards' names)<br>
-Lastest Offenses:<br>
+
+<h4>Lastest Offenses</h4>
+<p class='opener'>Keep on the look out for these recent sex offenders. More information about where they could be and how dangerous they are can be found by clicking on their names.</p>
+<table class="niceTable" cellspacing="0">
+	<thead>
+		<tr>
+			<th class="offenderName">Offender Name</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
 <?php
 	$q = "SELECT name, dateOfCrime FROM SexOffender ORDER BY dateOfCrime DESC LIMIT 0,10";
 
@@ -12,15 +21,11 @@ Lastest Offenses:<br>
 	
 	while($row = mysqli_fetch_array($query))
 	{
-		echo $row["name"]."<--->".$row["dateOfCrime"]."<br>";
-		$subQ = "SELECT bar FROM Frequents WHERE drinker='".$row["name"]."'";
-		$subQuery = mysqli_query($cxn, $subQ) or die("Query failed: ".mysqli_error($cxn));
-		echo "<ul>";
-		while($subRow = mysqli_fetch_array($subQuery))
-		{
-			echo "<li>".$subRow["bar"]."</li>";
-		}
-		echo "</ul>";
+		echo "<tr><td><a href='predator.php?name=" . urlencode($row['name']) . "'>" . $row['name'] . "</a></td><td>" . $row['dateOfCrime'] . "</td></tr>";
 	}
+?>
+</tbody>
+		</table>
+<?php
 	require_once("res/bottom.php");
 ?>

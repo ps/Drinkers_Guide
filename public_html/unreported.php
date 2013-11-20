@@ -5,7 +5,17 @@ require_once("res/top.php");
 
 ?>
 
-<h2>This is a list of possible unreported offences based on the history of the sex offenders </h2>
+<h4>This is a list of possible unreported offences based on the history of the sex offenders </h4>
+<p class='opener'>From records of consumption and people they left with, this list contains possible unreported offenses that could use further investigation.</p>
+<table class="niceTable" cellspacing="0">
+	<thead>
+		<tr>
+			<th class="offenderName">Offender Name</th>
+			<th>Potential Victim</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
 <?php
 
 //use this query for unreported offenses!! it lists the sexoffenders who consumed alcohol on day of their crime
@@ -37,8 +47,8 @@ WHERE lw.drinker2 = so.name AND lw.drinker1 NOT IN (SELECT victim FROM SexOffend
 $results = mysqli_query($cxn, $q) or die("Could not fetch sex offenders");
 
 while($row = mysqli_fetch_assoc($results)){
-	printf("%s | %s | %s<br/>", $row['criminal'], $row['potentialVictim'], $row['dateOfCrime']);
+	printf("<tr><td><a href='predator.php?name=%s' title='View predator information'>%s</a></td><td>%s</td><td>%s</td></tr>", urlencode($row['criminal']), $row['criminal'], $row['potentialVictim'], $row['dateOfCrime']);
 }
-
+echo "</tbody></table><br/>";
 require_once("res/bottom.php");
 ?>

@@ -16,7 +16,11 @@
 	$rating = $row['rating'];
 ?>
 <h1><?php echo $bname; ?></h1>
+<address>
+<?php echo $row['city'] . ", NJ"; ?>
+</address>
 <h2>Safety Rating: <div class="ratingCircle r<?php echo round($rating); ?>"><?php echo $rating; ?></div></h2>
+
 <?php
 	$q = "SELECT beer FROM Sells WHERE bar='".$bname."'";
 
