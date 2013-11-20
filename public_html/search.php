@@ -111,23 +111,22 @@ else{
 
 	  map = new google.maps.Map(document.getElementById('map-canvas'),
 	      mapOptions);
-
+	  var infowindow = new google.maps.InfoWindow({ content: ''});
 	  <?php
 	  mysqli_data_seek($results, 0);
 	  $i = 0;
 	  //this is pretty hacky
 	  while($row = mysqli_fetch_assoc($results)){
-	    echo "var infowindow".$i." = new google.maps.InfoWindow({ content: '" . $row['name'] . "'});";
 	    echo "var marker".$i." = new google.maps.Marker({ position: new google.maps.LatLng(" . $row['latitude'] . "," . $row['longitude'] ."), map: map, title: '" . $row['name'] . "'});\n";
 	    if($i == 0){
-	    	echo "infowindow".$i.".open(map,marker".$i.");";
+	    	echo "infowindow.setContent('<a href=\"bar.php?bar=". $row['name'] ."\" title=\"View bar\">" . $row['name'] . "</a>'); infowindow.open(map,marker".$i.");";
 	    }
-	    else{
-		  echo "google.maps.event.addListener(marker".$i.", 'click', function() { infowindow".$i.".open(map,marker".$i.");});";
-		}
+	   
+		echo "google.maps.event.addListener(marker".$i.", 'click', function() { infowindow.setContent('<a href=\"bar.php?bar=". $row['name'] ."\" title=\"View bar\">" . $row['name'] . "</a>'); infowindow.open(map,marker".$i.");});";
 	    $i++;
 	  }
 	?>
+
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
