@@ -190,3 +190,6 @@ Some possibilities:
 	 	+ 5-7 There is some risk.
 	 	+ 3-4 There is a moderate risk.
 	 	+ 1-2 There is high risk.
+
+#### POTENTIAL THINGS TO DO IF WE HAVE TIME 
+- add a price to sells in beers and maybe think of a pattern with the price
