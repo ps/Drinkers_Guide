@@ -195,3 +195,5 @@ Some possibilities:
 - add a price to sells in beers and maybe think of a pattern with the price
 - get bar picture
 - get bar review comments [bad and good] maybe write them ourselves
+- remove people who were offended more than 2 times
+- add indexes to tables

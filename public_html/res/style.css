@@ -79,7 +79,7 @@ nav ul li a{
 	font-family: "Noto Sans";
 }
 
-nav ul li a:hover, .pg_home .ln_home, .pg_latestOffenses .ln_latestOffenses, .pg_unreported .ln_unreported, .pg_topTenBars .ln_topTenBars, .pg_strikeNext .ln_strikeNext{
+nav ul li a:hover, .pg_home .ln_home, .pg_latestOffenses .ln_latestOffenses, .pg_unreported .ln_unreported, .pg_topTenBars .ln_topTenBars, .pg_strikeNext .ln_strikeNext, .pg_technical .ln_technical{
 	background: #96E0FF;
 	text-decoration: none;
 }
