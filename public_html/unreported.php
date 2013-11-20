@@ -1,6 +1,12 @@
-<h2>This is a list of possible unreported offences based on the history of the sex offenders </h2>
 <?php
 require_once("settings.php");
+$PG_NAME = 'unreported';
+require_once("res/top.php");
+
+?>
+
+<h2>This is a list of possible unreported offences based on the history of the sex offenders </h2>
+<?php
 
 //use this query for unreported offenses!! it lists the sexoffenders who consumed alcohol on day of their crime
 //and left with a bar with a person that was not their victim
@@ -33,3 +39,6 @@ $results = mysqli_query($cxn, $q) or die("Could not fetch sex offenders");
 while($row = mysqli_fetch_assoc($results)){
 	printf("%s | %s | %s<br/>", $row['criminal'], $row['potentialVictim'], $row['dateOfCrime']);
 }
+
+require_once("res/bottom.php");
+?>
