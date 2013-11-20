@@ -1,5 +1,7 @@
 <?php 
 	require_once("settings.php");
+	$PG_NAME = 'latestOffenses';
+	require_once("res/top.php");
 ?>
 (Probably add a picture next to the bastards' names)<br>
 Lastest Offenses:<br>
@@ -20,4 +22,5 @@ Lastest Offenses:<br>
 		}
 		echo "</ul>";
 	}
+	require_once("res/bottom.php");
 ?>

@@ -12,8 +12,13 @@ body{
 }
 #container{
 	width: 800px;
-	margin: 10px auto;
+	margin: 0px auto;
+	position: relative;
+	min-height: 100%;
+}
 
+#content{
+	padding-bottom: 30px;
 }
 
 /* clearfix - thanks to http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -74,12 +79,13 @@ nav ul li a{
 	font-family: "Noto Sans";
 }
 
-nav ul li a:hover, .pg_home .ln_home{
+nav ul li a:hover, .pg_home .ln_home, .pg_latestOffenses .ln_latestOffenses{
 	background: #96E0FF;
 	text-decoration: none;
 }
 
 #page_header{
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 #page_header h1, #page_header h2{
@@ -162,22 +168,22 @@ h4{
   border: 1px black solid;
 }
 
-.pg_home table td, .pg_home table th{
+.niceTable td, .niceTable th{
 	padding: 5px 10px;
 	margin: 0;
 }
-.pg_home table tr td{
+.niceTable tr td{
 	background: #FFD6C4;
 }
-.pg_home table tr:nth-child(even) td{
+.niceTable tr:nth-child(even) td{
 	background: #FFF;
 }
-.pg_home table th{
+.niceTable th{
 	text-align: left;
 	font-weight: normal;
 	font-size: 10px;
 }
-.pg_home th.barName{
+.niceTable th.barName{
 	width: 82%;
 }
 
@@ -189,8 +195,24 @@ a:hover{
 	text-decoration: underline;
 }
 
+footer{
+	position: absolute;
+	bottom: 4px;
+}
 footer small{
 	color: #FFF;
-	position: relative;
-	top: 3px;
+}
+
+
+
+/* page specific styles */
+.pg_search .niceTable td{
+	font-size: 12px;
+}
+
+.pg_search .niceTable th.barName{
+	width: 40%;
+}
+.pg_search .niceTable tr:nth-child(odd) td{
+	background: #96E0FF;
 }

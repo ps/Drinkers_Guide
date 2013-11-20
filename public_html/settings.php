@@ -24,3 +24,9 @@ function getOneRating($bName){
 	$results = mysqli_query($cxn, $q) or die("Could not fetch rating");
 	return $results;
 }
+
+function niceDie($msg){
+	echo $msg;
+	require_once("res/bottom.php");
+	die();
+}
