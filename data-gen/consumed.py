@@ -48,7 +48,7 @@ for info in left:
 	#generate data for drinker 1
 	drinker = info[0]
 	bar = info[3]
-	numDrinks = random.randint(0,4)
+	numDrinks = random.randint(1,4)
 	mins = random.randint(1,120)
 	newTime =  (info[2])-datetime.timedelta(minutes=mins)
 
@@ -101,7 +101,7 @@ for info in moreDrinkers:
 	visits = random.randint(1,4)
 	for k in range(0, visits):
 		drinker = info[0]
-		drinks = random.randint(0,10)
+		drinks = random.randint(1,10)
 		#generate date based on 
 		y = 2013
 		m =	10
