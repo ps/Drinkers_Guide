@@ -16,10 +16,11 @@ $lat = -1;
 $lon = -1;
 $radius = 0;
 $city = "";
+$street = "";
 
 //Show this predator's information, and show a strike-zone map (also possibly include his location)
 
-$q = "SELECT so.name AS name, d.gender AS gender, d.city as city, COUNT(*) as numOffenses, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name AND so.name='" . $predator_name . "' GROUP BY so.name";
+$q = "SELECT so.name AS name, d.gender AS gender, d.city as city, d.address as street, COUNT(*) as numOffenses, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name AND so.name='" . $predator_name . "' GROUP BY so.name";
 $results = mysqli_query($cxn, $q) or die("Could not get sex offender's information");
 
 if(mysqli_num_rows($results) == 0){
@@ -27,6 +28,7 @@ if(mysqli_num_rows($results) == 0){
 }
 $row = mysqli_fetch_assoc($results);
 
+$street = $row["street"];
 $city = $row['city'];
 $lat = $row['lat'];
 $lon = $row['lon'];
@@ -98,7 +100,7 @@ if($dangerRank > 10){
     <?php
     printf("<img style='border:1px black solid' width='150' src='%s' />", $predator_img);
     printf("<h2>%s <div style='position: relative; top: -2px;' class='ratingCircle r%d'>%d</div></h2>", $predator_name, 10-$dangerRank, $dangerRank);
-    printf("<p class='n'>From %s, NJ</p>", $city);
+    printf("<p class='n'>%s, %s, NJ</p>", $street, $city);
     printf("<p class='n'>Danger Rank: %d</p>" , $dangerRank);
     echo "<br/><h3>Previous Offenses</h3>";
     echo $histText;
