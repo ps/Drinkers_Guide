@@ -186,6 +186,9 @@ h4{
 .niceTable th.barName{
 	width: 82%;
 }
+.niceTable.blue td{
+	background: #96E0FF;
+}
 
 a{
 	color: inherit;

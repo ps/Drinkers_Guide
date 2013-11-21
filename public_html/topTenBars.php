@@ -32,7 +32,7 @@ $total = mysqli_num_rows($results);
 	</div>
 	<div class="right50">
 		<h4>Top Ten Safest Bars</h4>
-		<table class="niceTable" cellspacing="0">
+		<table class="niceTable blue" cellspacing="0">
 			<thead>
 				<tr>
 					<th class="barName">Bar Name</th>
