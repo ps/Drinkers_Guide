@@ -69,29 +69,29 @@
 </ul>
 <h4>Beer, Country, Manufacturer Tables (beer_country_manf.py)</h4>
 <ul>
-	<li>beer name, manufacturer, and country information was scrapted from (www.beerme.com/beerlist.php)</li>
-	<li>beer name, manufacturer, and style were scrapted from the page, alcohol content was generated randomly between 1%-10% inclusive</li>
+	<li>Beer name, manufacturer, and country information was scrapted from (www.beerme.com/beerlist.php)</li>
+	<li>Beer name, manufacturer, and style were scrapted from the page, alcohol content was generated randomly between 1%-10% inclusive</li>
 	<li>Manufacturer and Country tables followed from the scrapted data</li>
-	<li>a few countries were manually labeled as having prohibition</li>
+	<li>A few countries were manually labeled as having prohibition</li>
 </ul>
 
 
 <h4>Consumed Table (consumed.py)</h4>
 <ul>
 	<li>
-		the script pulled the data from the LeftWith table
+		The script pulled the data from the LeftWith table
 		<ul>
-		<li>the date was based on the date from the LeftWith table and the time was anywhere between 1-120 minutes before the time at which the individuals left the bar</li>
-		<li>drinker1 from LeftWith table was selected to consume 1-4 drinks</li>
-		<li>drinker2 from LeftWith table was selected to consume 4-10 drinks</li>
-		<li>only one entry was generated for each unique drinker from the LeftWith table</li>
+		<li>The date was based on the date from the LeftWith table and the time was anywhere between 1-120 minutes before the time at which the individuals left the bar</li>
+		<li>Drinker1 from LeftWith table was selected to consume 1-4 drinks</li>
+		<li>Drinker2 from LeftWith table was selected to consume 4-10 drinks</li>
+		<li>Only one entry was generated for each unique drinker from the LeftWith table</li>
 		</ul>	
 	</li>
 	<li>
-		the rest of data was pulled from the Drinkers table and selected those that did not appear in LeftWith
+		The rest of data was pulled from the Drinkers table and selected those that did not appear in LeftWith
 		<ul>
-			<li>for each drinker, an assumption was made that a drinker would go to a bar 1-4 times over a course of a month</li>
-			<li>each drinker would be generated to consume anywhere between 1-10 drinks during one visit, date of consumption was random</li>
+			<li>For each drinker, an assumption was made that a drinker would go to a bar 1-4 times over a course of a month</li>
+			<li>Each drinker would be generated to consume anywhere between 1-10 drinks during one visit, date of consumption was random</li>
 		</ul>
 	</li>
 </ul>
