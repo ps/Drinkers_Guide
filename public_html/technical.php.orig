@@ -6,21 +6,13 @@
 <script src="res/shCore.js"></script>
 <script src="res/shBrushSql.js"></script>
 <h3>Target Audience and Business Aspects</h3>
-<p>Target Audience: Drinkers and Police</p>
-<h4>Drinkers</h4>
-<ul>
-	<li>Find safe bar around them</li>
-	<li>Be aware which predators go to the same bars that they do</li>
-</ul>
-<h4>Police</h4>
-<ul>
-	<li>Find bars most likely to have sex offenders</li>
-	<li>Use prediction to find when sex offenders are going to strike next</li>
+Target Audience: Drinkers and Police
 
-</ul>
-
+Drinkers:
+- find safe bar around them
+- be aware which predators go to the same bars that they do
 <h3>Data Generation</h3>
-
+<<<<<<< HEAD
 <p>The files responsible for each portion of generation is listed next to the names below</p>
 <h4>Cities (cities.py, city_scrape.js)</h4>
 <ul>
@@ -67,6 +59,10 @@
 	<li>The script randomly assigns a beer to a drinker</li>
 	<li>We weight Polish beers to be liked 40% of the time</li>
 </ul>
+
+=======
+
+
 <h4>Beer, Country, Manufacturer Tables (beer_country_manf.py)</h4>
 <ul>
 	<li>beer name, manufacturer, and country information was scrapted from (www.beerme.com/beerlist.php)</li>
@@ -106,6 +102,8 @@
 	<li>2 female victims were made into sexual offenders and assulted males</li>
 </ul>
 
+
+>>>>>>> f22c662e7f6efc61559fac1ca13e8f196864c849
 <h3>Patterns</h3>
 <p>Our patterns were placed after our data was generated. The files which enforce the patterns are listed next the the pattern names below</p>
 <h4>People who leave with underage drinkers are sex offenders</h4>

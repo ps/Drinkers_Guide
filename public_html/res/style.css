@@ -247,6 +247,9 @@ footer small{
 .pg_technical ul li{
 	margin: .3em 0;
 }
+.pg_technical ul ul{
+	margin-left: 1.2em;
+}
 
 p.n{
 	font-family: "Noto Sans";

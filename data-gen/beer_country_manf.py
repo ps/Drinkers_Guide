@@ -27,7 +27,7 @@ cursor = db.cursor()
 
 print "Getting data"
 #soup = BeautifulSoup(urllib2.urlopen('http://www.beerme.com/beerlist.php'))
-soup = BeautifulSoup(open("list_of_beers.html"))
+soup = BeautifulSoup(open("data/list_of_beers.html"))
 print "Got page"
 
 print "Finding table"
