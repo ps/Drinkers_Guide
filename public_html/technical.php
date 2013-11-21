@@ -80,7 +80,6 @@
 	C.name=D.drinker AND C.dateOfCrime&lt;LEFT(D.dateOfConsump,10) AND C.numDrinks&lt;=D.numDrinks 
 	ORDER BY D.drinker
 	</pre>
-
 	<h4>Unreported Offenses (unreported.php)</h4>
 	<pre class="brush: sql">
 	SELECT B.dateOfCrime, A.numDrinks, B.name AS criminal, B.victim AS recordedVictim,  
@@ -94,9 +93,10 @@
 	  (SELECT DISTINCT name FROM SexOffender) AND B.victim &lt;> 
 	  	IF(A.drinker=C.drinker1, C.drinker2, C.drinker1)
 	</pre>
-	<h4>Best and Worst Bars (settings.php)</h4>
-	<p>The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
-		ten were picked for the best bars, last ten were picked for the worst bars.</p>
+	<h4>Best and Worst Bars (topTenBars.php)</h4>
+	The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
+	ten were picked for the best bars, last ten were picked for the worst bars.
+	The same query was also used to generate worst bars on the home page.
 	<pre class="brush: sql">
 	SELECT b.city AS city, b.name AS name, 
 		ROUND((10 - (COUNT(A.name) + 
