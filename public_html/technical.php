@@ -91,9 +91,10 @@ AND A.drinker IN
   (SELECT DISTINCT name FROM SexOffender) AND B.victim &lt;> 
   	IF(A.drinker=C.drinker1, C.drinker2, C.drinker1)
 </pre>
-<h4>Best and Worst Bars</h4>
+<h4>Best and Worst Bars (topTenBars.php)</h4>
 The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
 ten were picked for the best bars, last ten were picked for the worst bars.
+The same query was also used to generate worst bars on the home page.
 <pre class="brush: sql">
 SELECT b.city AS city, b.name AS name, 
 	ROUND((10 - (COUNT(A.name) + 
