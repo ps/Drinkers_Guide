@@ -38,7 +38,7 @@
 					//Select the most dangerous bars of the month
 					$results = getAllRatings(true);
 					$i = 10;
-					while($i > 0 && $row = mysqli_fetch_assoc($results)){
+					while($i > 0 && $row = mysql_fetch_assoc($results)){
 						printf("<tr><td><a href='bar.php?bar=%s' title='View bar'>%s</a></td><td>%.1f</td></tr>", urlencode(trim($row['name'])), trim($row['name']), $row['rating']);
 						$i--;
 					}
@@ -60,9 +60,9 @@
 
 	var offenderData = [
 	<?php
-	  $results = mysqli_query($cxn, "SELECT * FROM SexOffender, Drinker WHERE SexOffender.name = Drinker.name");
+	  $results = mysql_query( "SELECT * FROM SexOffender, Drinker WHERE SexOffender.name = Drinker.name");
 	  $first = true;
-	  while($row = mysqli_fetch_assoc($results)){
+	  while($row = mysql_fetch_assoc($results)){
 	    if(!$first) echo ",";
 	    else $first = false;
 	    echo "new google.maps.LatLng(" . $row['latitude'] . "," . $row['longitude'] .")";

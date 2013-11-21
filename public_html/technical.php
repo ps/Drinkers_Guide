@@ -80,36 +80,36 @@
 	C.name=D.drinker AND C.dateOfCrime&lt;LEFT(D.dateOfConsump,10) AND C.numDrinks&lt;=D.numDrinks 
 	ORDER BY D.drinker
 	</pre>
-	<h4>Unreported Offenses (unreported.php)</h4>
-	<pre class="brush: sql">
-	SELECT B.dateOfCrime, A.numDrinks, B.name AS criminal, B.victim AS recordedVictim,  
-	IF(A.drinker=C.drinker1, C.drinker2, C.drinker1) AS potentialVictim 
-	FROM Consumed A, SexOffender B, LeftWith C 
-	WHERE LEFT(C.dateOccurred,10)=B.dateOfCrime 
-	AND (A.drinker=C.drinker1 OR A.drinker=C.drinker2) 
-	AND A.drinker=B.name 
-	AND LEFT(A.dateOfConsump, 10)=B.dateOfCrime 
-	AND A.drinker IN 
-	  (SELECT DISTINCT name FROM SexOffender) AND B.victim &lt;> 
-	  	IF(A.drinker=C.drinker1, C.drinker2, C.drinker1)
-	</pre>
-	<h4>Best and Worst Bars (topTenBars.php)</h4>
-	The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
+<h4>Unreported Offenses (unreported.php)</h4>
+<pre class="brush: sql">
+SELECT B.dateOfCrime, A.numDrinks, B.name AS criminal, B.victim AS recordedVictim,  
+IF(A.drinker=C.drinker1, C.drinker2, C.drinker1) AS potentialVictim 
+FROM Consumed A, SexOffender B, LeftWith C 
+WHERE LEFT(C.dateOccurred,10)=B.dateOfCrime 
+AND (A.drinker=C.drinker1 OR A.drinker=C.drinker2) 
+AND A.drinker=B.name 
+AND LEFT(A.dateOfConsump, 10)=B.dateOfCrime 
+AND A.drinker IN 
+  (SELECT DISTINCT name FROM SexOffender) AND B.victim &lt;> 
+  	IF(A.drinker=C.drinker1, C.drinker2, C.drinker1)
+</pre>
+<h4>Best and Worst Bars (topTenBars.php)</h4>
+<p>The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
 	ten were picked for the best bars, last ten were picked for the worst bars.
-	The same query was also used to generate worst bars on the home page.
-	<pre class="brush: sql">
-	SELECT b.city AS city, b.name AS name, 
-		ROUND((10 - (COUNT(A.name) + 
-			(SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN 
-				(SELECT name FROM Beer WHERE manf IN 
-					(SELECT m.name FROM Manufacturer m,Country c WHERE 
-					m.country = c.name AND prohibition=1)))) * (10/13)),1) AS rating 
-	FROM Bar b LEFT JOIN 
-		(SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c 
-		WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar 
-		GROUP BY b.name
-		ORDER BY rating
-	</pre>
+	The same query was also used to generate worst bars on the home page.</p>
+<pre class="brush: sql">
+SELECT b.city AS city, b.name AS name, 
+	ROUND((10 - (COUNT(A.name) + 
+		(SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN 
+			(SELECT name FROM Beer WHERE manf IN 
+				(SELECT m.name FROM Manufacturer m,Country c WHERE 
+				m.country = c.name AND prohibition=1)))) * (10/13)),1) AS rating 
+FROM Bar b LEFT JOIN 
+	(SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c 
+	WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar 
+	GROUP BY b.name
+	ORDER BY rating
+</pre>
 </div>
 <h3 data-link="dataGeneration" class="expand-link">Data Generation <span>expand</span></h3>
 <div data-box="dataGeneration" class="expand-box">

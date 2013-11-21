@@ -22,12 +22,12 @@ $q = "SELECT D.drinker AS criminal, C.dateOfCrime, LEFT(D.dateOfConsump,10) AS a
 	  Consumed D WHERE C.name=D.drinker AND C.dateOfCrime<LEFT(D.dateOfConsump,10) AND C.numDrinks<=D.numDrinks 
 	  ORDER BY D.drinker";
 
-$query = mysqli_query($cxn, $q) or die("Query failed: ".mysqli_error($cxn));
+$query = mysql_query( $q) or die("Query failed: ".mysql_error());
 
 echo "<table class='niceTable modified' cellspacing='0'><thead><tr><th class='barName'>Criminal</th><th>Date Of Offense</th><th>Potentially Struck Again On</th>";
 echo "</tr></thead><tbody>";
 
-while($row = mysqli_fetch_array($query))
+while($row = mysql_fetch_array($query))
 {
 	echo "<tr><td>".$row["criminal"]."</td><td>".$row["dateOfCrime"]."</td><td>".$row["anotherPotentialCrimeDate"]."</td></tr>";
 }

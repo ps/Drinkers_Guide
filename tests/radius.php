@@ -30,13 +30,13 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
   <?php
-    $results = mysqli_query($cxn, "SELECT so.name AS name, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name GROUP BY so.name LIMIT 1;");
+    $results = mysql_query( "SELECT so.name AS name, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name GROUP BY so.name LIMIT 1;");
     $first = true;
     //the radius must be in meters
     //approximation for scaling http://geography.about.com/library/faq/blqzdistancedegree.htm
     // ~ 100km
     //so this only looks good for 1 person at a time
-      while($row = mysqli_fetch_assoc($results)){
+      while($row = mysql_fetch_assoc($results)){
       echo "new google.maps.Circle({
         strokeColor: '#FF0000',
         strokeOpacity: 0.8,

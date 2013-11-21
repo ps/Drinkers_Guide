@@ -8,7 +8,7 @@ if(!isset($_GET['name'])){
 ?>
 
 <?php
-$predator_name = mysqli_escape_string($cxn, trim($_GET['name']));
+$predator_name = mysql_escape_string( trim($_GET['name']));
 $predator_img = "";
 $predator_history = NULL; //result object
 $dangerRating = 0;
@@ -21,12 +21,12 @@ $street = "";
 //Show this predator's information, and show a strike-zone map (also possibly include his location)
 
 $q = "SELECT so.name AS name, d.gender AS gender, d.city as city, d.address as street, COUNT(*) as numOffenses, d.latitude AS lat, d.longitude AS lon, MAX(SQRT(POW(d.latitude - b.latitude,2) + POW(d.longitude - b.longitude, 2))) AS radius FROM SexOffender so, Drinker d, Frequents f, Bar b WHERE so.name = f.drinker AND f.bar = b.name AND d.name=so.name AND so.name='" . $predator_name . "' GROUP BY so.name";
-$results = mysqli_query($cxn, $q) or die("Could not get sex offender's information");
+$results = mysql_query( $q) or die("Could not get sex offender's information");
 
-if(mysqli_num_rows($results) == 0){
+if(mysql_num_rows($results) == 0){
 	die("No sex offender found");
 }
-$row = mysqli_fetch_assoc($results);
+$row = mysql_fetch_assoc($results);
 
 $street = $row["street"];
 $city = $row['city'];
@@ -66,7 +66,7 @@ if($contentsChanged){
 }
 
 $q = sprintf("SELECT s.victim as victim, s.dateOfCrime as dateOfCrime, d.gender as victimGender FROM SexOffender s, Drinker d WHERE s.name = '%s' and s.victim = d.name", $predator_name);
-$history = mysqli_query($cxn, $q) or die("Could not get history");
+$history = mysql_query( $q) or die("Could not get history");
 
 
 
@@ -76,10 +76,10 @@ danger rating:
 - whether he/she bi more dangerous
 - illegal beers
 */
-$dangerRank = mysqli_num_rows($history);
+$dangerRank = mysql_num_rows($history);
 $sexes = array("M" => 0, "F" => 0);
 $histText = "<ul class='marginFix'>";
-while($row = mysqli_fetch_assoc($history)){
+while($row = mysql_fetch_assoc($history)){
 	$sexes[$row['victimGender']] = 1;
 	$histText .= sprintf("<li><span style='width:150px; display:inline-block;'>%s</span><b>(%s)</b> </li>", $row['victim'], $row['dateOfCrime']);
 }

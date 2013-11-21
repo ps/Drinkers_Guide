@@ -17,9 +17,9 @@
 <?php
 	$q = "SELECT name, dateOfCrime FROM SexOffender ORDER BY dateOfCrime DESC LIMIT 0,10";
 
-	$query = mysqli_query($cxn, $q) or die("Query failed: ".mysqli_error($cxn));
+	$query = mysql_query( $q) or die("Query failed: ".mysql_error());
 	
-	while($row = mysqli_fetch_array($query))
+	while($row = mysql_fetch_array($query))
 	{
 		echo "<tr><td><a href='predator.php?name=" . urlencode($row['name']) . "'>" . $row['name'] . "</a></td><td>" . $row['dateOfCrime'] . "</td></tr>";
 	}

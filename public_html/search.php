@@ -22,14 +22,14 @@ if(isset($_GET['bname']) && isset($_GET['location'])){
 		$lat = $results["results"][0]["geometry"]["location"]["lat"];
 		//only select top 10
 		$q = sprintf("SELECT name, longitude, latitude, SQRT(POW(longitude - %f, 2) + POW(latitude - %f, 2)) AS dist, city FROM Bar ORDER BY dist LIMIT 10;", $lon, $lat);
-		$results = mysqli_query($cxn, $q) or die("Could not find closest bars");
+		$results = mysql_query( $q) or die("Could not find closest bars");
 	}
 	else if($barName != "" && $barName != "Search by bar name"){
 		//search by bar
 		$searchType = "barname";
 		$terms = implode("%", explode(" ", $barName));
 		$q = "SELECT name, city, longitude, latitude FROM Bar WHERE name LIKE '%" . $terms . "%' LIMIT 10";
-		$results = mysqli_query($cxn, $q) or die("Could not find bars");
+		$results = mysql_query( $q) or die("Could not find bars");
 	}
 	else{
 		niceDie("Nothing submitted");
@@ -70,7 +70,7 @@ else{
 		?>
 		<p>Click the bar names to find out more information about the safety of the bar</p>
 		<?php
-			if(mysqli_num_rows($results) == 0){
+			if(mysql_num_rows($results) == 0){
 				echo "No bars were found";
 			}
 			echo "<table class='niceTable' cellspacing='0'><thead><tr><th class='barName'>Bar Name</th><th>City</th>";
@@ -78,7 +78,7 @@ else{
 				echo "<th>Distance*</th>";
 			}
 			echo "</tr></thead><tbody>";
-			while($row = mysqli_fetch_assoc($results)){
+			while($row = mysql_fetch_assoc($results)){
 				//get the safety rating for each bar, plot on map
 				printf("<tr><td><a href='bar.php?bar=%s' title='View bar'>%s</a></td><td>%s</td>" , urlencode($row['name']), $row['name'], $row['city']);
 				if($searchType == "location"){
@@ -113,10 +113,10 @@ else{
 	      mapOptions);
 	  var infowindow = new google.maps.InfoWindow({ content: ''});
 	  <?php
-	  mysqli_data_seek($results, 0);
+	  mysql_data_seek($results, 0);
 	  $i = 0;
 	  //this is pretty hacky
-	  while($row = mysqli_fetch_assoc($results)){
+	  while($row = mysql_fetch_assoc($results)){
 	    echo "var marker".$i." = new google.maps.Marker({ position: new google.maps.LatLng(" . $row['latitude'] . "," . $row['longitude'] ."), map: map, title: '" . $row['name'] . "'});\n";
 	    if($i == 0){
 	    	echo "infowindow.setContent('<a href=\"bar.php?bar=". $row['name'] ."\" title=\"View bar\">" . $row['name'] . "</a>'); infowindow.open(map,marker".$i.");";

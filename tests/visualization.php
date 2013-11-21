@@ -22,9 +22,9 @@ var map, pointarray, heatmap;
 
 var offenderData = [
 <?php
-  $results = mysqli_query($cxn, "SELECT * FROM SexOffender, Drinker WHERE SexOffender.name = Drinker.name");
+  $results = mysql_query( "SELECT * FROM SexOffender, Drinker WHERE SexOffender.name = Drinker.name");
   $first = true;
-  while($row = mysqli_fetch_assoc($results)){
+  while($row = mysql_fetch_assoc($results)){
     if(!$first) echo ",";
     else $first = false;
     echo "new google.maps.LatLng(" . $row['latitude'] . "," . $row['longitude'] .")";

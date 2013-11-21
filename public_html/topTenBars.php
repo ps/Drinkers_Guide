@@ -4,7 +4,7 @@ $PG_NAME = 'topTenBars';
 require_once("res/top.php");
 
 $results = getAllRatings(true);
-$total = mysqli_num_rows($results);
+$total = mysql_num_rows($results);
 
 ?>
 
@@ -21,7 +21,7 @@ $total = mysqli_num_rows($results);
 			<tbody>
 				<?php
 					$i = 10;
-					while($i > 0 && $row = mysqli_fetch_assoc($results)){
+					while($i > 0 && $row = mysql_fetch_assoc($results)){
 						printf("<tr><td><a href='bar.php?bar=%s' title='View bar'>%s</a></td><td>%s</td></tr>", urlencode($row['name']), $row['name'], $row['rating']);
 						$total--;
 						$i--;
@@ -42,10 +42,10 @@ $total = mysqli_num_rows($results);
 			<tbody>
 				<?php
 					while($total > 10){
-						$row = mysqli_fetch_row($results);
+						$row = mysql_fetch_row($results);
 						$total--;
 					}
-					while($row = mysqli_fetch_assoc($results)){
+					while($row = mysql_fetch_assoc($results)){
 						printf("<tr><td><a href='bar.php?bar=%s' title='View bar'>%s</a></td><td>%s</td></tr>", urlencode($row['name']), $row['name'], $row['rating']);
 						$total--;
 						$i--;

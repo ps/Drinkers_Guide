@@ -44,9 +44,9 @@ FROM LeftWith lw, SexOffender so
 WHERE lw.drinker2 = so.name AND lw.drinker1 NOT IN (SELECT victim FROM SexOffender WHERE name=so.name)";
 */
 
-$results = mysqli_query($cxn, $q) or die("Could not fetch sex offenders");
+$results = mysql_query( $q) or die("Could not fetch sex offenders");
 
-while($row = mysqli_fetch_assoc($results)){
+while($row = mysql_fetch_assoc($results)){
 	printf("<tr><td><a href='predator.php?name=%s' title='View predator information'>%s</a></td><td>%s</td><td>%s</td></tr>", urlencode($row['criminal']), $row['criminal'], $row['potentialVictim'], $row['dateOfCrime']);
 }
 echo "</tbody></table><br/>";
