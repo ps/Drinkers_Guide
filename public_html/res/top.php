@@ -12,6 +12,7 @@
 <body class="pg_<?php if(isset($PG_NAME)) echo $PG_NAME; ?>">
 	<div id="bg"></div>
 	<div id="container">
+		<div id="body">
 		<header id="page_header">
 			<hgroup>
 				<h1>Drinker's Guide</h1>

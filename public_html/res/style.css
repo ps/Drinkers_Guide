@@ -7,19 +7,23 @@ body, label, input, small{
 	font-family: "Noto Sans" , "Helvetica", "Arial", "sans-serif";
 }
 body{
-	background: url("bg.jpg") repeat-x;
-	background-position: bottom;
+	margin: 0;
+	padding: 0;
 }
-#container{
+html, body{
+	height: 100%;
+}
+
+#body{
 	width: 800px;
 	margin: 0px auto;
+	padding-bottom: 30px;
+}
+#container{	
 	position: relative;
 	min-height: 100%;
 }
 
-#content{
-	padding-bottom: 30px;
-}
 
 /* clearfix - thanks to http://nicolasgallagher.com/micro-clearfix-hack/ */
 .cf:before,
@@ -106,10 +110,6 @@ nav ul li a:hover, .pg_home .ln_home, .pg_latestOffenses .ln_latestOffenses, .pg
 	height: 75px;
 	background-color: #000;
 	z-index: -1;
-}
-#bg2{
-	bottom: 0;
-	height: 10px;
 }
 
 p{
@@ -199,10 +199,16 @@ a:hover{
 }
 
 footer{
+	width: 100%;
+	background: #000;
+	padding: 5px 0;
 	position: absolute;
-	bottom: 4px;
+	bottom: 0;
 }
 footer small{
+	display: block;
+	width: 800px;
+	margin: 0 auto;
 	color: #FFF;
 }
 
