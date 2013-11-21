@@ -134,6 +134,16 @@ ELSE 'No'
 END AS isTrue
 ```
 
+#### People who frequent international bars like at least one Polish beer ####
+```sql
+SELECT IF
+((SELECT COUNT(f.drinker) FROM Frequents f, Bar b 
+WHERE f.bar = b.name AND b.international='1' AND
+(SELECT COUNT(*) FROM Likes l WHERE l.drinker = f.drinker AND l.beer IN(
+SELECT b.name FROM Beer b, Manufacturer m
+WHERE b.manf = m.name AND m.country = 'Poland')) = 0) = 0, 'Yes', 'No') AS verification
+```
+
 #### Safety Ranking ####
 
 Ok, so this query gets the number of sex offenders all of the bars have:
