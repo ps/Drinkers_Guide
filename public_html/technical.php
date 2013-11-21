@@ -7,13 +7,13 @@
 <script src="res/shBrushSql.js"></script>
 <h3>Target Audience and Business Aspects</h3>
 <h3>Data Generation</h3>
-<h4>Cities (cities.py)</h4>
+<p>The files responsible for each portion of generation is listed next to the names below</p>
+<h4>Cities (cities.py, city_scrape.js)</h4>
 <ul>
-	<li>Cities were taken from wikipedia's list of municipalities in NJ (<a href="http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey" target="_blank" title="Open in new tab">http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey</a>)</li>
+	<li>Cities were taken from wikipedia's list of municipalities in NJ (<a href="http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey" target="_blank" title="Open in new tab">http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey</a>) using city_scrape.js</li>
 	<li>Afterwards, we used the Google Geocode API (via the cities.py script) to get the longitude and latitude</li>
 	<li>The methods cities.py offers will add approximately a random 10 miles around the longitude and latitude of the city to give the randomness of bar/drinker locations</li>
 </ul>
-
 <h4>Bar Table (bars.py, cities.py)</h4>
 <ul>
 	<li>Random numbers for phone number, random string of characters for license</li>
@@ -21,7 +21,14 @@
 	<li>The bar names are randomly generated from three lists of 'bar-name sounding' words</li>
 	<li>We also added an extra forty Polish bars manually (which have a value of 1 for international)</li>
 </ul>
-
+<h4>Drinker Table (drinkers.py, reinsertFemales.py)</h4>
+<ul>
+	<li>Street name scraped from <a href="http://www.mess.be/inickgenwuname.php" target="_blank" title="Open in new tab">http://www.mess.be/inickgenwuname.php</a></li>
+	<li>City is from cities.py</li>
+	<li>Found a list of names online and randomly connected first names and last names</li>
+	<li>Age is a random number from 17 to 80 (underage drinkers were using in our patterns)</li>
+	<li>After we altered our data, we realized we had lost all females so we wrote reinsertFemales.py which made 30% of drinkers female</li>
+</ul>
 <h4>Frequents Table (frequents.py)</h4>
 <ul>
 	<li>For each drinker, we chose a certain amount of bars from the city they live in and had them at least visit one and gave a high chance of visiting a few more</li>
@@ -35,10 +42,23 @@
 	<li>Not all drinkers necessarily leave with other drinkers</li>
 </ul>
 
+<h4>Sells (sells.py, sells_redemption.py)</h4>
+<ul>
+	<li>Our original sells.py script randomly assigned a beer to a bar</li>
+	<li>Due to many bars not selling any beers, we wrote sells_redemption.py which enforces all bars to sell at least one beer</li>
+</ul>
+
+<h4>Likes (likes.py)</h4>
+<ul>
+	<li>The script randomly assigns a beer to a drinker</li>
+	<li>We weight Polish beers to be liked 40% of the time</li>
+</ul>
+
 <h3>Patterns</h3>
+<p>Our patterns were placed after our data was generated. The files which enforce the patterns are listed next the the pattern names below</p>
 <h4>People who leave with underage drinkers are sex offenders</h4>
 
-<p>This pattern states that if an older person left with an underage drinker the older person is a sex offender.</p>
+<p>This pattern states that if an older person left with an underage drinker the older person is a sex offender. (underagePattern.py)</p>
 <pre class="brush: sql">
 SELECT CASE WHEN (SELECT COUNT(*) FROM (
 	SELECT d1.name
@@ -53,7 +73,7 @@ ELSE 'No'
 END AS isTrue
 </pre>
 
-<h4>Bars which serve illegal beers have sex offenders</h4>
+<h4>Bars which serve illegal beers have sex offenders (illegalBeerPattern.py)</h4>
 <p>
 	Here is the verification of the pattern:
 </p>
@@ -67,7 +87,7 @@ ELSE 'No'
 END AS isTrue
 </pre>
 
-<h4>People who frequent international bars like at least one Polish beer</h4>
+<h4>People who frequent international bars like at least one Polish beer (internationalBeerPattern.py)</h4>
 <p>Here is a verification of the pattern</p>
 <pre class="brush: sql">
 SELECT IF
