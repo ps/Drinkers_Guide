@@ -275,3 +275,22 @@ address{
 	background: #000;
 	padding: 10px;
 }
+
+.pg_technical .expand-link{
+	cursor: pointer;
+	position: relative;
+}
+.pg_technical .expand-link span{
+	font-size: 12px;
+	color: #FAF43E;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+.pg_technical .expand-link:hover span{
+	text-decoration: underline;
+}
+
+.pg_technical .expand-box{
+	display: none;
+}
