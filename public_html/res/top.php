@@ -4,6 +4,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
 	<link href="res/style.css" rel="stylesheet" type="text/css" />
+	<link href="res/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="res/shThemeDefault.css" rel="stylesheet" type="text/css" />
 	<script src="res/jquery.js"></script>
 	<script src="res/main.js"></script>
 </head>

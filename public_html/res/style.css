@@ -234,8 +234,15 @@ footer small{
 .r9 {background: #76c126;}
 .r10 {background: #4aff31;}
 
-.pg_bar .columns ul, ul.marginFix{
+.pg_bar .columns ul, ul.marginFix, .pg_technical ul{
 	margin-left: 1.2em;
+}
+.pg_technical ul{
+	margin-bottom: 1em;
+	font-family: "Gentium Book Basic";
+}
+.pg_technical ul li{
+	margin: .3em 0;
 }
 
 p.n{
@@ -250,4 +257,9 @@ p.n{
 }
 address{
 	font-style: normal;
+}
+
+.pg_technical textarea{
+	width: 100%;
+	height: 8.5em;
 }
