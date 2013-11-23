@@ -100,6 +100,10 @@
 <h3 data-link="queries" class="expand-link">Queries Behind the Scenes <span>expand</span></h3>
 <div data-box="queries" class="expand-box">
 	<h4>Bar Safety Ratings (bar.php)</h4>
+	<p>
+		This query selects the number of illegal beers sold and sex offenders/victims who frequent the bar, 
+		and converts it to a 0-10 scale. 
+	</p>
 	<pre class="brush: sql">
 	SELECT b.city AS city, b.name AS name,
     ROUND((10 - (COUNT(A.name) +
@@ -115,6 +119,11 @@
 	</pre>
 
 	<h4>Offender Predictions (strikeNext.php)</h4>
+	<p>
+		The query finds sex offenders who left with a person at a date after the original crime 
+		date and consumed equal or greater amount of alcohol as compared to the day on 
+		which the sex offender left the bar with someone.
+	</p>
 	<pre class="brush: sql">
 	SELECT D.drinker AS criminal, C.dateOfCrime, LEFT(D.dateOfConsump,10) AS anotherPotentialCrimeDate, 
 		  C.numDrinks AS numDrinksOnDayOfOffense, D.numDrinks AS numDrinksOnAnyDayAfterOffense 
@@ -126,6 +135,8 @@
 	ORDER BY D.drinker
 	</pre>
 <h4>Unreported Offenses (unreported.php)</h4>
+<p>The query lists sex offenders who consumed alcohol on day of their crime
+and left a bar with a person that was not their victim.</p>
 <pre class="brush: sql">
 SELECT B.dateOfCrime, A.numDrinks, B.name AS criminal, B.victim AS recordedVictim,  
 IF(A.drinker=C.drinker1, C.drinker2, C.drinker1) AS potentialVictim 
@@ -142,19 +153,6 @@ AND A.drinker IN
 <p>The query calculated and returns all bars with the safety rating. The query sorts the result based on the rating. First
 	ten were picked for the best bars, last ten were picked for the worst bars.
 	The same query was also used to generate worst bars on the home page.</p>
-<pre class="brush: sql">
-SELECT b.city AS city, b.name AS name, 
-	ROUND((10 - (COUNT(A.name) + 
-		(SELECT COUNT(*)  FROM Sells s  WHERE s.bar = b.name AND s.beer IN 
-			(SELECT name FROM Beer WHERE manf IN 
-				(SELECT m.name FROM Manufacturer m,Country c WHERE 
-				m.country = c.name AND prohibition=1)))) * (10/13)),1) AS rating 
-FROM Bar b LEFT JOIN 
-	(SELECT c.bar AS bar, s.name AS name FROM SexOffender s, Frequents c 
-	WHERE s.name = c.drinker OR s.victim = c.drinker) A ON b.name = A.bar 
-	GROUP BY b.name
-	ORDER BY rating
-</pre>
 </div>
 <h3 data-link="dataGeneration" class="expand-link">Data Generation <span>expand</span></h3>
 <div data-box="dataGeneration" class="expand-box">
