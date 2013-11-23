@@ -24,18 +24,36 @@
 <h3 data-link="patterns" class="expand-link">Patterns <span>expand</span></h3>
 	<div data-box="patterns" class="expand-box">
 	<p>Our patterns were placed after our data was generated. The files which enforce the patterns are listed next the the pattern names below</p>
-	<h4>People who leave with underage drinkers are sex offenders</h4>
+	
 
-	<p>This pattern states that if an older person left with an underage drinker the older person is a sex offender. (underagePattern.py)</p>
+	<h4>The higher the alcohol content of the beer the higher the price (beer_price.py)</h4>
+
+	<pre class="brush: sql">
+	SELECT CASE WHEN (SELECT COUNT(*) FROM (
+		SELECT A.beer FROM 
+		(SELECT * FROM Sells B, Beer C WHERE B.beer=C.name) A, 
+		(SELECT * FROM Sells B, Beer C WHERE B.beer=C.name) D 
+		WHERE (ABS(A.alcContent-D.alcContent)&lt;=0.01 OR A.alcContent > D.alcContent) 
+		AND A.beer&lt;>D.beer 
+		AND A.price &lt; D.price
+    ) A) = 0 THEN 'Yes'
+	ELSE 'No'
+	END AS isTrue
+	</pre>
+
+
+	<h4>People who leave with underage drinkers are sex offenders (underagePattern.py)</h4>
+
+	<p>This pattern states that if an older person left with an underage drinker the older person is a sex offender.</p>
 	<pre class="brush: sql">
 	SELECT CASE WHEN (SELECT COUNT(*) FROM (
 		SELECT d1.name
 		FROM LeftWith lw, Drinker d1, Drinker d2 
-		WHERE lw.drinker1 = d1.name AND d1.age >= 21 AND lw.drinker2 = d2.name and d2.age < 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
+		WHERE lw.drinker1 = d1.name AND d1.age >= 21 AND lw.drinker2 = d2.name and d2.age &lt; 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
 		UNION
 		SELECT d1.name
 		FROM LeftWith lw, Drinker d1, Drinker d2 
-		WHERE lw.drinker2 = d1.name AND d1.age >= 21 AND lw.drinker1 = d2.name and d2.age < 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
+		WHERE lw.drinker2 = d1.name AND d1.age >= 21 AND lw.drinker1 = d2.name and d2.age &lt; 21 AND NOT EXISTS(SELECT * from SexOffender s WHERE s.name = d1.name)
 		) A) = 0 THEN 'Yes'
 	ELSE 'No'
 	END AS isTrue
