@@ -22,7 +22,7 @@
 <h2>Safety Rating: <div class="ratingCircle r<?php echo round($rating); ?>"><?php echo $rating; ?></div></h2>
 
 <?php
-	$q = "SELECT beer FROM Sells WHERE bar='".$bname."'";
+	$q = "SELECT s.beer AS beer, s.price AS price, b.style AS style, b.alcContent AS ac FROM Sells s, Beer b WHERE s.bar='".$bname."' AND b.name = s.beer";
 
 	$query = mysql_query( $q) or die("Query failed: ".mysql_error());
 	$numBeers = mysql_num_rows($query);
@@ -31,14 +31,25 @@
 <div class="columns cf">
 	<div class="left50">
 		<h4>Beers Offered (<?php echo $numBeers; ?>)</h4>
-		<ul>
+		<table class="niceTable blue" cellspacing="0">
+			<thead>
+				<tr>
+					<th class="beerName">Beer Name</th>
+					<th>Price&nbsp;($)</th>
+					<th>Alcohol Content (%)</th>
+					<th>Style</th>
+				</tr>
+			</thead>
+			<tbody>
 		<?php
 			while($row = mysql_fetch_array($query))
 			{
-				echo "<li>". $row["beer"]. "</li>";
+				printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", $row['beer'], $row['price'], $row['ac'], $row['style']);
 			}
 		?>
-		</ul><br/>
+			</tbody>
+		</table>
+		<br/>
 		<?php
 			$q = "SELECT beer FROM Sells WHERE bar='".$bname."' AND beer IN (SELECT A.name FROM Beer A, Manufacturer B WHERE A.manf=B.name AND B.country IN 
 					(SELECT name FROM Country WHERE prohibition='1'))";

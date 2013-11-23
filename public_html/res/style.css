@@ -152,7 +152,7 @@ h4{
 .submitbox{
 	text-align: right;
 }
-.submitbox input{
+.submitbox input, .pg_technical .veri button{
 	padding: 5px 10px;
 	font-size: 12px;
 	background-color: #96E0FF;
@@ -160,6 +160,9 @@ h4{
 	cursor: pointer;
 	border: none;
 	border-radius: 3px;
+}
+.submitbox input:hover, .pg_technical .veri button:hover{
+	background-color: #C9EFFF;
 }
 
 #map-canvas{
@@ -188,6 +191,9 @@ h4{
 }
 .niceTable.blue td{
 	background: #96E0FF;
+}
+.pg_bar .niceTable td{
+	font-size: 12px;
 }
 
 a{
@@ -299,4 +305,19 @@ address{
 
 .pg_technical .expand-box{
 	display: none;
+}
+
+.pg_technical .loader{
+	display: none;
+}
+.pg_technical .veri button{
+	display: inline-block;
+	margin-right: 10px;	
+}
+.pg_technical .veri{
+	margin-bottom: 30px;
+}
+.pg_technical .veri span{
+	display: inline-block;
+	margin-left: 10px;
 }

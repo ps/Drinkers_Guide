@@ -40,6 +40,9 @@
 	ELSE 'No'
 	END AS isTrue
 	</pre>
+	<div class="veri">
+		<button class="verify" data-which="alc">Verify this pattern</button><img class="loader" src="res/loader.gif" /><span></span>
+	</div>
 
 
 	<h4>People who leave with underage drinkers are sex offenders (underagePattern.py)</h4>
@@ -58,6 +61,9 @@
 	ELSE 'No'
 	END AS isTrue
 	</pre>
+	<div class="veri">
+		<button class="verify" data-which="underage">Verify this pattern</button><img class="loader" src="res/loader.gif" /><span></span>
+	</div>
 
 	<h4>Bars which serve illegal beers have sex offenders (illegalBeerPattern.py)</h4>
 	<p>
@@ -72,6 +78,9 @@
 	ELSE 'No'
 	END AS isTrue
 	</pre>
+	<div class="veri">
+		<button class="verify" data-which="offender">Verify this pattern</button><img class="loader" src="res/loader.gif" /><span></span>
+	</div>
 
 	<h4>People who frequent international bars like at least one Polish beer (internationalBeerPattern.py)</h4>
 	<p>Here is a verification of the pattern</p>
@@ -81,8 +90,11 @@
 	WHERE f.bar = b.name AND b.international='1' AND
 	(SELECT COUNT(*) FROM Likes l WHERE l.drinker = f.drinker AND l.beer IN(
 	SELECT b.name FROM Beer b, Manufacturer m
-	WHERE b.manf = m.name AND m.country = 'Poland')) = 0) = 0, 'Yes', 'No') AS verification
+	WHERE b.manf = m.name AND m.country = 'Poland')) = 0) = 0, 'Yes', 'No') AS isTrue
 	</pre>
+	<div class="veri">
+		<button class="verify" data-which="polish">Verify this pattern</button><img class="loader" src="res/loader.gif" /><span></span>
+	</div>
 </div>
 
 <h3 data-link="queries" class="expand-link">Queries Behind the Scenes <span>expand</span></h3>
@@ -245,6 +257,33 @@ function toggle(link, cb){
 }
 $(".expand-link").on("click", function(){
 	toggle($(this));
+});
+$(".verify").on("click", function(){
+	var but = $(this);
+	var loader = but.parent().find("img");
+	var out = but.parent().find("span");
+	var which = but.attr("data-which");
+	out.html("Verifying...");
+	if(which == "alc" || which == "underage"){
+		out.html("Verifying... please wait, this pattern takes ~40 seconds to verify.")
+	}
+	loader.show();
+	$.ajax({
+		url: "verify.php?pattern=" + which,
+		dataType: "text",
+		success: function(data, a, b){
+			if(data == "Yes"){
+				out.html("Pattern was verified!");
+			}
+			else if(data == "No"){
+				out.html("Pattern was not verified.");
+			}
+			else if(data == "ERROR"){
+				out.html("Unknown error occurred.");
+			}
+			loader.hide();
+		}
+	});
 });
 toggle($(".expand-link[data-link=target]"));
 </script>
