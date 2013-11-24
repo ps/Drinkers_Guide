@@ -6,6 +6,8 @@ import sys
 This generation file assumes that the database already has the drinkers as well as the beers already in place.
 
 Also, this does not check for duplicate entries, but relies on the SQL primary key restraints to prevent duplicates.
+
+It randomly selects a drinker and a beer and assigns.
 '''
 cxn = conn_remote()
 number = 15000 #number of likes rows desired

@@ -3,6 +3,8 @@ import random
 import sys
 
 '''
+This file will take drinkers who frequent international bars but do NOT like a Polish beer and add a Polish beer to the likes table with that drinker so the pattern is satisfied.
+
 SELECT f.drinker FROM Frequents f, Bar b 
 WHERE f.bar = b.name AND b.international='1' AND
 (SELECT COUNT(*) FROM Likes l WHERE l.drinker = f.drinker AND l.beer IN(

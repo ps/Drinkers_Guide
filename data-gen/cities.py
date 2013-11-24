@@ -1,5 +1,7 @@
 #!/usr/bin/python
 '''
+Uses actual municipalities from New Jersey and uses the Google Maps API Geocoding service to find the latitude and longitude. 
+For each person/bar it will randomize the longitude/latitude by ~10 miles
 '''
 import re
 import urllib

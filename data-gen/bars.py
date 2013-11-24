@@ -3,6 +3,9 @@ import string
 import cities
 from settings import *
 
+'''
+Makes random bar names using the following three lists. Also makes Polish bars afterwards (setting international to 1).
+'''
 #makes about 60,000 bars
 
 #press ctrl-c to stop, or wait
