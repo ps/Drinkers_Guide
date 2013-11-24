@@ -29,7 +29,7 @@ echo "</tr></thead><tbody>";
 
 while($row = mysql_fetch_array($query))
 {
-	echo "<tr><td>".$row["criminal"]."</td><td>".$row["dateOfCrime"]."</td><td>".$row["anotherPotentialCrimeDate"]."</td></tr>";
+	echo "<tr><td><a href='predator.php?name=".urlencode($row["criminal"])."' title='View predator'>".$row["criminal"]."</a></td><td>".$row["dateOfCrime"]."</td><td>".$row["anotherPotentialCrimeDate"]."</td></tr>";
 }
 echo "</tbody></table><br>";
 

@@ -81,7 +81,7 @@ $sexes = array("M" => 0, "F" => 0);
 $histText = "<ul class='marginFix'>";
 while($row = mysql_fetch_assoc($history)){
 	$sexes[$row['victimGender']] = 1;
-	$histText .= sprintf("<li><span style='width:150px; display:inline-block;'>%s</span><b>(%s)</b> </li>", $row['victim'], $row['dateOfCrime']);
+	$histText .= sprintf("<li><span style='width:200px; display:inline-block;'>%s</span><b>(%s)</b> </li>", $row['victim'], $row['dateOfCrime']);
 }
 $histText .= "</ul>";
 
