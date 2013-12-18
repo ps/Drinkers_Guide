@@ -12,6 +12,7 @@
 	if(mysql_num_rows($results) == 0){
 		niceDie("Bar not found");
 	}
+	$bname = mysql_escape_string($bname);
 	$row = mysql_fetch_assoc($results);
 	$rating = $row['rating'];
 ?>
