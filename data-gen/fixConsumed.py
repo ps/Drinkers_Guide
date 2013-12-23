@@ -2,14 +2,11 @@ import MySQLdb
 import re
 import random
 import sys 
+from settings import *
 '''
 The script fixed the consumed table where certain entries had 0 in the numDrinks field and assigns a number 1-10 into that field.
 '''
 
-def conn_remote():
-	db = MySQLdb.connect(host="cs336-9.cs.rutgers.edu", user="root", passwd="root", db="SAFETY_DB")
-	print "Connection made"
-	return db
 print "Getting connection"
 cxn = conn_remote()
 

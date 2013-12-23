@@ -14,6 +14,7 @@ import random
 import sys
 import unicodedata
 from bs4 import BeautifulSoup
+from settings import *
 
 #sanitize from unicode characters to ascii
 def sanitizeString(str):
@@ -22,7 +23,7 @@ def sanitizeString(str):
 
 #connect to db
 print "Connectin to db"
-db = MySQLdb.connect(host="cs336-9.cs.rutgers.edu", user="root", passwd="root", db="SAFETY_DB")
+db = conn_remote()
 cursor = db.cursor()
 
 print "Getting data"

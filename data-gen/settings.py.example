@@ -1,0 +1,7 @@
+import MySQLdb
+
+datadir = "data/"
+def conn_remote():
+	db = MySQLdb.connect(host="<sql host>", user="<user>", passwd="<password>", db="<database>")
+	print "Connection made"
+	return db
