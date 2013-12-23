@@ -1,3 +1,4 @@
+#To run the data generation, put in your database credentials and rename this file to settings.py
 import MySQLdb
 
 datadir = "data/"
