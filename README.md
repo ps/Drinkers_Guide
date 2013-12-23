@@ -1,6 +1,8 @@
 Drinker's Guide
 ===============
 
+[See it live](http://kevinalbs.com/drinkersGuide)
+
 ## About ##
 This project was done for the undergraduate course [Principles of Information and Data Management](http://www.cs.rutgers.edu/undergraduate/courses/336/) which covered SQL and relational database design. 
 
@@ -27,34 +29,7 @@ The data is for one month of October 2013 with the following assumptions:
 - Each drinker goes to bar on average 3-4 times 
 - Each drinker frequents 2-3 different bars 
 
-## Ideas ##
-Some of these are difficult to implement but who knows.
-
-* Use the data to determine a safety ranking of bars based off of the number of offences commited at a bar
-* Visualize this with a map (not necessarily google maps), if we stick to one state, we could roll our own simple map which just plots each bar and has a heatmap of how dangerous the bars are
-* Have a form to report offences
-* Have a tool which locates the safest bar in your area to go to
-* If we want to do something with the location, should we have real city/town names with their legitimate zip codes etc? We can get a list of them from [this wikipedia page](http://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey)
-* Right now I favored Polish bars and beers. However, the data might visualize better if I don't favor Polish bars, just beers, so the distribution of people is still genuine to the population.
-
-## Time Table ##
-This week:
-- Actually create the tables from our flowchart
-- Finish all data generation 
-- Enforce all of the patterns we want
-
-Next week:
-- Make the backend (probably in PHP)
-- Make forms to report offences, etc.
-- Make at least a couple visualizations of most dangerous areas
-- Add profiles of sex offenders
-- Real town names from NJ, NY, PA
-- Possibly use [google heatmap](https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap)
-
-
-
 ## Data Generation ##
-
 ### Patterns ###
 
 We need to add a couple of patterns to the data. It might be easier to add all of the data initially and then implement the patterns by deleting records which go against the pattern. This way we can just worry about making a shit ton of data for now.
