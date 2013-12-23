@@ -1,6 +1,6 @@
 <?php
-$cxn = mysql_connect("cs336-9.cs.rutgers.edu", "root", "root") or die("Could not connect to database server");
-mysql_select_db("SAFETY_DB", $cxn);
+$cxn = mysql_connect("<sql host>", "<user>", "<password>") or die("Could not connect to database server");
+mysql_select_db("<database>", $cxn);
 
 //To increase number of bars with lower safety rating, we can add more illegal beers to sells (as long as we update the illegal beer pattern)
 

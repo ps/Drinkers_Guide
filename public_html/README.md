@@ -1,15 +1,5 @@
-# Design stuffs #
+# Front-end #
 
-- What is our name? Possibilities:
-	 - Drinking guardian
-	 - Drinker's Guide
-
-- Colors:
-	- Black, white
-	- Badge yellow #FAF43E
-	- Orange (danger) #FFD6C4
-	- Blue #96E0FF
-
-- Add better die function which includes bottom.php
-- Add circle around ratings which is colored based on rating
-- Footer not at the bottom for Firefox
+1. To start with the front-end first make sure you have set up the database (see the README in the root directory).
+2. Open up settings.php.example and put in your database credentials
+3. Rename settings.php.example to settings.py
